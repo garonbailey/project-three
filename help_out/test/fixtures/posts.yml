@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: MyString
+  float: MyString
+  longitude: MyString
+  float: MyString
+  usernotes: MyString
+  contactemail: MyString
+  contactphone: MyString
+
+two:
+  latitude: MyString
+  float: MyString
+  longitude: MyString
+  float: MyString
+  usernotes: MyString
+  contactemail: MyString
+  contactphone: MyString
