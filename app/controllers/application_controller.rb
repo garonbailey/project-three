@@ -5,6 +5,17 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_responder
 
+  def index
+    puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
+
+
+    puts "some garbages"
+
+    @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
+
+    render '/index'
+  end
+
   def welcome
     render html: "I am up and running!"
   end
