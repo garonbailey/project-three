@@ -7,10 +7,6 @@ class ApplicationController < ActionController::Base
 
   def index
     puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
-
-
-    puts "some garbages"
-
     @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 
     render '/index'
