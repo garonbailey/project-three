@@ -1,6 +1,5 @@
 class ResponderController < ApplicationController
   def new
-    @responder = Responder.new
   end
 
   def create
