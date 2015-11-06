@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_responder
 
+  def welcome
+    render html: "I am up and running!"
+  end
+
   private
 
   def current_responder
