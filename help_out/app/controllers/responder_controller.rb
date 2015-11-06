@@ -16,6 +16,6 @@ class ResponderController < ApplicationController
   private
 
   def responder_params
-    return params.require(:responder).permit(:username, :password)
+    return params.require(:responder).permit(:username, :password, :password_confirmation)
   end
 end

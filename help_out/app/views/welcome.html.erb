@@ -1,0 +1,39 @@
+<h2>sign <em>up</em></h2>
+
+<form action="<%= responder_path %>" method="POST"
+    autocomplete="false">
+  <input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <input type="text" name="responder[username]"
+    placeholder="username"><br/>
+  <input type="password" name="responder[password]"
+    placeholder="set your password"><br/>
+  <input type="password" name="responder[password_confirmation]"
+    placeholder="confirm your password"><br/>
+  <input type="submit" value="Sign up">
+</form>
+
+<h2>sign <em>in</em> to lift your burdens</h2>
+
+<form action="<%= session_path %>" method="POST"
+    autocomplete="false">
+  <input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <input type="text" name="responder[username]"
+    placeholder="username"><br/>
+  <input type="password" name="responder[password]"
+    placeholder="password"><br/>
+  <input type="submit" value="Sign in">
+</form>
+
+<% if current_responder %>
+<hr/>
+<form action="<%= session_path %>" method="POST">
+  <input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log Out">
+</form>
+<% end %>
