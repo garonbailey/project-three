@@ -1,0 +1,1007 @@
+
+
+Started GET "/" for ::1 at 2015-11-06 10:52:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (7.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (174.5ms)
+
+
+Started GET "/index.html" for ::1 at 2015-11-06 10:52:20 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (82.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.3ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 10:52:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (129.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddSessionTokenToResponders (20151106024429)
+  [1m[35m (3.7ms)[0m  BEGIN
+  [1m[36m (15.6ms)[0m  [1mALTER TABLE "responders" ADD "session_token" character varying[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151106024429"]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeColumnInResponders (20151106024453)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.9ms)[0m  [1mALTER TABLE "responders" RENAME COLUMN "password" TO "password_digest"[0m
+  [1m[35m (7.1ms)[0m  ALTER TABLE "responders" ALTER "password_digest" SET NOT NULL
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20151106024453"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (7.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'responders'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/index" for ::1 at 2015-11-06 10:53:48 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/tuckermargulies/Desktop/project_3/project-three/app/views"
+):
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (88.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (88.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (195.8ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 10:54:31 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.5ms)
+Completed 200 OK in 2025ms (Views: 2024.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comment.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/assets/post.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/assets/responder.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/assets/angular.self-215ef93498a21844831a6105b47c878bcbd1a06765c7c2cf74a0363e79c372f0.js?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/assets/comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/assets/responder.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-06 10:54:33 -0500
+
+
+Started GET "/index" for ::1 at 2015-11-06 10:54:33 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:04:16 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.8ms)
+Completed 200 OK in 182ms (Views: 173.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:05:15 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.1ms)
+Completed 200 OK in 178ms (Views: 176.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:05:40 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.8ms)
+Completed 200 OK in 255ms (Views: 250.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:06:38 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.1ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:08:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (3.8ms)
+Completed 200 OK in 482ms (Views: 469.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:19:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (4.2ms)
+Completed 200 OK in 509ms (Views: 485.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:21:15 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.2ms)
+Completed 200 OK in 142ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:21:50 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.0ms)
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:21:56 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 123.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:22:12 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for ApplicationController):
+  actionpack (4.2.4) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (83.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (186.9ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:22:18 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.0ms)
+Completed 200 OK in 133ms (Views: 132.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:22:58 -0500
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/application_controller.rb:9:in `+'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (78.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (162.3ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:24:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/application_controller.rb:9:in `+'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (81.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (188.7ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:25:00 -0500
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/application_controller.rb:9:in `+'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (140.9ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:25:30 -0500
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Object into String):
+  app/controllers/application_controller.rb:9:in `+'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (159.5ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:25:39 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.4ms)
+Completed 200 OK in 429ms (Views: 428.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:25:58 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.1ms)
+Completed 200 OK in 114ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:26:10 -0500
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `GOOGLE_MAP' for #<Object:0x007fbc218cceb0>):
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (78.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (167.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:26:19 -0500
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into String):
+  app/controllers/application_controller.rb:9:in `[]'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (136.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:26:26 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:27:21 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:31:04 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (4.7ms)
+Completed 200 OK in 216ms (Views: 209.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:31:57 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 137.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:32:52 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.5ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/'https://maps.googleapis.com/maps/api/js?key=%27%20+%20ENV[%27GOOGLE_MAP%27]%20+%20%27&callback=initMap%27" for ::1 at 2015-11-06 11:32:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/'https:/maps.googleapis.com/maps/api/js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (46.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (161.1ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:33:17 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.8ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:34:32 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.3ms)
+Completed 200 OK in 116ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:35:19 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (2.8ms)
+Completed 200 OK in 172ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:36:38 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.9ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:37:03 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.8ms)
+Completed 200 OK in 142ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:38:23 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.2ms)
+Completed 200 OK in 157ms (Views: 155.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:38:43 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.4ms)
+Completed 200 OK in 171ms (Views: 170.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:38:52 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.7ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:40:34 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.4ms)
+Completed 200 OK in 116ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/url" for ::1 at 2015-11-06 11:40:34 -0500
+
+ActionController::RoutingError (No route matches [GET] "/url"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (137.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (101.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (195.6ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:41:02 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.7ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/url" for ::1 at 2015-11-06 11:41:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/url"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (83.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (166.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:41:13 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/url" for ::1 at 2015-11-06 11:41:13 -0500
+
+ActionController::RoutingError (No route matches [GET] "/url"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (137.5ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:41:33 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html within layouts/application (0.4ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/url" for ::1 at 2015-11-06 11:41:33 -0500
+
+ActionController::RoutingError (No route matches [GET] "/url"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (80.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (173.4ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:45:18 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 181ms (Views: 179.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:45:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 502ms (Views: 488.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:48:29 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/@map_url" for ::1 at 2015-11-06 11:48:29 -0500
+
+ActionController::RoutingError (No route matches [GET] "/@map_url"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (80.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (180.8ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:48:37 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/@map_url" for ::1 at 2015-11-06 11:48:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/@map_url"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (163.7ms)
+
+
+Started GET "/index" for ::1 at 2015-11-06 11:50:18 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 282ms (Views: 275.2ms | ActiveRecord: 0.0ms)
