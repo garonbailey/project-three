@@ -11,13 +11,10 @@ class SessionController < ApplicationController
       session[:session_token] = token
       responder.update(session_token: token)
 
-      flash[:message] = "Welcome back."
-
       # render json: { token: generated_token }
 
       redirect_to application_angular_path
     else
-      flash[:message] = "That username / password doesn't exist."
       render action: :new
     end
   end
