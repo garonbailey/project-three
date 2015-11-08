@@ -15,6 +15,8 @@
       var map;
       function initMap() {
 
+
+
       var myLatLng = {lat: 40.739906, lng: -73.98972};
 
       var map = new google.maps.Map(document.getElementById('map'), {
@@ -22,24 +24,27 @@
         center: myLatLng
       });
 
-      ///CLICKABLE MAKRERS///
+      ///DRAGGABLE MAKRERS///
       var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         draggable: true,
         title: 'Hello World!'
       });
+        console.log("marker " + marker.position)
 
       google.maps.event.addListener(map, 'click', function (event){
         placeMarker(event.latLng)
       });
 
-      /// DRAGGABLE MARKERS///
+      /// CLICKABLE MARKERS///
       function placeMarker(location) {
         var marker = new google.maps.Marker({
           position:location,
-          map:map
+          map:map,
+          label: "H"
         })
+        console.log("location " + location)
       }
     }
 
