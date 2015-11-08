@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
 
   resources :posts
-  resources :responders
+  resources :responders, only: [:create]
   resources :comments, only: [:create]
 
 end
