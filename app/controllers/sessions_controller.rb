@@ -13,9 +13,9 @@ class SessionsController < ApplicationController
 
       # render json: { token: generated_token }
 
-      redirect_to application_angular_path
+      redirect_to posts_path
     else
-      render action: :new
+      redirect_to :back
     end
   end
 
