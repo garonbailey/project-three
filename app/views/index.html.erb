@@ -1,15 +1,17 @@
-<h2>Report a homeless person in need below</h2>
-<p>{{ctrl.message}}</p>
-<div id="map"></div>
-<form>
-	<h3>Location:</h3>
-	<input type="text" name="post[long]" placeholder="Longitude">
-	<input type="text" name="post[lat]" placeholder="Latitude">
-	<h3>Description/Notes:</h3>
-	<textarea rows="6" cols="48" name="post[description]" placeholder="Describe the circumstances, location, or person in need"></textarea><br/>
-	<input type="submit" value="Help Out">
-</form>
-<script type="text/javascript">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HelpOut</title>
+
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript">
       var map;
       function initMap() {
 
@@ -50,3 +52,5 @@
     <script async defer
       src= "<%=@map_url%>">
     </script>
+  </body>
+</html>
