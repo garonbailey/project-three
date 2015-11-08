@@ -5,8 +5,12 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_responder
 
-  def welcome
-    render html: "I am up and running!"
+  def angular
+    render 'application/angular', layout: 'angular'
+  end
+
+  def index
+    render 'application/welcome'
   end
 
   private
