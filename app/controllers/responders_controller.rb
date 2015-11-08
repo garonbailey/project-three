@@ -1,4 +1,11 @@
 class RespondersController < ApplicationController
+  def index
+    @responders = Responder.all
+  end
+
+  def show
+  end
+
   def new
   end
 
@@ -10,6 +17,15 @@ class RespondersController < ApplicationController
     else
       redirect_to root_path
     end
+  end
+
+  def destroy
+  end
+
+  def edit
+  end
+
+  def update
   end
 
   private
