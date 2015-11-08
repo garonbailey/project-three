@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get 'application/index'
   get 'login' => 'sessions#create'
   get 'logout' => 'sessions#destroy'
-  get 'index' => 'application#index'
 
   resources :posts
   resources :responders
