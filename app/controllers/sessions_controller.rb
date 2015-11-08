@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
   def destroy
     log_out!
 
-    redirect_to root_path
+    redirect_to portal_path
   end
 
   def current_responder
