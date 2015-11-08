@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   root 'application#welcome'
 
   get 'application/index'
-  get 'login' => 'session#create'
-  get 'logout' => 'session#destroy'
+  get 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
   get 'index' => 'application#index'
 
   resources :posts
