@@ -7,6 +7,6 @@ Rails.application.routes.draw do
 
   resources :posts
   resources :responders, only: [:create]
-  resources :comments, only: [:create], shallow: true
+  resources :comments, only: [:create]
 
 end
