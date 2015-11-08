@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  root 'application#welcome'
+  root 'application#angular'
+
+  get 'application/angular'
+
+  get '/new' => 'posts#new'
+
+  get '/' => 'posts#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
