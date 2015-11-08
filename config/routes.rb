@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  root 'application#welcome'
+  root 'application#index'
 
-  get 'application/index'
-  get 'login' => 'sessions#create'
-  get 'logout' => 'sessions#destroy'
+  get '/portal' => 'application#portal'
 
+
+  resources :sessions, only: [:create, :destroy]
   resources :posts
   resources :responders, only: [:create]
   resources :comments, only: [:create]
+
 
 end

@@ -13,8 +13,8 @@ class ApplicationController < ActionController::Base
     render '/index'
   end
 
-  def welcome
-    render html: "I am up and running!"
+  def portal
+    render '/portal'
   end
 
   private
