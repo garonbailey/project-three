@@ -1,32 +1,50 @@
-<h2>sign <em>up</em></h2>
+<div class="page-header">
+  <h2>welcome <em>back</em></h2>
+    <hr>
+</div>
 
-<form action="<%= responders_path %>" method="POST"
-    autocomplete="false">
-  <input type="hidden" name="authenticity_token"
-    value="<%= form_authenticity_token %>">
+<p class="lead">
+  <form action="<%= sessions_path %>" method="POST"
+      autocomplete="false">
+    <div class="form-group">
+      <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
 
-  <input type="text" name="responder[username]"
-    placeholder="username"><br/>
-  <input type="password" name="responder[password]"
-    placeholder="set your password"><br/>
-  <input type="password" name="responder[password_confirmation]"
-    placeholder="confirm your password"><br/>
-  <input type="submit" value="Sign up">
-</form>
+      <input type="text" class="form-control" name="responder[username]"
+      placeholder="username"><br/>
+      <input type="password" class="form-control" name="responder[password]"
+      placeholder="password"><br/>
 
-<h2>sign <em>in</em></h2>
+      <input type="submit" value="Sign in">
+  </form><br/><br/>
+    <a role="button" data-toggle="collapse"
+    href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    [sign <em>up</em>]
+    </a>
+      <div class="collapse" id="collapseExample">
+        <div class="well">
+          <form action="<%= responders_path %>" method="POST"
+              autocomplete="false">
+              <input type="hidden" name="authenticity_token"
+              value="<%= form_authenticity_token %>">
 
-<form action="<%= sessions_path %>" method="POST"
-    autocomplete="false">
-  <input type="hidden" name="authenticity_token"
-    value="<%= form_authenticity_token %>">
+              <input type="text" class="form-control" name="responder[username]"
+              placeholder="choose a username"><br/>
+              <input type="password" class="form-control" name="responder[password]"
+              placeholder="set your password"><br/>
+              <input type="password" class="form-control" name="responder[password_confirmation]"
+              placeholder="confirm your password"><br/>
 
-  <input type="text" name="responder[username]"
-    placeholder="username"><br/>
-  <input type="password" name="responder[password]"
-    placeholder="password"><br/>
-  <input type="submit" value="Sign in">
-</form>
+              <input type="submit" value="Sign up">
+          </form>
+        </div>
+      </div>
+    </div>
+</p>
+
+
+
+
 
 <% if current_responder %>
 <hr/>
