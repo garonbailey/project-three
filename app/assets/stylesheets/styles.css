@@ -52,6 +52,11 @@ form {
   border: 1px solid #f1f1f1;
 }
 
+.center-block {
+  width: 50%;
+  margin 0 auto;
+}
+
 hr.fade {
     border: 0;
     height: 1px;
