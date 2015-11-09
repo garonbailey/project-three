@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: :create
 
 	def new
 		@post = Post.new
@@ -25,11 +26,10 @@ class PostsController < ApplicationController
 	end
 
 	def create
-    fail
 		@post = Post.new(post_params)
 		@post.save
 
-		redirect_to post_path(@post)
+		render partial: 'post', layout: false
 	end
 
 	def destroy
