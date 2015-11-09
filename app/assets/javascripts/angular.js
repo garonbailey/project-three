@@ -7,17 +7,20 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var controller = this;
 	this.newReport = function () {
-		$http.post('/posts/create', {
+		console.log("I AM DEFINITELY IN HERE");
+
+		$http.post('/posts', {
 			post: {
-				location: this.location,
-				usernotes: this.usernotes
+				location: controller.location,
+				usernotes: controller.usernotes
 			}
 		}).
 		success(function(data) {
+			console.log("DATA", data);
 			if (data.errors) {
-				this.error = data.errors;
+				controller.error = data.errors;
 			} else {
-				this.message = data.message;
+				controller.message = data.message;
 			}
 		});
 	}
