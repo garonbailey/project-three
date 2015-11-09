@@ -6,16 +6,16 @@ class PostsController < ApplicationController
 		puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 
 	    @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
-		render 'post/new', layout: 'angular'
+		render 'posts/new', layout: 'angular'
 	end
 
 	def index
-		# @posts = Post.all
-		render 'post/index', layout: 'angular'
+		@posts = Post.all
+		render 'posts/index', layout: 'angular'
 	end
 
 	def closed
-		render 'post/closed', layout: 'angular'
+		render 'posts/closed', layout: 'angular'
 	end
 
 
