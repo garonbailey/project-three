@@ -1,14 +1,21 @@
-<h2>Report a homeless person in need below</h2>
-<p>{{ctrl.message}}</p>
-<div id="map"></div>
-<form>
-	<h3>Location:</h3>
-	<input type="text" name="post[long]" placeholder="Longitude">
-	<input type="text" name="post[lat]" placeholder="Latitude">
-	<h3>Description/Notes:</h3>
-	<textarea rows="6" cols="48" name="post[description]" placeholder="Describe the circumstances, location, or person in need"></textarea><br/>
-	<input type="submit" value="Help Out">
-</form>
+<div class="container">
+	<div class="center-block">
+  	<h1>Help Someone in Need</h1>
+<!-- <div id="map"></div> -->
+			<div class="form-group">
+				<form ng-submit="ctrl.newReport(post)">
+					<input type="text" class="form-control" ng-model="location" placeholder="Location"><br/>
+					<textarea ng-model="usernotes" class="form-control" placeholder="notes..."></textarea><br/>
+					<input type="submit" value="Help Out">
+				</form>
+			</div>
+		</div>
+</div>
+
+
+
+
+
 <script type="text/javascript">
       var map;
       function initMap() {
