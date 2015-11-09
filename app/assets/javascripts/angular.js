@@ -1,14 +1,21 @@
 var app = angular.module('HelpOut', ['ngRoute']);
 
-app.controller('postCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
-	this.name = 'postCtrl';
-	this.id = $routeParams.id;
-	this.message = "I work, sort of. Actually, no I don't.";
+app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+	this.message = "I'm the login controller."
 }]);
 
 app.controller('newPostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
 	this.message = "I'm still working. This is the new post page/home screen.";
 }]);
+
+app.controller('allPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+	this.message = "Posts Index; Fill in .json get request later.";
+	var controller = this;
+	$http.get('/posts.json').success(function(postsData){
+		controller.posts = postsData;
+	})
+
+}])
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode({ enabled: true });
@@ -18,12 +25,22 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 			controller: 'newPostCtrl',
 			controllerAs: 'ctrl'
 		}).
-		when('/new', {
-			templateUrl: '/angular_templates/new.html',
-			controller: 'postCtrl',
+		when('/login', {
+			templateUrl: '/angular_templates/login.html',
+			controller: 'loginCtrl',
 			controllerAs: 'ctrl'
+		}).
+		when('/reports', {
+			templateUrl: '/angular_templates/all_posts.html',
+			controller: 'allPostsCtrl',
+			controllerAs: 'ctrl'
+		}).
+		when('/closed', {
+			templateUrl: '/angular_templates/closed_posts.html',
+			controller: 'closedPostsCtrl',
+			controllerAs: 'ctrl'
+		}).
+		otherwise({
+			redirectTo: '/'
 		});
-		// otherwise({
-		// 	redirectTo: ''
-		// });
 }]);

@@ -6,13 +6,13 @@ Rails.application.routes.draw do
 
   get '/new' => 'posts#new'
 
-  get '/' => 'posts#index'
+  get '/' => 'posts#new'
 
-  get '/login' => ''
+  get '/login' => 'session#new'
 
-  get '/reports' => ''
+  get '/reports' => 'posts#index'
 
-  get '/closed' => ''
+  get '/closed' => 'posts#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
