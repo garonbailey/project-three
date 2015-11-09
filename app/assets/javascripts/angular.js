@@ -10,7 +10,7 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 		$http.post('/posts/create', {
 			post: {
 				location: this.location,
-				usernotes: this.userNotes
+				usernotes: this.usernotes
 			}
 		}).
 		success(function(data) {

@@ -25,6 +25,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
+    fail
 		@post = Post.new(post_params)
 		@post.save
 

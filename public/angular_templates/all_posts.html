@@ -1,7 +1,20 @@
-<h2>Open Reports</h2>
+<div class="container">
+  <div class="center-block">
+    <h1>Open Reports</h1>
 
-<p>{{ctrl.message}}</p>
-
-<ul>
-	<li ng-repeat>{{@posts}}</li>
-</ul>
+  <table class="table table-condensed table-hover">
+     <thead>
+        <tr>
+          <th>Location</th>
+          <th>Opened</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr ng-repeat="post in ctrl.posts" >
+        <td><a href="/posts/{{post.id}}">{{post.location}}</a></td>
+        <td>{{post.created_at}}</td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
