@@ -9,7 +9,11 @@ app.controller('newPostCtrl', ['$routeParams', '$http', function ($routeParams, 
 }]);
 
 app.controller('allPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
-	this.message = "All Posts Page";
+	this.message = "Posts Index; Fill in .json get request later.";
+	var controller = this;
+	$http.get('/posts.json').success(function (postsData) {
+		controller.posts = postsData;
+	});
 }]);
 
 app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
