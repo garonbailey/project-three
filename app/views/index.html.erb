@@ -47,5 +47,22 @@
     <script async defer
       src= "<%=@map_url%>">
     </script>
+
+  <form action="<%=posts/create%>" method="POST">
+    <input type="hidden" name="authenticity_token"
+           value="<%=form_authenticity_token%>">
+    <input type="text" name="post[description]"
+          placeholder="description"
+          value =><br>
+    <input type="text" name="post[latitude]"
+          placeholder="latitude"> <br>
+    <input type="text" name="post[longitude]"
+          placeholder="longitude"> <br>
+    <input type="submit" value='Add Post'>
+
+
+  </form>
+
+
   </body>
 </html>
