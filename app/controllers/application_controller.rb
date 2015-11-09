@@ -17,8 +17,8 @@ class ApplicationController < ActionController::Base
     render '/index'
   end
 
-  def portal
-    render '/portal'
+  def login
+    render '/login'
   end
 
   private
