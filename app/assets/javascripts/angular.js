@@ -13,9 +13,12 @@ app.controller('allPostsCtrl', ['$routeParams', '$http', function ($routeParams,
 	var controller = this;
 	$http.get('/posts.json').success(function(postsData){
 		controller.posts = postsData;
-	})
+	});
+}]);
 
-}])
+app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+	this.message = "Closed Posts Controller";
+}]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode({ enabled: true });
