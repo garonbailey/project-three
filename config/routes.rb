@@ -8,14 +8,20 @@ Rails.application.routes.draw do
 
   get '/' => 'posts#index'
 
+  get '/login' => ''
+
+  get '/reports' => ''
+
+  get '/closed' => ''
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-
   get '/portal' => 'application#portal'
-  get '/sessions' => 'sessions#current_responder', defaults: { format: :json }
-  post '/sessions' => 'sessions#create'
-  delete '/sessions' => 'sessions#destroy'
+  get '/session' => 'session#current_responder', defaults: { format: :json }
+  post '/session' => 'session#create'
+  delete '/session' => 'session#destroy'
+
 
 
 
