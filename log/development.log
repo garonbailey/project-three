@@ -11991,3 +11991,27 @@ Processing by PostsController#index as JSON
   Rendered posts/index.json.jbuilder (8.4ms)
 Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.0ms)
 >>>>>>> 63be26a79de2c6bf06ca5f9959cc58d9e6ad9c49
+
+
+Started GET "/posts" for ::1 at 2015-11-09 15:45:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (2.0ms)
+Completed 200 OK in 359ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:46:03 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"-35.45618, 125.39812", "usernotes"=>"out here"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (25.4ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", -35.45618], ["usernotes", "out here"], ["created_at", "2015-11-09 20:46:03.706405"], ["updated_at", "2015-11-09 20:46:03.706405"]]
+  [1m[35m (28.1ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (12.4ms)
+Completed 200 OK in 174ms (Views: 57.0ms | ActiveRecord: 58.9ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-09 15:46:08 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 195ms (Views: 193.4ms | ActiveRecord: 0.0ms)
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
