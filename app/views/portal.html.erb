@@ -1,10 +1,17 @@
-<div class="page-header">
-  <h2>welcome <em>back</em></h2>
-    <hr>
-</div>
+<header>
+    <div class="logo">
+      <h1><a href="/">HelpOut</a></h1>
+    </div>
+    <div class="nav">
+      <li><a target="_self" href='/login'>Responder Login/Sign Up</a></li>
+      <li><a href="/">Report</a></li>
+      <li><a href="/posts">View Open Reports</a></li>
+      <li><a href="/closed">View Past Reports</a></li>
+    </div>
+  </header>
 
 <p class="lead">
-  <form action="<%= sessions_path %>" method="POST"
+  <form action="<%= session_path %>" method="POST"
       autocomplete="false">
     <div class="form-group">
       <input type="hidden" name="authenticity_token"
@@ -48,7 +55,7 @@
 
 <% if current_responder %>
 <hr/>
-<form action="<%= sessions_path %>" method="POST">
+<form action="<%= session_path %>" method="POST">
   <input type="hidden" name="authenticity_token"
     value="<%= form_authenticity_token %>">
   <input type="hidden" name="_method" value="DELETE">

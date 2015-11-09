@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
   root 'application#angular'
+  
+  get '/login' => 'application#portal'
 
   get 'application/angular'
 
   get '/' => 'posts#new'
-
-  get '/login' => 'session#new'
 
   get '/posts' => 'posts#index'
 
