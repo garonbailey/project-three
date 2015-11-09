@@ -1397,3 +1397,1127 @@ ActionController::RoutingError (No route matches [GET] "/welcome"):
   Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (171.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 13:46:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (11.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 36ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 13:47:27 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 460ms (Views: 457.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comment.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/assets/post.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/assets/responder.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/assets/angular.self-215ef93498a21844831a6105b47c878bcbd1a06765c7c2cf74a0363e79c372f0.js?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/assets/comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/assets/responder.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-07 13:47:28 -0500
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:28:10 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (293.0ms)
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x007fd8ced4e280>:0x007fd8d14a82e0>):
+    47:     <script async defer
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50:       <form action = "<%=posts_path %>" method="POST">
+    51:         <input type ="hidden"
+    52:                name="authenticity_token"
+    53:                value="<%=form_authenticity_token">
+  app/views/index.html.erb:50:in `_app_views_index_html_erb__4323495322502195207_70284604020700'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (192.4ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:29:17 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007fd8cb980520>:0x007fd8cb953ac0>):
+    47:     <script async defer
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50:       <form action = "<%=posts/new %>" method="POST">
+    51:         <input type ="hidden"
+    52:                name="authenticity_token"
+    53:                value="<%=form_authenticity_token">
+  app/views/index.html.erb:50:in `_app_views_index_html_erb__4323495322502195207_70284552606740'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (165.6ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:38:00 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (76.4ms)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007fd8ceeb8da0>:0x007fd8cc6d0bf8>):
+    47:     <script async defer
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50:       <form action = "<%=posts/new %>" method="POST">
+    51:         <input type ="hidden"
+    52:                name="authenticity_token"
+    53:                value="<%=form_authenticity_token">
+  app/views/index.html.erb:50:in `_app_views_index_html_erb__4323495322502195207_70284552606740'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.7ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:38:22 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 124.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:38:42 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:39:48 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:39:57 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:40:09 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:40:14 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for ::1 at 2015-11-07 15:44:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (50.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (79.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (173.3ms)
+
+
+Started GET "/application/welcome" for ::1 at 2015-11-07 15:45:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application/welcome"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (81.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (165.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 15:45:17 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 15:45:54 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendered welcome.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `responder_path' for #<#<Class:0x007fd8cb9bac48>:0x007fd8cb9ba180>):
+    1: <h2>sign <em>up</em></h2>
+    2: 
+    3: <form action="<%= responder_path %>" method="POST"
+    4:     autocomplete="false">
+    5:   <input type="hidden" name="authenticity_token"
+    6:     value="<%= form_authenticity_token %>">
+  app/views/welcome.html.erb:3:in `_app_views_welcome_html_erb__584854167010188439_70284552816280'
+  app/controllers/application_controller.rb:16:in `welcome'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 15:47:18 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 15:47:25 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:47:28 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 15:48:02 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 21:38:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (4.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 40ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 21:38:41 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (24.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f94f6e89e18>:0x007f94f6e0bbf8>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___1646822546718535817_70138886902780'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (79.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (188.7ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 21:38:41 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f94f6e89e18>:0x007f94f6ca85b8>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___1646822546718535817_70138886902780'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (125.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-07 21:40:39 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for ::1 at 2015-11-07 21:40:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (37.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (163.2ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 21:40:51 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f94f326b738>:0x007f94f35cbe00>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___1646822546718535817_70138886902780'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (128.3ms)
+
+
+Started GET "/index" for ::1 at 2015-11-07 21:40:52 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f94f326b738>:0x007f94f6fe3890>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___1646822546718535817_70138886902780'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.9ms)
+
+
+Started GET "/application/index" for ::1 at 2015-11-07 21:40:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application/index"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.1ms)
+
+
+Started GET "/application/weo" for ::1 at 2015-11-07 21:40:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application/weo"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (135.1ms)
+
+
+Started GET "/application/welcome" for ::1 at 2015-11-07 21:41:01 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application/welcome"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 00:41:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (6.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 40ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 00:41:41 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f844c749550>:0x007f84508838b8>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___2780438544179632494_70103131754980'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (83.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (197.1ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 00:41:42 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f844c749550>:0x007f844cf3f0c0>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___2780438544179632494_70103131754980'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.2ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 00:42:14 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f844c749550>:0x007f844ce2e960>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___2780438544179632494_70103131754980'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (83.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (188.2ms)
+
+
+Started GET "/application/index" for ::1 at 2015-11-08 00:42:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/application/index"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (160.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-08 09:19:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#welcome as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 39ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for ::1 at 2015-11-08 09:19:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (154.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-11-08 09:19:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-11-08 09:19:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (136.5ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:19:21 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93418d7530>:0x007f9340827488>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135241642780'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:19:21 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93418d7530>:0x007f9342c5af80>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135241642780'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.9ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:19:57 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93418d7530>:0x007f934477b080>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <!-- <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135242804480'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (137.6ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:20:07 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93418d7530>:0x007f9342bd85f8>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <!-- <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135228307360'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (131.0ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:20:25 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93418d7530>:0x007f93444982a0>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <!-- <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135228307360'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.5ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:21:07 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93418d7530>:0x007f93440eb3a0>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135239319080'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.7ms)
+
+
+Started GET "/index" for ::1 at 2015-11-08 09:23:04 -0500
+Processing by ApplicationController#index as HTML
+  Rendered index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x007f93458c7dc0>:0x007f93458c6f38>):
+    48:       src= "<%=@map_url%>">
+    49:     </script>
+    50: 
+    51:   <form action="<%=posts/create%>" method="POST">
+    52:     <input type="hidden" name="authenticity_token"
+    53:            value="<%=form_authenticity_token%>">
+    54:     <input type="text" name="post[description]"
+  app/views/index.html.erb:51:in `_app_views_index_html_erb___4507656723545605677_70135239319080'
+  app/controllers/application_controller.rb:12:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.2ms)
