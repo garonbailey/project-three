@@ -1,4 +1,11 @@
 class RespondersController < ApplicationController
+  def index
+    @responders = Responder.all
+  end
+
+  def show
+  end
+
   def new
   end
 
@@ -6,10 +13,19 @@ class RespondersController < ApplicationController
     @responder = Responder.new(responder_params)
     if @responder.save
       session[:responder_id] = @responder.id
-      redirect_to new_session_path
+      redirect_to portal_path
     else
-      redirect_to root_path
+      redirect_to portal_path
     end
+  end
+
+  def destroy
+  end
+
+  def edit
+  end
+
+  def update
   end
 
   private

@@ -1,0 +1,52 @@
+<h2>Report a homeless person in need below</h2>
+<p>{{ctrl.message}}</p>
+<div id="map"></div>
+<form>
+	<h3>Location:</h3>
+	<input type="text" name="post[long]" placeholder="Longitude">
+	<input type="text" name="post[lat]" placeholder="Latitude">
+	<h3>Description/Notes:</h3>
+	<textarea rows="6" cols="48" name="post[description]" placeholder="Describe the circumstances, location, or person in need"></textarea><br/>
+	<input type="submit" value="Help Out">
+</form>
+<script type="text/javascript">
+      var map;
+      function initMap() {
+
+
+
+      var myLatLng = {lat: 40.739906, lng: -73.98972};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: myLatLng
+      });
+
+      ///DRAGGABLE MAKRERS///
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        draggable: true,
+        title: 'Hello World!'
+      });
+        console.log("marker " + marker.position)
+
+      google.maps.event.addListener(map, 'click', function (event){
+        placeMarker(event.latLng)
+      });
+
+      /// CLICKABLE MARKERS///
+      function placeMarker(location) {
+        var marker = new google.maps.Marker({
+          position:location,
+          map:map,
+          label: "H"
+        })
+        console.log("location " + location)
+      }
+    }
+
+    </script>
+    <script async defer
+      src= "<%=@map_url%>">
+    </script>
