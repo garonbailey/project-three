@@ -5,15 +5,20 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_responder
 
+  def angular
+    render 'application/angular', layout: 'angular'
+  end
+
   def index
     puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
+
     @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 
     render '/index'
   end
 
-  def welcome
-    render html: "I am up and running!"
+  def portal
+    render '/portal'
   end
 
   private

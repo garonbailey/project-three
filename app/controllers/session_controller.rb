@@ -3,9 +3,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    responder = Responder.find_by username: session_params[:username]
+    responder = Responder.find_by username: responder_params[:username]
 
-    if responder && responder.authenticate(session_params[:password])
+    if responder && responder.authenticate(responder_params[:password])
 
       token = SecureRandom.urlsafe_base64
       session[:session_token] = token
@@ -13,16 +13,16 @@ class SessionsController < ApplicationController
 
       # render json: { token: generated_token }
 
-      redirect_to application_angular_path
+      redirect_to posts_path
     else
-      render action: :new
+      redirect_to :back
     end
   end
 
   def destroy
     log_out!
 
-    redirect_to root_path
+    redirect_to portal_path
   end
 
   def current_responder
@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
 
   private
 
-  def session_params
-    params.require(:session).permit(:username, :password)
+  def responder_params
+    params.require(:responder).permit(:username, :password)
   end
 end
