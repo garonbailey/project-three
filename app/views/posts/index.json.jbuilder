@@ -1,4 +1,5 @@
 json.posts @posts do |post|
-  json.(post, :id, :location, :usernotes, :contactname, :contactemail, :contactphone)
-  json.comments post.comments, partial: 'comments/comment', as: :comment
+  json.id post.id
+  json.location post.location
+  json.usernotes post.usernotes
 end

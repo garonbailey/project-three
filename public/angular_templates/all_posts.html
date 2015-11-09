@@ -6,15 +6,15 @@
      <thead>
         <tr>
           <th>Location</th>
-          <th>Opened</th>
+          <th>Notes</th>
         </tr>
       </thead>
     <tbody>
-        <tr ng-repeat="post in ctrl.posts" >
-        <td><a href="/posts/{{post.id}}">{{ctrl.post.location}}</a></td>
-        <td>{{ctrl.post.created_at}}</td>
+        <tr ng-repeat="posts in ctrl.posts">
+        <td>{{posts.location}}</td>
+        <td>{{posts.usernotes}}</td>
         </tr>
     </tbody>
-  </table>
+   </table>
   </div>
 </div>
