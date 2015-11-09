@@ -1,7 +1,13 @@
+
+
+
+<div id="map">
+	<map zoom="4" center="-25.363882, 131.044922" on-click="placeMarker()"></map>
+</div>
+
 <div class="container">
 	<div class="center-block">
   	<h1>Help Someone in Need</h1>
-<!-- <div id="map"></div> -->
 			<div class="form-group">
 				<form ng-submit="ctrl.newReport()">
 					<input type="text" class="form-control"
@@ -13,49 +19,3 @@
 			</div>
 		</div>
 </div>
-
-
-
-
-
-<script type="text/javascript">
-      var map;
-      function initMap() {
-
-
-
-      var myLatLng = {lat: 40.739906, lng: -73.98972};
-
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: myLatLng
-      });
-
-      ///DRAGGABLE MAKRERS///
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        draggable: true,
-        title: 'Hello World!'
-      });
-        console.log("marker " + marker.position)
-
-      google.maps.event.addListener(map, 'click', function (event){
-        placeMarker(event.latLng)
-      });
-
-      /// CLICKABLE MARKERS///
-      function placeMarker(location) {
-        var marker = new google.maps.Marker({
-          position:location,
-          map:map,
-          label: "H"
-        })
-        console.log("location " + location)
-      }
-    }
-
-    </script>
-    <script async defer
-      src= "<%=@map_url%>">
-    </script>
