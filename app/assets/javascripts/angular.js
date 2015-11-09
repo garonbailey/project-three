@@ -9,8 +9,12 @@ app.controller('newPostCtrl', ['$routeParams', '$http', function ($routeParams, 
 }]);
 
 app.controller('allPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
-	this.message = "Posts Index; Fill in .json get request later."
-}])
+	this.message = "All Posts Page";
+}]);
+
+app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+	this.message = "Closed Posts Controller";
+}]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode({ enabled: true });
