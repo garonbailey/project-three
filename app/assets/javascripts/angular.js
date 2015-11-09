@@ -26,11 +26,11 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 	}
 }]);
 
-app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($scope, $routeParams, $http) {
+app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	this.message = "Posts Index; Fill in .json get request later.";
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
-		controller.posts = postsData;
+		controller.posts = postsData.posts;
 	});
 }]);
 
