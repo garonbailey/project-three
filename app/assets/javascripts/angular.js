@@ -4,11 +4,25 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 	this.message = "I'm the login controller."
 }]);
 
-app.controller('newPostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
-	this.message = "I'm still working. This is the new post page/home screen.";
+app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($scope, $routeParams, $http) {
+	$scope.post = {};
+	$scope.newReport = function () {
+		$http({
+			method: 'POST',
+			url: '/posts/create',
+			data: $scope.post
+		}).
+		success(function(data) {
+			if (data.errors) {
+				$scope.error = data.errors;
+			} else {
+				$scope.message = data.message;
+			}
+		});
+	}
 }]);
 
-app.controller('allPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($scope, $routeParams, $http) {
 	this.message = "Posts Index; Fill in .json get request later.";
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
