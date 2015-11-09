@@ -12916,6 +12916,241 @@ Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
 
 Started GET "/posts.json" for ::1 at 2015-11-09 16:50:01 -0500
 Processing by PostsController#index as JSON
+<<<<<<< HEAD
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (8.4ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:40:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (2.2ms)
+Completed 200 OK in 303ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:40:45 -0500
+
+
+Started GET "/assets/angular.self-34ed2039db5a555ad9e8562f2dd5ed65da410ef9803e68c8f117c83311ce1bb1.js?body=1" for ::1 at 2015-11-09 15:40:45 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:40:46 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (61.8ms)
+Completed 200 OK in 136ms (Views: 125.5ms | ActiveRecord: 9.4ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:43:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"Goat", "usernotes"=>"again"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "again"], ["created_at", "2015-11-09 20:43:04.668984"], ["updated_at", "2015-11-09 20:43:04.668984"]]
+  [1m[35m (175.5ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (4.0ms)
+Completed 200 OK in 241ms (Views: 16.7ms | ActiveRecord: 183.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:43:08 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (8.2ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:44:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"nyc", "usernotes"=>"struggle real"}}
+  [1m[35m (2.9ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "struggle real"], ["created_at", "2015-11-09 20:44:38.342171"], ["updated_at", "2015-11-09 20:44:38.342171"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (3.4ms)
+Completed 500 Internal Server Error in 78ms (Views: 18.8ms | ActiveRecord: 14.3ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/application_controller.rb:9:in `angular'
+  app/controllers/posts_controller.rb:33:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.9ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f82916d19e0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f82916d1670 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f82916c8cf0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-11-09 15:44:45 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.5ms)
+Completed 200 OK in 248ms (Views: 246.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:44:46 -0500
+
+
+Started GET "/assets/angular.self-34ed2039db5a555ad9e8562f2dd5ed65da410ef9803e68c8f117c83311ce1bb1.js?body=1" for ::1 at 2015-11-09 15:44:46 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:44:59 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"render", "usernotes"=>"this shit"}}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 0.0], ["usernotes", "this shit"], ["created_at", "2015-11-09 20:44:59.843471"], ["updated_at", "2015-11-09 20:44:59.843471"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  Rendered posts/_post.json.jbuilder (0.5ms)
+Completed 500 Internal Server Error in 14ms (Views: 3.3ms | ActiveRecord: 4.1ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/application_controller.rb:9:in `angular'
+  app/controllers/posts_controller.rb:33:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.8ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f82916d19e0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f82916d1670 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f82916c8cf0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-11-09 15:46:07 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:46:07 -0500
+
+
+Started GET "/assets/angular.self-34ed2039db5a555ad9e8562f2dd5ed65da410ef9803e68c8f117c83311ce1bb1.js?body=1" for ::1 at 2015-11-09 15:46:08 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:46:14 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"render", "usernotes"=>"this shit"}}
+  [1m[35m (2.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "this shit"], ["created_at", "2015-11-09 20:46:14.684934"], ["updated_at", "2015-11-09 20:46:14.684934"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 10.7ms)
+
+ActionView::MissingTemplate (Missing template application/angular with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sean/src/project-three/project-three/app/views"
+):
+  app/controllers/application_controller.rb:9:in `angular'
+  app/controllers/posts_controller.rb:33:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (142.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f82916d19e0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f82916d1670 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f82916c8cf0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-11-09 15:47:03 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:47:03 -0500
+
+
+Started GET "/assets/angular.self-34ed2039db5a555ad9e8562f2dd5ed65da410ef9803e68c8f117c83311ce1bb1.js?body=1" for ::1 at 2015-11-09 15:47:03 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:47:09 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"render", "usernotes"=>"this shit"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 0.0], ["usernotes", "this shit"], ["created_at", "2015-11-09 20:47:09.161035"], ["updated_at", "2015-11-09 20:47:09.161035"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  Rendered posts/index.json.jbuilder (1.5ms)
+Completed 200 OK in 72ms (Views: 29.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:14:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.0ms)
+Completed 200 OK in 280ms (Views: 260.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portal" for ::1 at 2015-11-09 16:14:31 -0500
+Processing by ApplicationController#portal as HTML
+  Rendered portal.html.erb within layouts/application (22.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<#<Class:0x007fcaabf67570>:0x007fcaab9c2688>):
+    4: </div>
+    5: 
+    6: <p class="lead">
+    7:   <form action="<%= sessions_path %>" method="POST"
+    8:       autocomplete="false">
+    9:     <div class="form-group">
+   10:       <input type="hidden" name="authenticity_token"
+  app/views/portal.html.erb:7:in `_app_views_portal_html_erb___243565383865505011_70254252513660'
+  app/controllers/application_controller.rb:21:in `portal'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (207.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (125.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (289.8ms)
+
+
+Started GET "/portal" for ::1 at 2015-11-09 16:14:32 -0500
+Processing by ApplicationController#portal as HTML
+  Rendered portal.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<#<Class:0x007fcaabf67570>:0x007fcaaea2aa28>):
+    4: </div>
+    5: 
+    6: <p class="lead">
+    7:   <form action="<%= sessions_path %>" method="POST"
+    8:       autocomplete="false">
+    9:     <div class="form-group">
+   10:       <input type="hidden" name="authenticity_token"
+  app/views/portal.html.erb:7:in `_app_views_portal_html_erb___243565383865505011_70254252513660'
+  app/controllers/application_controller.rb:21:in `portal'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (142.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (112.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (252.3ms)
+
+
+Started GET "/login" for ::1 at 2015-11-09 16:14:46 -0500
+Processing by SessionController#new as HTML
+  Rendered session/login.html.erb within layouts/angular (1.2ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-09 16:14:46 -0500
+Processing by SessionController#new as HTML
+  Rendered session/login.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+=======
   [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.json.jbuilder (1.6ms)
 Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.4ms)
@@ -12925,3 +13160,4 @@ Started GET "/login" for ::1 at 2015-11-09 16:50:03 -0500
 Processing by ApplicationController#portal as HTML
   Rendered portal.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 67ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+>>>>>>> 2d0e9a0d5c045a5d995c78c9af1098c6cb9eb465
