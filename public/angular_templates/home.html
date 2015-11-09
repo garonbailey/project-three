@@ -3,9 +3,11 @@
   	<h1>Help Someone in Need</h1>
 <!-- <div id="map"></div> -->
 			<div class="form-group">
-				<form ng-submit="ctrl.newReport(post)">
-					<input type="text" class="form-control" ng-model="location" placeholder="Location"><br/>
-					<textarea ng-model="usernotes" class="form-control" placeholder="notes..."></textarea><br/>
+				<form ng-submit="ctrl.newReport()">
+					<input type="text" class="form-control"
+						ng-model="ctrl.location" placeholder="Location"><br/>
+					<textarea ng-model="ctrl.usernotes" class="form-control"
+						placeholder="notes..."></textarea><br/>
 					<input type="submit" value="Help Out">
 				</form>
 			</div>
