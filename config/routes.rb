@@ -12,6 +12,11 @@ Rails.application.routes.draw do
 
   get '/closed' => 'posts#closed'
 
+
+  get 'index' => 'application#index'
+
+  post 'posts/create' => 'posts#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -21,11 +26,8 @@ Rails.application.routes.draw do
   delete '/session' => 'session#destroy'
 
 
-
-
   resources :posts
   resources :responders, only: [:create]
   resources :comments, only: [:create]
-
 
 end

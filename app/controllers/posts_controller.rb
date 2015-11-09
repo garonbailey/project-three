@@ -1,5 +1,13 @@
 class PostsController < ApplicationController
 
+  def create
+    @post = Post.new(post_params)
+    @post.save
+  end
+
+  def post_params
+    return params.require(:post).permit(:description, :latitude, :longitude)
+
 	def new
 		@post = Post.new
 		puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
@@ -57,4 +65,5 @@ class PostsController < ApplicationController
 		                             :contactemail, :contactphone)
 
 	end
+
 end
