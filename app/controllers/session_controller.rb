@@ -1,5 +1,6 @@
 class SessionController < ApplicationController
   def new
+    render 'session/login', layout: 'angular'
   end
 
   def create

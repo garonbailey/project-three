@@ -4,15 +4,13 @@ Rails.application.routes.draw do
 
   get 'application/angular'
 
-  get '/new' => 'posts#new'
+  get '/' => 'posts#new'
 
-  get '/' => 'posts#index'
+  get '/login' => 'session#new'
 
-  get '/login' => ''
+  get '/reports' => 'posts#index'
 
-  get '/reports' => ''
-
-  get '/closed' => ''
+  get '/closed' => 'posts#closed'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
