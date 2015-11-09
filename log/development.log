@@ -9253,6 +9253,7 @@ Completed 200 OK in 18ms (Views: 4.0ms | ActiveRecord: 7.9ms)
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2015-11-09 14:48:39 -0500
   [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ApplicationController#angular as HTML
@@ -9274,6 +9275,126 @@ Completed 200 OK in 312ms (Views: 292.5ms | ActiveRecord: 0.0ms)
 
 Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:20:57 -0500
 >>>>>>> 63be26a79de2c6bf06ca5f9959cc58d9e6ad9c49
+=======
+Started GET "/" for ::1 at 2015-11-09 14:22:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (7.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (88.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (194.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveLatitudeFromPosts (20151108032816)
+  [1m[35m (3.7ms)[0m  BEGIN
+  [1m[36m (38.6ms)[0m  [1mALTER TABLE "posts" DROP "latitude"[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151108032816"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeColumnInPosts (20151108033448)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mALTER TABLE "posts" RENAME COLUMN "longitude" TO "location"[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151108033448"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (12.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'responders'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2015-11-09 14:23:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (4.2ms)
+Completed 200 OK in 266ms (Views: 247.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:23:12 -0500
+
+
+Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:23:12 -0500
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
 
 ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css"):
   actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -9297,6 +9418,7 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
 <<<<<<< HEAD
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
@@ -9380,6 +9502,72 @@ Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195
 
 Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:22:36 -0500
 >>>>>>> 63be26a79de2c6bf06ca5f9959cc58d9e6ad9c49
+=======
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (23.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (73.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (171.3ms)
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:23:12 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-09 14:23:19 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"Tucker", "usernotes"=>"Flarg"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "Flarg"], ["created_at", "2015-11-09 19:23:19.508042"], ["updated_at", "2015-11-09 19:23:19.508042"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (13.9ms)
+Completed 200 OK in 67ms (Views: 19.8ms | ActiveRecord: 22.5ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:01:09 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"Tucker", "usernotes"=>"Flarg"}}
+  [1m[36m (4.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.9ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 0.0], ["usernotes", "Flarg"], ["created_at", "2015-11-09 20:01:09.770662"], ["updated_at", "2015-11-09 20:01:09.770662"]]
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  Rendered posts/_post.json.jbuilder (5.6ms)
+Completed 200 OK in 90ms (Views: 23.0ms | ActiveRecord: 25.3ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:01:23 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"Tucker", "usernotes"=>"Flarg"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "Flarg"], ["created_at", "2015-11-09 20:01:23.781735"], ["updated_at", "2015-11-09 20:01:23.781735"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (0.5ms)
+Completed 200 OK in 14ms (Views: 3.4ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:01:30 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"Tucker", "usernotes"=>"Sclrop"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 0.0], ["usernotes", "Sclrop"], ["created_at", "2015-11-09 20:01:30.177922"], ["updated_at", "2015-11-09 20:01:30.177922"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  Rendered posts/_post.json.jbuilder (2.6ms)
+Completed 200 OK in 23ms (Views: 4.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 15:03:25 -0500
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
 
 ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css"):
   actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -9403,6 +9591,7 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
 <<<<<<< HEAD
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
@@ -9438,6 +9627,35 @@ Completed 200 OK in 291ms (Views: 261.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:53:32 -0500
+=======
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (183.0ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (182.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:05:10 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 91ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 15:05:11 -0500
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
 
 ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css"):
   actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -9461,6 +9679,7 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -9488,6 +9707,35 @@ Started GET "/assets/angular.self-99c706a8d9f98e15afde761b7ac044609dbf7e6c7326c0
 
 
 Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:53:42 -0500
+=======
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (168.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:05:19 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 15:05:19 -0500
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
 
 ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css"):
   actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -9511,6 +9759,7 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -9541,6 +9790,35 @@ Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195
 
 
 Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:54:19 -0500
+=======
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (128.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:16:00 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.5ms)
+Completed 200 OK in 177ms (Views: 152.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 15:16:00 -0500
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
 
 ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css"):
   actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -9564,6 +9842,7 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -9914,6 +10193,172 @@ Started GET "/stylesheets/angular.css" for ::1 at 2015-11-09 14:24:49 -0500
 >>>>>>> 63be26a79de2c6bf06ca5f9959cc58d9e6ad9c49
 
 ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css"):
+=======
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (96.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (188.1ms)
+
+
+Started GET "/assets/angular.self-f38d8d668bc9593888801c1b61f79b9ae08b52215afa83466d0de6d887f78f32.js?body=1" for ::1 at 2015-11-09 15:16:00 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:17:39 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:19:34 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:19:39 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:20:14 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 143ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-f3761d4a1409e0002f55c57172b65bfcab967a1301ab7d05b554c79147f498da.css?body=1" for ::1 at 2015-11-09 15:20:14 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:23:04 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 104ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:24:00 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:24:04 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:24:50 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:25:59 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:27:43 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.5ms)
+Completed 200 OK in 182ms (Views: 171.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-fa58cc65a162626e49cb7cbee29c83a22f452707dbd4ac6fa4d60e5ede909c4e.css?body=1" for ::1 at 2015-11-09 15:27:43 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:28:32 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-ef4b77afa9f4ed8900cb5668f28371258846eb8c4f1d6586cba096ac99f1b7b9.css?body=1" for ::1 at 2015-11-09 15:28:32 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:30:43 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 73ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:30:53 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 103ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:31:07 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:31:15 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:31:36 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-955578e1ab9f61b377c73f8571fc4059cd97097477c149c1fb3076530f51d825.css?body=1" for ::1 at 2015-11-09 15:31:36 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:31:42 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-5d155703f31e0204ccfaa2be1524c98ab04dff2422f7c3412f3a44d4adae01ea.css?body=1" for ::1 at 2015-11-09 15:31:43 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:33:52 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-3b8b92d6d525ff2d75bfa5bdb5e30471cb210b896010135ef49a00a71710be3c.css?body=1" for ::1 at 2015-11-09 15:33:52 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:35:16 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:37:51 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for ::1 at 2015-11-09 15:37:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
   actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
   actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
@@ -9935,6 +10380,7 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/angular.css
   rack (1.6.4) lib/rack/lock.rb:17:in `call'
   rack (1.6.4) lib/rack/content_length.rb:15:in `call'
   rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
 <<<<<<< HEAD
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
@@ -12925,3 +13371,341 @@ Started GET "/login" for ::1 at 2015-11-09 16:50:03 -0500
 Processing by ApplicationController#portal as HTML
   Rendered portal.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 67ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+=======
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (160.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:38:03 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:38:12 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:38:51 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:48:30 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 121ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-cf1f3b71822c2eef76dbf24a549204e503109a6a436df1972ad47daaa8caf15a.css?body=1" for ::1 at 2015-11-09 15:48:30 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:48:59 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-d1ffda2e443a1f9ab531d57c40231e2ece616454d5ddab6a3580f53f2d9d2de5.css?body=1" for ::1 at 2015-11-09 15:48:59 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:50:24 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-6304ccc8a4fc855413173bbaefe6a42b3feb0f4949b133310da294a96c127c58.css?body=1" for ::1 at 2015-11-09 15:50:24 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:50:56 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-e3abdffc90177e7a6e2dbbbd1300df34ede6464c16a5746dcf15520503a3e5c1.css?body=1" for ::1 at 2015-11-09 15:50:56 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:51:13 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-816706bde34c5b418dad24e8b1e7a49e9530ee96862b2590d986f0f7278d4123.css?body=1" for ::1 at 2015-11-09 15:51:13 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 15:51:43 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 15:57:22 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 86ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-e42609c07d0bc588c026e603043d69276431c4ff479e9022178005af4c8bd362.js?body=1" for ::1 at 2015-11-09 15:57:23 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:02:17 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-84de9bc46597f66262fd5b4f2454506fb1d69fb7c80705d10692882e97571c5d.js?body=1" for ::1 at 2015-11-09 16:02:17 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:03:10 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-6d930ed986b98bc5b4938d3f3ed2aaf31a46efc57d76d3ed4a14abc10267a03b.js?body=1" for ::1 at 2015-11-09 16:03:10 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:03:28 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-71ebe75ea4b3ed4e86c430605366e7465b3d283896f13719c5c43b81a4c12f34.js?body=1" for ::1 at 2015-11-09 16:03:28 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:03:33 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:04:28 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-356192395d18d95651a35955de9b7c8251e0515c4288bacdd9abc2a18617a6f0.js?body=1" for ::1 at 2015-11-09 16:04:28 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:04:31 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:04:38 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-876f80cc6837b121446c7f35e039b9efe8aa19da78d338d225ab94130f197dde.js?body=1" for ::1 at 2015-11-09 16:04:38 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:05:32 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-a7d3a6d9e1844b148e3edeabc402d6637b53d15a0ac82ee00c57162522a1665e.js?body=1" for ::1 at 2015-11-09 16:05:32 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:17:30 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 127ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-6d695dbb4e0ac696b7153550032d888788c23649fd2fad40dff527fee327f4c2.js?body=1" for ::1 at 2015-11-09 16:17:30 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:17:42 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-171edf949eedd266a2518829120abbd5f8acde6233376ee4697462b730de69f5.js?body=1" for ::1 at 2015-11-09 16:17:43 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:17:55 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:18:03 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:18:35 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-421461e3c8fb7035c9296bc30505427b1b6282b5968e2b05dfe997bd6b6e2ef6.js?body=1" for ::1 at 2015-11-09 16:18:35 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:18:54 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 79ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-beac61b224c3b92e3feec7d7080478e190519be613647df95ed2c40966da2b78.js?body=1" for ::1 at 2015-11-09 16:18:54 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:29:16 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 195ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-81e8b533ca8bad79174c82ae59a5ac9c42c17de087b5af270439a76cf0f555ba.js?body=1" for ::1 at 2015-11-09 16:29:17 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:29:56 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:30:14 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-e1bcee17714533cb9f805d4bc3d6b573cb07e25ba504962db607c98cf5c23109.css?body=1" for ::1 at 2015-11-09 16:30:14 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:30:19 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-b402469848b5db2c2c7003ad410f4ee246d1614cb04d3fa4502624a3e2a66446.css?body=1" for ::1 at 2015-11-09 16:30:19 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:31:44 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:31:49 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:31:59 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:32:22 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:32:30 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 16:32:49 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-98992368b52905906257c350f84f725ba6a7d5317e392e2d4abdab057ea8be06.css?body=1" for ::1 at 2015-11-09 16:32:49 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:33:15 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-26cb4ba6ff0d6ef9fcc8023b49b19506998e3b20dbb9573c525efe774122dd4e.css?body=1" for ::1 at 2015-11-09 16:33:15 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:33:23 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-08da3e07a71212db4fe5da0aa84f22ac4f8e3345374aaf0536823dbf139d3dbb.css?body=1" for ::1 at 2015-11-09 16:33:23 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:33:33 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-48d9f73b4e508aac63f162bb7830ce89b3d393f2af0b7cfd937588ce8ce43936.css?body=1" for ::1 at 2015-11-09 16:33:33 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:33:44 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 67ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-aa25274068a33374c1522a4083a511ceb5393c856c68fe9ea9efe2b599c217c0.css?body=1" for ::1 at 2015-11-09 16:33:44 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:34:04 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 146ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-9baceea0b47b0aefe0482b724eddf048ab45127ed74e1896b76fb0dc42adb5ba.css?body=1" for ::1 at 2015-11-09 16:34:05 -0500
+
+
+Started GET "/" for ::1 at 2015-11-09 16:38:49 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 183ms (Views: 175.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-5dbe6095b7747db4ede0f5e22ff6dc4f2604c1d41ebb8ad1dc29cf1253ebf7d7.js?body=1" for ::1 at 2015-11-09 16:38:49 -0500
+>>>>>>> fd5f27cffd7e088941e578caf5873027d4c521de
