@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/login' => 'session#new'
 
-  get '/reports' => 'posts#index'
+  get '/posts' => 'posts#index'
 
   get '/closed' => 'posts#closed'
 
