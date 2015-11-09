@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="center-block">
   	<h1>Help Someone in Need</h1>
-<!-- <div id="map"></div> -->
+<div id="map"></div>
 			<div class="form-group">
 				<form ng-submit="ctrl.newReport()">
 					<input type="text" class="form-control"
@@ -53,9 +53,11 @@
         })
         console.log("location " + location)
       }
+
+      initMap();
     }
 
     </script>
     <script async defer
-      src= "<%=@map_url%>">
+      src="https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap">
     </script>
