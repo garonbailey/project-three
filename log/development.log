@@ -9753,3 +9753,581 @@ ActionView::MissingTemplate (Missing template post/index with {:locale=>[:en], :
   Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
   Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (249.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 14:48:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.4ms)
+Completed 200 OK in 293ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:48:19 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.6ms)
+Completed 200 OK in 44ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:48:20 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:48:20 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-09 14:49:01 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"sfo", "usernotes"=>"bathroom"}}
+  [1m[35m (2.3ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "bathroom"], ["created_at", "2015-11-09 19:49:01.724299"], ["updated_at", "2015-11-09 19:49:01.724299"]]
+  [1m[35m (3.4ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (9.2ms)
+Completed 200 OK in 85ms (Views: 19.0ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:49:20 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:49:20 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:49:21 -0500
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:51:08 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:51:08 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:51:08 -0500
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:52:15 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:52:16 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:52:16 -0500
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:53:38 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:53:38 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:53:38 -0500
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:55:37 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:55:37 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:55:38 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 14:56:01 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.6ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 14:57:54 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (9.2ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-09 14:58:28 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 14:59:22 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 14:59:22 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 14:59:22 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:02:52 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"new location", "usernotes"=>"new problem"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 0.0], ["usernotes", "new problem"], ["created_at", "2015-11-09 20:02:52.010457"], ["updated_at", "2015-11-09 20:02:52.010457"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  Rendered posts/_post.json.jbuilder (0.5ms)
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:04:00 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:04:00 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 15:04:01 -0500
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:09:12 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:09:13 -0500
+
+
+Started GET "/assets/angular.self-26b7c3d482b562bfb2a43598769d3533bc7e0d61d6df3b83ae62ed807ecca2fc.js?body=1" for ::1 at 2015-11-09 15:09:13 -0500
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:11:36 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 83ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:11:36 -0500
+
+
+Started GET "/assets/angular.self-f2c0c27ba7a8c57f0ded87bf6b715196f4c998fa202bd4ad179ffc92e4dca2f6.js?body=1" for ::1 at 2015-11-09 15:11:37 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:11:37 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (2.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (15.5ms)
+Completed 200 OK in 75ms (Views: 70.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:11:40 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:11:40 -0500
+
+
+Started GET "/assets/angular.self-f2c0c27ba7a8c57f0ded87bf6b715196f4c998fa202bd4ad179ffc92e4dca2f6.js?body=1" for ::1 at 2015-11-09 15:11:40 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:11:41 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (3.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (16.9ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-09 15:13:38 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>"dkdkd", "usernotes"=>"kdkkd"}}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 0.0], ["usernotes", "kdkkd"], ["created_at", "2015-11-09 20:13:38.037540"], ["updated_at", "2015-11-09 20:13:38.037540"]]
+  [1m[35m (4.5ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (0.3ms)
+Completed 200 OK in 19ms (Views: 3.5ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:13:40 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (6.3ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:13:48 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (3.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (11.9ms)
+Completed 200 OK in 68ms (Views: 63.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:15:38 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:15:38 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:15:38 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:15:39 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (12.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (24.5ms)
+Completed 200 OK in 63ms (Views: 49.8ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:18:06 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:18:06 -0500
+
+
+Started GET "/assets/angular.self-f2c0c27ba7a8c57f0ded87bf6b715196f4c998fa202bd4ad179ffc92e4dca2f6.js?body=1" for ::1 at 2015-11-09 15:18:07 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:18:07 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (7.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (15.5ms)
+Completed 200 OK in 52ms (Views: 42.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:18:09 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:18:10 -0500
+
+
+Started GET "/assets/angular.self-f2c0c27ba7a8c57f0ded87bf6b715196f4c998fa202bd4ad179ffc92e4dca2f6.js?body=1" for ::1 at 2015-11-09 15:18:10 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:18:10 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (15.2ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:19:36 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:19:36 -0500
+
+
+Started GET "/assets/angular.self-8fb334f011dbed22b1025e405aa2a9d0c9c3669c15bab38f283134b944bb80be.js?body=1" for ::1 at 2015-11-09 15:19:36 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:19:37 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (8.5ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:20:55 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:20:56 -0500
+
+
+Started GET "/assets/angular.self-fbe0b353fa16d3674e89683b0013e1025d9abc2b66a65c98fce6bff2d6b2e8cb.js?body=1" for ::1 at 2015-11-09 15:20:56 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:20:56 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (2.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.2ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:21:32 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:21:33 -0500
+
+
+Started GET "/assets/angular.self-84c02fa169c44ee2bdc6291ac085aec4925f395d7c082a1d4c399118f421df5f.js?body=1" for ::1 at 2015-11-09 15:21:33 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:21:34 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (11.6ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:23:43 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:23:43 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:23:44 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:23:44 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (10.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (20.6ms)
+Completed 200 OK in 56ms (Views: 41.6ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:29:47 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:29:48 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:29:48 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:29:48 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (8.8ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:30:15 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:30:15 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:30:16 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:30:16 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (6.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (16.4ms)
+Completed 200 OK in 72ms (Views: 61.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:30:31 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:30:31 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:30:31 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:30:32 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (20.1ms)
+Completed 200 OK in 76ms (Views: 73.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:30:46 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:30:47 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:30:47 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:30:47 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (21.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (31.8ms)
+Completed 200 OK in 65ms (Views: 43.2ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:31:10 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:31:10 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:31:10 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:31:11 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (8.2ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:34:08 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:34:08 -0500
+
+
+Started GET "/assets/angular.self-8ed88abf202af1b3a9602683d89370d584bc8afc38f80f4708628c1ebb3c8e5c.js?body=1" for ::1 at 2015-11-09 15:34:08 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:34:09 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.1ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:34:33 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:34:34 -0500
+
+
+Started GET "/assets/angular.self-fbe0b353fa16d3674e89683b0013e1025d9abc2b66a65c98fce6bff2d6b2e8cb.js?body=1" for ::1 at 2015-11-09 15:34:34 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:34:34 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (8.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (21.8ms)
+Completed 200 OK in 60ms (Views: 50.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:35:15 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:35:16 -0500
+
+
+Started GET "/assets/angular.self-eea1d96df22b0f14672e6949589e3479882fd5b81fffb137703b68c29bfaab4c.js?body=1" for ::1 at 2015-11-09 15:35:16 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:35:16 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (8.5ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:35:27 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:35:27 -0500
+
+
+Started GET "/assets/angular.self-eea1d96df22b0f14672e6949589e3479882fd5b81fffb137703b68c29bfaab4c.js?body=1" for ::1 at 2015-11-09 15:35:28 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:35:28 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (4.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (15.0ms)
+Completed 200 OK in 48ms (Views: 41.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:37:37 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:37:38 -0500
+
+
+Started GET "/assets/angular.self-eea1d96df22b0f14672e6949589e3479882fd5b81fffb137703b68c29bfaab4c.js?body=1" for ::1 at 2015-11-09 15:37:38 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:37:38 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (10.5ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:38:01 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:38:02 -0500
+
+
+Started GET "/assets/angular.self-eea1d96df22b0f14672e6949589e3479882fd5b81fffb137703b68c29bfaab4c.js?body=1" for ::1 at 2015-11-09 15:38:02 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:38:02 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (9.0ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/reports" for ::1 at 2015-11-09 15:38:44 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-399b6906adcae97b4a291f8fa1e10a45291df12c4624195c08643078b7881197.css?body=1" for ::1 at 2015-11-09 15:38:44 -0500
+
+
+Started GET "/assets/angular.self-34ed2039db5a555ad9e8562f2dd5ed65da410ef9803e68c8f117c83311ce1bb1.js?body=1" for ::1 at 2015-11-09 15:38:44 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-09 15:38:45 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (8.4ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.0ms)
