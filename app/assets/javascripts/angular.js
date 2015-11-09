@@ -5,18 +5,18 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 }]);
 
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($scope, $routeParams, $http) {
-	$scope.post = {};
-	$scope.newReport = function () {
-		$http({
-			method: 'POST',
-			url: '/posts/create',
-			data: $scope.post
+	this.newReport = function () {
+		$http.post('/posts/create', {
+			post: {
+				location: this.location,
+				usernotes: this.userNotes
+			}
 		}).
 		success(function(data) {
 			if (data.errors) {
-				$scope.error = data.errors;
+				this.error = data.errors;
 			} else {
-				$scope.message = data.message;
+				this.message = data.message;
 			}
 		});
 	}
