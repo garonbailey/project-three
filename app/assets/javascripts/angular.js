@@ -1,7 +1,17 @@
 var app = angular.module('HelpOut', ['ngRoute']);
 
 app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
-	this.message = "I'm the login controller."
+	this.login = function () {
+		$http.post('/session', {
+
+		});
+	};
+
+	this.signUp = function () {
+		$http.post('/responders', {
+
+		});
+	}
 }]);
 
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
@@ -47,11 +57,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 			controllerAs: 'ctrl'
 		}).
 		when('/login', {
-			templateUrl: '/angular_templates/login.html',
-			controller: 'loginCtrl',
-			controllerAs: 'ctrl'
+			redirectTo: '/login'
 		}).
-		when('/reports', {
+		when('/posts', {
 			templateUrl: '/angular_templates/all_posts.html',
 			controller: 'allPostsCtrl',
 			controllerAs: 'ctrl'
