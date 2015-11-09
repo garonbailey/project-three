@@ -4,12 +4,13 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 	this.message = "I'm the login controller."
 }]);
 
-app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($scope, $routeParams, $http) {
+app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
+	var controller = this;
 	this.newReport = function () {
 		$http.post('/posts/create', {
 			post: {
 				location: this.location,
-				usernotes: this.userNotes
+				usernotes: this.usernotes
 			}
 		}).
 		success(function(data) {
