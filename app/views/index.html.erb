@@ -5,8 +5,8 @@
     <title>HelpOut</title>
 
     <style type="text/css">
-      html, body { height: 100%; margin: 0; padding: 0; }
-      #map { height: 100%; }
+      html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+      #map { height: 50%; }
     </style>
   </head>
   <body>
@@ -14,11 +14,7 @@
     <script type="text/javascript">
       var map;
       function initMap() {
-
-
-
       var myLatLng = {lat: 40.739906, lng: -73.98972};
-
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         center: myLatLng
@@ -47,10 +43,26 @@
         console.log("location " + location)
       }
     }
-
     </script>
     <script async defer
       src= "<%=@map_url%>">
     </script>
+
+  <form action="<%=posts/create%>" method="POST">
+    <input type="hidden" name="authenticity_token"
+           value="<%=form_authenticity_token%>">
+    <input type="text" name="post[description]"
+          placeholder="description"
+          value =><br>
+    <input type="text" name="post[latitude]"
+          placeholder="latitude"> <br>
+    <input type="text" name="post[longitude]"
+          placeholder="longitude"> <br>
+    <input type="submit" value='Add Post'>
+
+
+  </form>
+
+
   </body>
 </html>
