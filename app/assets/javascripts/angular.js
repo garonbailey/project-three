@@ -53,11 +53,20 @@ app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($ro
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
 		controller.posts = postsData.posts;
+		console.log(controller.posts);
 	});
 }]);
 
 app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
 	this.message = "Closed Posts Controller";
+}]);
+
+app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+	var currentId = $routeParams.id;
+	var controller = this;
+	$http.get('/posts.json').success(function (data) {
+		controller.currentPost = data.posts[currentId - 1];
+	});
 }]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -74,6 +83,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 		when('/posts', {
 			templateUrl: '/angular_templates/all_posts.html',
 			controller: 'allPostsCtrl',
+			controllerAs: 'ctrl'
+		}).
+		when('/posts/:id', {
+			templateUrl: '/angular_templates/one_post.html',
+			controller: 'singlePostCtrl',
 			controllerAs: 'ctrl'
 		}).
 		when('/closed', {

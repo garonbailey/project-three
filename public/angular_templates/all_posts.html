@@ -12,7 +12,7 @@
     <tbody>
         <tr ng-repeat="posts in ctrl.posts">
         <td>{{posts.location}}</td>
-        <td>{{posts.usernotes}}</td>
+        <td><a href='posts/{{posts.id}}'>{{posts.usernotes}}</a></td>
         </tr>
     </tbody>
    </table>
