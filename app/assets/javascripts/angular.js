@@ -55,6 +55,7 @@ app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($ro
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
 		controller.posts = postsData.posts;
+
 	});
 }]);
 
@@ -80,6 +81,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 		}).
 		when('/login', {
 			redirectTo: '/login'
+		}).
+		when('/logout', {
+			redirectTo: '/logout'
 		}).
 		when('/posts', {
 			templateUrl: '/angular_templates/all_posts.html',
