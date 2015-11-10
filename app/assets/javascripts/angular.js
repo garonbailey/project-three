@@ -1,4 +1,4 @@
-var app = angular.module('HelpOut', ['ngRoute']);
+var app = angular.module('HelpOut', ['ngRoute', 'ngMap']);
 
 app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
 	this.login = function () {
@@ -15,6 +15,18 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 }]);
 
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
+	var map;
+	  $scope.$on('mapInitialized', function(evt, evtMap) {
+	    map = evtMap;
+	    $scope.placeMarker = function(e) {
+	      var marker = new google.maps.Marker({position: e.latLng, map: map});
+	      map.panTo(e.latLng);
+						console.log(marker.position.lat())
+						console.log(marker.position.lng())
+						console.log(marker)
+	    }
+	  });
+
 	var controller = this;
 	this.newReport = function () {
 		console.log("I AM DEFINITELY IN HERE");
