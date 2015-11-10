@@ -1,23 +1,18 @@
-#map{
-  height: 80%;
-}
-
-map {
-
-  width: 80%;
-  background: black;
-}
-
 * {
   margin: 0;
   border: 0;
   padding: 0;
   font: inherit;
   box-sizing: border-box;
+
 }
 
-#map {
-  height: 250px;
+
+
+map {
+  width: 100%;
+  z-index: -1;
+  padding-bottom: 3em;
 }
 
 html {
@@ -75,6 +70,8 @@ form {
 .center-block {
   width: 50%;
   margin 0 auto;
+
+
 }
 
 hr.fade {
