@@ -39,8 +39,9 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 			console.log("DATA", data);
 			if (data.errors) {
 				controller.error = data.errors;
+				controller.message = "Error submitting report";
 			} else {
-				controller.message = data.message;
+				controller.message = "New Report Successful!";
 			}
 		});
 	}
