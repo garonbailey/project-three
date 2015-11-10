@@ -1,12 +1,16 @@
-
-<h2>Single Response</h2>
-{{ctrl.currentPost.id}}
-{{ctrl.currentPost.usernotes}}
-{{ctrl.currentPost.location}}
-
 <div class="container">
   <div class="center-block">
-    <h1></h1>
-	<li ng-repeat></li>
+    <div class="jumbotron">
+      <p>{{ctrl.currentPost.usernotes}}</p>
+      <p>{{ctrl.currentPost.comments}}</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button" ng-click="editReport()">
+            Edit
+          </a>
+          <a class="btn btn-primary btn-lg" href="#" role="button" ng-click="deleteReport()">
+            Delete
+          </a>
+        </p>
+    </div>
   </div>
 </div>

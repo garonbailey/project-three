@@ -947,3 +947,105 @@ Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-10 15:04:51 -0500
 
 
 Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-10 15:04:51 -0500
+
+
+Started GET "/" for ::1 at 2015-11-10 15:06:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.1ms)
+Completed 200 OK in 284ms (Views: 265.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:06:48 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (33.5ms)
+Completed 200 OK in 76ms (Views: 57.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:06:53 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (8.4ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/0" for ::1 at 2015-11-10 15:12:11 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 16ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=0):
+  app/controllers/posts_controller.rb:23:in `show'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (129.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (153.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (299.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-11-10 15:12:44 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/angular (0.8ms)
+Completed 200 OK in 69ms (Views: 41.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:12:45 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (13.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-11-10 15:13:15 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/styles.self-92e1bdbb625d3bc9778b1fb9171be9d0c987e115e6601a72b5669ef10467ff10.css?body=1" for ::1 at 2015-11-10 15:13:15 -0500
+
+
+Started GET "/assets/angular.self-b2845b3a07ab8ac9942f85c013a33df9c2d6d73f122d7193fd425f5510b3f197.js?body=1" for ::1 at 2015-11-10 15:13:15 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:13:16 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (11.2ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-11-10 15:14:54 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/angular.self-b2845b3a07ab8ac9942f85c013a33df9c2d6d73f122d7193fd425f5510b3f197.js?body=1" for ::1 at 2015-11-10 15:14:54 -0500
+
+
+Started GET "/assets/styles.self-92e1bdbb625d3bc9778b1fb9171be9d0c987e115e6601a72b5669ef10467ff10.css?body=1" for ::1 at 2015-11-10 15:14:54 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:14:54 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (20.0ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 1.5ms)
