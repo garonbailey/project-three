@@ -18,6 +18,7 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 	var map;
 	var controller = this;
 
+
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
     $scope.placeMarker = function(e) {
@@ -28,9 +29,9 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
   });
 
 
-	console.log(controller)
+
 	this.newReport = function () {
-		console.log(controller)
+
 		$http.post('/posts', {
 			post: {
 				location: controller.lat,
@@ -41,23 +42,36 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 			console.log("DATA", data);
 			if (data.errors) {
 				controller.error = data.errors;
+				controller.message = "Error submitting report";
 			} else {
-				controller.message = data.message;
+				controller.message = "New Report Successful!";
+				controller.location = undefined;
+				controller.usernotes = undefined;
 			}
 		});
 	}
 }]);
 
 app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
-	this.message = "Posts Index; Fill in .json get request later.";
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
 		controller.posts = postsData.posts;
+		console.log(controller.posts);
 	});
 }]);
 
 app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
 	this.message = "Closed Posts Controller";
+}]);
+
+app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+	var post = $routeParams.index;
+	var controller = this;
+	controller.post =
+	$http.get('/posts.json').success(function (data) {
+		controller.currentPost = data.posts[post];
+		console.log(data.posts);
+	});
 }]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
@@ -74,6 +88,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 		when('/posts', {
 			templateUrl: '/angular_templates/all_posts.html',
 			controller: 'allPostsCtrl',
+			controllerAs: 'ctrl'
+		}).
+		when('/posts/:index', {
+			templateUrl: '/angular_templates/one_post.html',
+			controller: 'singlePostCtrl',
 			controllerAs: 'ctrl'
 		}).
 		when('/closed', {
