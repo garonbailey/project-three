@@ -39,7 +39,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 			}
 		}).
 		success(function(data) {
-			console.log("DATA", data);
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting report";
@@ -56,7 +55,6 @@ app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($ro
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
 		controller.posts = postsData.posts;
-		console.log(controller.posts);
 	});
 }]);
 
@@ -67,10 +65,8 @@ app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routePara
 app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
 	var post = $routeParams.index;
 	var controller = this;
-	controller.post =
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
-		console.log(data.posts);
 	});
 }]);
 
