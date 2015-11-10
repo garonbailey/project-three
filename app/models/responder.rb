@@ -8,7 +8,6 @@ class Responder < ActiveRecord::Base
     minimum: 6, allow_nil: true
   }
 
-  has_many :posts, dependent: :destroy
-  has_many :comments, through: :posts
+  has_many :comments
 
 end
