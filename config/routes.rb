@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get '/closed' => 'posts#closed'
 
+  get '/posts/:id' => 'posts#show'
+
 
   get 'index' => 'application#index'
 
