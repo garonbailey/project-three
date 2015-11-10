@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
   end
 
   def login
-    render '/login'
+    render '/login', :layout => false
   end
 
   private
