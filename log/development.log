@@ -23493,3 +23493,109 @@ Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.4ms)
   [1m[35m (41.1ms)[0m  COMMIT
   [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
 >>>>>>> e10cb410f5dfdfa6ea98524bec958654ebbf52a1
+
+
+Started GET "/" for ::1 at 2015-11-10 13:39:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (6.8ms)
+Completed 200 OK in 423ms (Views: 369.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-92e1bdbb625d3bc9778b1fb9171be9d0c987e115e6601a72b5669ef10467ff10.css?body=1" for ::1 at 2015-11-10 13:39:57 -0500
+
+
+Started GET "/assets/angular.self-8ce0f537ac6788de3f64e665573bff4ecc1771c57068b8294bfed0d4c3423923.js?body=1" for ::1 at 2015-11-10 13:39:57 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-10 13:40:19 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74101426921151, "usernotes"=>"wuh-bam"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (13.2ms)[0m  [1mINSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["location", 40.74101426921151], ["usernotes", "wuh-bam"], ["created_at", "2015-11-10 18:40:19.270190"], ["updated_at", "2015-11-10 18:40:19.270190"]]
+  [1m[35m (39.0ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (27.9ms)
+Completed 200 OK in 307ms (Views: 90.7ms | ActiveRecord: 57.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:40:23 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (3.2ms)
+Completed 200 OK in 160ms (Views: 157.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:40:31 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (2.8ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:40:36 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (3.1ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:41:00 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (2.5ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 13:41:33 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.739945311750056, "usernotes"=>"poor guy. he doesn't stand a chance."}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 40.739945311750056], ["usernotes", "poor guy. he doesn't stand a chance."], ["created_at", "2015-11-10 18:41:33.844209"], ["updated_at", "2015-11-10 18:41:33.844209"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered posts/_post.json.jbuilder (0.4ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:41:36 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (2.8ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:41:40 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (7.3ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:41:44 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (6.2ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 13:43:00 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.73255968766241, "usernotes"=>"Just hanging out."}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("location", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["location", 40.73255968766241], ["usernotes", "Just hanging out."], ["created_at", "2015-11-10 18:43:00.429872"], ["updated_at", "2015-11-10 18:43:00.429872"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered posts/_post.json.jbuilder (0.3ms)
+Completed 200 OK in 45ms (Views: 38.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:43:06 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (3.7ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 13:43:10 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (6.8ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.7ms)
