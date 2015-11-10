@@ -11,8 +11,6 @@ class SessionController < ApplicationController
       session[:session_token] = token
       responder.update(session_token: token)
 
-      # render json: { token: generated_token }
-
       redirect_to posts_path
     else
       redirect_to :back
