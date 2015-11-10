@@ -25,6 +25,7 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
       var marker = new google.maps.Marker({position: e.latLng, map: map});
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
+			controller.lng = marker.position.lng();
     }
   });
 
@@ -34,7 +35,8 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 
 		$http.post('/posts', {
 			post: {
-				location: controller.lat,
+				latitude: controller.lat,
+				longitude: controller.lng,
 				usernotes: controller.usernotes
 			}
 		}).
