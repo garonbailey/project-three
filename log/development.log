@@ -13948,3 +13948,16 @@ Started GET "/assets/angular.self-5dbe6095b7747db4ede0f5e22ff6dc4f2604c1d41ebb8a
 =======
 >>>>>>> 2d0e9a0d5c045a5d995c78c9af1098c6cb9eb465
 >>>>>>> 7704a19d1f438c512378a98af988c6b6bad3e08f
+
+
+Started GET "/" for ::1 at 2015-11-10 09:07:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (1.8ms)
+Completed 200 OK in 279ms (Views: 237.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-6dd34cb82f98190ddad6938d0f5d92c990529575d5f9d2181fd8344daaffec90.css?body=1" for ::1 at 2015-11-10 09:07:56 -0500
+
+
+Started GET "/assets/angular.self-091b8a85c535c5d45635b8edd2f2def33d637601ee82c459e8911d6181d90754.js?body=1" for ::1 at 2015-11-10 09:07:56 -0500
