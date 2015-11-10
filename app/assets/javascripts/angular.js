@@ -18,7 +18,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 	var map;
 	var controller = this;
 
-
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
     $scope.placeMarker = function(e) {
