@@ -1049,3 +1049,215 @@ Processing by PostsController#index as JSON
   [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.json.jbuilder (20.0ms)
 Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-11-10 15:26:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/angular (2.2ms)
+Completed 200 OK in 384ms (Views: 299.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/angular.self-b2845b3a07ab8ac9942f85c013a33df9c2d6d73f122d7193fd425f5510b3f197.js?body=1" for ::1 at 2015-11-10 15:26:15 -0500
+
+
+Started GET "/assets/styles.self-92e1bdbb625d3bc9778b1fb9171be9d0c987e115e6601a72b5669ef10467ff10.css?body=1" for ::1 at 2015-11-10 15:26:15 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:26:15 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (28.1ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:26:22 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (8.6ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:26:30 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (9.4ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:00 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.8ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:03 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (158.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:03 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (137.3ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:04 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (137.5ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:04 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (132.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:05 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (194.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:05 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.8ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:05 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:06 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:06 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (143.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:27:06 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"location"=>40.74257499754292, "usernotes"=>"help me!"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'location' for Post.):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (135.2ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007ffdb46fbbe8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007ffdb46fb7b0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007ffdb46f2c28 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]

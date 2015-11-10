@@ -1,6 +1,7 @@
 <div class="container">
   <div class="center-block">
     <div class="jumbotron">
+      <p><map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}" on-click="placeMarker()"></map></p>
       <p>{{ctrl.currentPost.usernotes}}</p>
       <p>{{ctrl.currentPost.comments}}</p>
         <p>
