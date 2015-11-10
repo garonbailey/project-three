@@ -22364,3 +22364,160 @@ Started GET "/" for ::1 at 2015-11-10 12:37:59 -0500
 Processing by ApplicationController#angular as HTML
   Rendered application/angular.html.erb within layouts/angular (0.1ms)
 Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-10 12:42:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (308.0ms)
+Completed 200 OK in 337ms (Views: 318.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-10 12:42:28 -0500
+
+
+Started GET "/" for ::1 at 2015-11-10 12:42:43 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.6ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 12:46:49 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (27.6ms)
+Completed 200 OK in 60ms (Views: 47.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 12:46:54 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (7.1ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for ::1 at 2015-11-10 12:47:06 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (118.7ms)
+Completed 200 OK in 122ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-10 12:47:06 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-10 12:47:06 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 12:47:15 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (15.0ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-10 12:51:43 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.7ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-10 12:51:44 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/closed" for ::1 at 2015-11-10 12:51:46 -0500
+Processing by PostsController#closed as HTML
+  Rendered posts/closed.html.erb within layouts/angular (0.9ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-10 13:17:15 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (124.0ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-10 13:17:15 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-10 13:25:03 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (189.4ms)
+Completed 200 OK in 193ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/angular.self-091b8a85c535c5d45635b8edd2f2def33d637601ee82c459e8911d6181d90754.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/responder.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/helpout_logo_250.png" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/login.self-92ea55b4212f7b8e05ea7ea9036e78ff5c45082604c5b0e329c18628581473e2.css?body=1" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-10 13:25:04 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-10 13:28:52 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (71.0ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/login.self-92ea55b4212f7b8e05ea7ea9036e78ff5c45082604c5b0e329c18628581473e2.css?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/angular.self-091b8a85c535c5d45635b8edd2f2def33d637601ee82c459e8911d6181d90754.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/responder.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 13:28:52 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-10 13:28:53 -0500
+
+
+Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-10 13:28:53 -0500
