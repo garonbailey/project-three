@@ -11,7 +11,7 @@
       </thead>
     <tbody>
         <tr ng-repeat="posts in ctrl.posts">
-        <td>{{posts.location}}</td>
+        <td>{{posts.latitude}}, {{posts.longitude}}</td>
         <td><a ng-href="/posts/{{$index}}">{{posts.usernotes}}</a></td>
         </tr>
         </a>
