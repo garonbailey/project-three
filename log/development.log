@@ -1,0 +1,74 @@
+
+
+Started GET "/login" for ::1 at 2015-11-10 14:02:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (528.4ms)
+Completed 200 OK in 558ms (Views: 539.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-b2845b3a07ab8ac9942f85c013a33df9c2d6d73f122d7193fd425f5510b3f197.js?body=1" for ::1 at 2015-11-10 14:02:05 -0500
+
+
+Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-10 14:02:05 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-10 14:02:05 -0500
+
+
+Started GET "/" for ::1 at 2015-11-10 14:02:13 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.6ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-92e1bdbb625d3bc9778b1fb9171be9d0c987e115e6601a72b5669ef10467ff10.css?body=1" for ::1 at 2015-11-10 14:02:13 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:02:40 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (45.8ms)
+Completed 200 OK in 82ms (Views: 69.2ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:02:57 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (13.8ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:03:00 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (9.0ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:03:02 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (7.8ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:03:04 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (8.3ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:03:07 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (19.6ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:03:09 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (6.9ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.9ms)
