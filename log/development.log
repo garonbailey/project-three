@@ -1,0 +1,243 @@
+
+
+Started GET "/" for ::1 at 2015-11-10 14:48:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (5.1ms)
+Completed 200 OK in 269ms (Views: 251.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-d56c2f12f03f8758e7297b3b07d317a77bc7e4412f443b2957bf2092004f0d95.js?body=1" for ::1 at 2015-11-10 14:48:09 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-10 14:48:20 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"latitude"=>40.73970640924502, "longitude"=>-73.99506419933459, "usernotes"=>"Man in need of help outside GA"}}
+Unpermitted parameters: latitude, longitude
+  [1m[35m (2.3ms)[0m  BEGIN
+  [1m[36m (2.5ms)[0m  [1mROLLBACK[0m
+  Rendered posts/_post.json.jbuilder (9.8ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 16.6ms)
+
+ActionView::Template::Error (undefined method `location' for #<Post:0x007fb194b7f118>):
+    1: json.post do
+    2:   json.id @post.id
+    3:   json.location @post.location
+    4:   json.usernotes @post.usernotes
+    5: end
+  app/views/posts/_post.json.jbuilder:3:in `block in _app_views_posts__post_json_jbuilder___4240117934811406237_70200363270260'
+  app/views/posts/_post.json.jbuilder:1:in `_app_views_posts__post_json_jbuilder___4240117934811406237_70200363270260'
+  app/controllers/posts_controller.rb:34:in `create'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.7ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fb192baf400 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fb192baf090 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fb192ba7408 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:48:29 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (2.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (7.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.9ms)
+
+ActionView::Template::Error (undefined method `location' for #<Post:0x007fb197b1f3c8>):
+    1: json.posts @posts do |post|
+    2:   json.id post.id
+    3:   json.location post.location
+    4:   json.usernotes post.usernotes
+    5: end
+  app/views/posts/index.json.jbuilder:3:in `block in _app_views_posts_index_json_jbuilder__172156346887181621_70200327712880'
+  app/views/posts/index.json.jbuilder:1:in `_app_views_posts_index_json_jbuilder__172156346887181621_70200327712880'
+  app/controllers/posts_controller.rb:14:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (170.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:48:37 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (5.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `location' for #<Post:0x007fb197752b50>):
+    1: json.posts @posts do |post|
+    2:   json.id post.id
+    3:   json.location post.location
+    4:   json.usernotes post.usernotes
+    5: end
+  app/views/posts/index.json.jbuilder:3:in `block in _app_views_posts_index_json_jbuilder__172156346887181621_70200327712880'
+  app/views/posts/index.json.jbuilder:1:in `_app_views_posts_index_json_jbuilder__172156346887181621_70200327712880'
+  app/controllers/posts_controller.rb:14:in `index'
+
+
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.7ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tuckermargulies/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (134.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-10 14:50:07 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-10 14:50:11 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 14:50:17 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"latitude"=>40.74165735229663, "longitude"=>-73.9954075220885, "usernotes"=>"Here"}}
+Unpermitted parameters: latitude, longitude
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered posts/_post.json.jbuilder (11.2ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:50:19 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (3.2ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 14:50:39 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"usernotes"=>"One time"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered posts/_post.json.jbuilder (0.3ms)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:50:51 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (2.8ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-10 14:51:27 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.2ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:51:28 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (3.6ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-10 14:51:32 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.3ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:51:32 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (3.0ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-10 14:52:07 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:52:07 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (3.0ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 14:55:28 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"latitude"=>40.74555184168232, "longitude"=>-73.9901703603391, "usernotes"=>"This is a note"}}
+Unpermitted parameters: latitude, longitude
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered posts/_post.json.jbuilder (0.2ms)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 14:56:17 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (3.3ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:00:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"usernotes"=>"Heythere"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered posts/_post.json.jbuilder (1.9ms)
+Completed 200 OK in 33ms (Views: 7.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:01:14 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"latitude"=>40.73873091594204, "longitude"=>-73.99583667553088, "usernotes"=>"Hey there"}}
+Unpermitted parameters: latitude, longitude
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered posts/_post.json.jbuilder (0.2ms)
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-10 15:02:12 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (1.1ms)
+Completed 200 OK in 175ms (Views: 174.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-11-10 15:02:22 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"latitude"=>40.73938124650658, "longitude"=>-73.99077266491076, "usernotes"=>"Diggity Dooggity"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (8.8ms)[0m  [1mINSERT INTO "posts" ("latitude", "longitude", "usernotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["latitude", 40.73938124650658], ["longitude", -73.99077266491076], ["usernotes", "Diggity Dooggity"], ["created_at", "2015-11-10 20:02:22.481159"], ["updated_at", "2015-11-10 20:02:22.481159"]]
+  [1m[35m (3.6ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (0.2ms)
+Completed 200 OK in 33ms (Views: 1.8ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:02:26 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (4.5ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.7ms)
