@@ -6,33 +6,34 @@
   box-sizing: border-box;
 }
 
-html {
+html body {
   height: 100%;
-  background: url(login_bg.jpg) no-repeat center center;
+  background: url(login_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   font-size: 12px;
   font-family: "Helvetica", sans-serif;
 }
 
 body {
-  margin: 0 auto;
-  font-family: "Helvetica", sans-serif;
-  color: #666;
+  overflow-x: hidden !important;
+}
+
+#page-wrap {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, .8);
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
 }
 
 form {
   width: 50%;
-  margin: 0 auto;
-}
-
-.form-right {
-  float: right;
-  width: auto;
-}
-
-.form-left {
-  float: left;
-  width: auto;
+  margin: 4em auto;
 }
 
 .form-login {
@@ -52,11 +53,6 @@ form {
 
 .form-control {
   border: 1px solid #f1f1f1;
-}
-
-.center-block {
-  width: 50%;
-  margin 0 auto;
 }
 
 hr.fade {
@@ -128,33 +124,6 @@ a:hover{
   opacity: .5;
 }
 
-.col-md-4 {
-  padding-top: 20px;
-}
-
-.col-md-4 img {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.list-group-item {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.jumbotron {
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 0 !important;
-  background-color: #fff;
-}
-
-textarea {
-  resize: vertical;
-}
-
 h3 {
   margin-bottom: 20px !important;
   text-align: center !important;
@@ -192,15 +161,6 @@ border-radius: 3px !important;
 .btn-primary:active, .btn-primary.active {
     background: orange !important;
     box-shadow: none;
-}
-
-.modal-content {
-  padding: 5px 20px 20px 20px;
-}
-
-.page-header {
-  border-bottom: none !important;
-  margin-top: 20px !important;
 }
 
 .btn-burger {

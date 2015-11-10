@@ -6,25 +6,11 @@
   <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" %>
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'login', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <header>
-      <div class="logo">
-        <h1><a href="/">HelpOut</a></h1>
-      </div>
-      <div class="nav">
-        <li><a target="_self" href='/login'>Responder Login/Sign Up</a></li>
-        <li><a href="/">Report</a></li>
-        <li><a href="/posts">View Open Reports</a></li>
-        <li><a href="/closed">View Past Reports</a></li>
-      </div>
-    </header>
-
-  <p class="lead">
+  <div id="page-wrap">
     <form action="<%= session_path %>" method="POST"
         autocomplete="false">
       <div class="form-group">
@@ -42,7 +28,7 @@
       href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
       [sign <em>up</em>]
       </a>
-        <div class="collapse" id="collapseExample">
+        <div class="collapse" id="signUpCollapse">
           <div class="well">
             <form action="<%= responders_path %>" method="POST"
                 autocomplete="false">
@@ -61,7 +47,7 @@
           </div>
         </div>
       </div>
-  </p>
+    </div>
 
   <% if current_responder %>
   <hr/>
