@@ -42,6 +42,8 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 				controller.message = "Error submitting report";
 			} else {
 				controller.message = "New Report Successful!";
+				controller.location = undefined;
+				controller.usernotes = undefined;
 			}
 		});
 	}
