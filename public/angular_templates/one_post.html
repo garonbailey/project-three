@@ -1,25 +1,18 @@
+<div class="jumbotron">
+      <p><map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}" on-click="placeMarker()">
+        <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
+      </map></p>
+			</div>
+			<div class="container">
+				<div class="center-block">
+      	<p><textarea readonly class="form-control">{{ctrl.currentPost.usernotes}}</textarea></p>
+				<div class="form-group">
+					<form ng-submit="ctrl.createComment()">
+						<textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea><br/><br/>
+						<input type="submit" value="Add Comment" /><br/><br/>
+					</form><br/><br/>
+					<a href="#" id="-btn" ng-click="()">
+				</div>
 
-<h2>ReportID: {{ctrl.currentPost.id}}</h2>
-<ul>
-	<li>{{ctrl.currentPost.usernotes}}</li>
-	<li>{{ctrl.currentPost.longitude}}</li>
-	<li>{{ctrl.currentPost.latitude}}</li>
-</ul>
-
-<div class="container">
-  <div class="center-block">
-    <div class="jumbotron">
-      <p><map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}" on-click="placeMarker()"></map></p>
-      <p>{{ctrl.currentPost.usernotes}}</p>
-      <p>{{ctrl.currentPost.comments}}</p>
-        <p>
-          <a class="btn btn-primary btn-lg" href="#" role="button" ng-click="editReport()">
-            Edit
-          </a>
-          <a class="btn btn-primary btn-lg" href="#" role="button" ng-click="deleteReport()">
-            Delete
-          </a>
-        </p>
-    </div>
-  </div>
+</div>
 </div>
