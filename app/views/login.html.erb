@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HelpOut</title>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" %>
+  <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" %>
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
+  <%= stylesheet_link_tag    'login', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="page-wrap">
+    <div class="center-block">
+      <img src="/assets/helpout_logo_w.png">
+    </div>
+    <form action="<%= session_path %>" method="POST"
+        autocomplete="false">
+      <div class="form-group">
+        <input type="hidden" name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+
+        <input type="text" class="form-control input-lg" name="responder[username]"
+        placeholder="username">
+        <input type="password" class="form-control input-lg" name="responder[password]"
+        placeholder="password">
+
+        <input type="submit" class="btn btn-default" value="Sign in">
+    </form><br/><br/>
+      <a role="button" data-toggle="collapse"
+      href="#signUpCollapse" aria-expanded="false" aria-controls="signUpCollapse">
+      [sign <em>up</em>]
+      </a>
+        <div class="collapse" id="signUpCollapse">
+          <div class="well">
+            <form action="<%= responders_path %>" method="POST"
+                autocomplete="false">
+                <input type="hidden" name="authenticity_token"
+                value="<%= form_authenticity_token %>">
+
+                <input type="text" class="form-control input-lg" name="responder[username]"
+                placeholder="choose">
+                <input type="password" class="form-control input-lg" name="responder[password]"
+                placeholder="set">
+                <input type="password" class="form-control input-lg" name="responder[password_confirmation]"
+                placeholder="confirm">
+
+                <input type="submit" class="btn btn-default" value="Sign up">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- <% if current_responder %>
+  <hr/>
+  <form action="<%= session_path %>" method="POST">
+    <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Log Out">
+  </form>
+  <% end %> -->
+
+</body>
+</html>
