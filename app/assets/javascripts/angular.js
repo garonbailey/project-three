@@ -29,8 +29,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 
 	var controller = this;
 	this.newReport = function () {
-		console.log("I AM DEFINITELY IN HERE");
-
 		$http.post('/posts', {
 			post: {
 				location: controller.location,
@@ -49,7 +47,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 }]);
 
 app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
-	this.message = "Posts Index; Fill in .json get request later.";
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
 		controller.posts = postsData.posts;
@@ -62,10 +59,12 @@ app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routePara
 }]);
 
 app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
-	var currentId = $routeParams.id;
+	var post = $routeParams.index;
 	var controller = this;
+	controller.post =
 	$http.get('/posts.json').success(function (data) {
-		controller.currentPost = data.posts[currentId - 1];
+		controller.currentPost = data.posts[post];
+		console.log(data.posts);
 	});
 }]);
 
@@ -85,7 +84,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 			controller: 'allPostsCtrl',
 			controllerAs: 'ctrl'
 		}).
-		when('/posts/:id', {
+		when('/posts/:index', {
 			templateUrl: '/angular_templates/one_post.html',
 			controller: 'singlePostCtrl',
 			controllerAs: 'ctrl'
