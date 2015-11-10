@@ -15822,3 +15822,52 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-09 21:41:07 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-09 21:43:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (335.5ms)
+Completed 200 OK in 367ms (Views: 346.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-09 21:43:31 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-09 21:43:57 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (158.6ms)
+Completed 200 OK in 162ms (Views: 161.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-e540fdbc3c79836ff7a0e19a78b84a4aeec52550d4d876f364673344da59a5d4.css?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/angular.self-64dbef3fa40bfe0216f1eff45dcc2a8b3ad704ee3af9330b4886ad9002ee2109.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/comment.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/responder.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/post.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-09 21:43:58 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-09 21:43:58 -0500
