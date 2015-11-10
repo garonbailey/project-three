@@ -383,3 +383,29 @@ SyntaxError (/Users/macbook/src/project-three/app/views/posts/index.json.jbuilde
   Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (192.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-10 15:11:27 -0500
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 164ms (Views: 163.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-92e1bdbb625d3bc9778b1fb9171be9d0c987e115e6601a72b5669ef10467ff10.css?body=1" for ::1 at 2015-11-10 15:11:27 -0500
+
+
+Started GET "/assets/angular.self-813c00c235f34b95c5411e515addd010ec73c31ba4b210ae527fddfc83aabc0d.js?body=1" for ::1 at 2015-11-10 15:11:27 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:11:28 -0500
+Processing by PostsController#index as JSON
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (77.7ms)
+Completed 200 OK in 148ms (Views: 135.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-10 15:11:32 -0500
+Processing by PostsController#index as JSON
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (1.7ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.5ms)
