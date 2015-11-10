@@ -11,12 +11,11 @@
   	<h1>Help Someone in Need</h1>
 			<div class="form-group">
 				<form ng-submit="ctrl.newReport()">
-					<input type="text" class="form-control"
-						ng-model="ctrl.location" placeholder="Location"
+					<input type="hidden" class="form-control"
+						ng-model="ctrl.location" placeholder="{{controller.lat}}"
 						><br/>
 					<textarea ng-model="ctrl.usernotes" class="form-control"
-						placeholder="notes..."
-						value="{{map.long}}"></textarea><br/>
+						placeholder="notes..."></textarea><br/>
 					<input type="submit" value="Help Out">
 				</form>
 			</div>
