@@ -11,6 +11,9 @@
 </head>
 <body>
   <div id="page-wrap">
+    <div class="center-block">
+      <img src="/assets/helpout_logo_w.png">
+    </div>
     <form action="<%= session_path %>" method="POST"
         autocomplete="false">
       <div class="form-group">
@@ -49,7 +52,7 @@
       </div>
     </div>
 
-  <% if current_responder %>
+  <!-- <% if current_responder %>
   <hr/>
   <form action="<%= session_path %>" method="POST">
     <input type="hidden" name="authenticity_token"
@@ -57,7 +60,7 @@
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Log Out">
   </form>
-  <% end %>
+  <% end %> -->
 
 </body>
 </html>

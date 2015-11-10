@@ -22,23 +22,37 @@ body {
 }
 
 #page-wrap {
-  width: 400px;
-  margin: 50px auto;
-  padding: 20px;
+  width: 500px;
+  margin: 5em auto;
+  padding: 5em;
+  text-align:center;
   /*background: rgba(242, 242, 242, .5);
   -moz-box-shadow: 0 0 10px black;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;*/
 }
 
+.center-block {
+  width: 100%;
+  margin 0 auto;
+}
+
 form {
   width: 80%;
-  margin: 4em auto;
+  margin: 2em auto;
 }
 
 .form-control {
   border: 1px solid #f1f1f1;
   border-radius: 0;
+}
+
+.well {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 
 hr.fade {
@@ -49,13 +63,13 @@ hr.fade {
 
 
 a {
-  color: orange;
+  color: white;
   opacity: .8;
   text-decoration: none;
 }
 
 a:hover{
-  color:orange;
+  color: white;
   opacity: .5;
 }
 
@@ -89,14 +103,3 @@ h3 {
     background-color: white;
     border-color: #f1f1f1;
   }
-
-.well {
-    min-height: 20px;
-    padding: 19px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-}
