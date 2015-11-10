@@ -33,11 +33,11 @@ ActiveRecord::Schema.define(version: 20151110192904) do
     t.string   "contactphone"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-<<<<<<< HEAD
+
     t.float    "longitude", null: false
-=======
+
     t.float    "longitude"
->>>>>>> 4335730bc70589a7e70168e70860294dbdf986c9
+
   end
 
   create_table "responders", force: :cascade do |t|

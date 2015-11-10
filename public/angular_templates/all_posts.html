@@ -5,27 +5,35 @@
   <table class="table table-condensed table-hover">
      <thead>
         <tr>
-<<<<<<< HEAD
+
           <th>Location</th>
           <th>Notes</th>
-=======
+
           <th>Notes</th>
           <th>Longitude</th>
           <th>Latitude</th>
->>>>>>> 4335730bc70589a7e70168e70860294dbdf986c9
+
+          <th>Notes</th>
+          <th>Longitude</th>
+          <th>Latitude</th>
+
         </tr>
       </thead>
     <tbody>
         <tr ng-repeat="posts in ctrl.posts">
-<<<<<<< HEAD
+
         <td>{{posts.latitude}}</td>
         <td>{{posts.longitude}}</td>
         <td><a ng-href="/posts/{{$index}}">{{posts.usernotes}}</a></td>
-=======
+
         <td><a ng-href="/posts/{{$index}}">{{posts.usernotes}}</a></td>
         <td>{{posts.longitude}}</td>
         <td>{{posts.latitude}}</td>
->>>>>>> 4335730bc70589a7e70168e70860294dbdf986c9
+
+        <td><a ng-href="/posts/{{$index}}">{{posts.usernotes}}</a></td>
+        <td>{{posts.longitude}}</td>
+        <td>{{posts.latitude}}</td>
+
         </tr>
         </a>
     </tbody>

@@ -20,11 +20,10 @@ class SessionController < ApplicationController
   def destroy
     log_out!
 
-    redirect_to portal_path
+    redirect_to login_path
   end
 
   def current_responder
-
   end
 
 
