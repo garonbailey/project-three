@@ -82,6 +82,12 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 		when('/login', {
 			redirectTo: '/login'
 		}).
+<<<<<<< HEAD
+=======
+		when('/logout', {
+			redirectTo: '/logout'
+		}).
+>>>>>>> 4335730bc70589a7e70168e70860294dbdf986c9
 		when('/posts', {
 			templateUrl: '/angular_templates/all_posts.html',
 			controller: 'allPostsCtrl',
