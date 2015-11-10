@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   root 'application#angular'
-  
-  get '/login' => 'application#portal'
+
+  get '/login' => 'application#login'
 
   get 'application/angular'
 
@@ -18,7 +18,6 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  get '/portal' => 'application#portal'
   get '/session' => 'session#current_responder', defaults: { format: :json }
   post '/session' => 'session#create'
   delete '/session' => 'session#destroy'
