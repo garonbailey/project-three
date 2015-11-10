@@ -57,7 +57,6 @@ app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($ro
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
 		controller.posts = postsData.posts;
-
 	});
 }]);
 
