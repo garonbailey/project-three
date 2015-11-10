@@ -21986,3 +21986,8 @@ Processing by PostsController#index as JSON
   [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
   Rendered posts/index.json.jbuilder (1.6ms)
 Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (146.7ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
