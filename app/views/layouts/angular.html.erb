@@ -31,10 +31,12 @@
          <a class="navbar-brand" href="/"><img src="assets/helpout_logo_header.png"></a>
       </div>
           <div class="collapse navbar-collapse">
+            <% if @header_nav %>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/posts">All Reports</a></li>
             </ul>
+            <% end %>
          </div>
       </div>
 </header>

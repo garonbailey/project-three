@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
 
+  def header_nav
+    @header_nav = true
+  end
+
 	def new
 		@post = Post.new
 		puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
