@@ -25,7 +25,8 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
 			controller.lng = marker.position.lng();
-    }
+    };
+		evtMap.setOptions({'scrollwheel': false})
   });
 
 
