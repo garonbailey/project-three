@@ -33,3 +33,7 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+// checkbox collapse home page
+
+$('.collapse').collapse()
