@@ -17,7 +17,6 @@ header {
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
-  box-shadow: 0 8px 6px -6px black;
   z-index: 1001;
 }
 
@@ -112,6 +111,7 @@ a:hover{
   padding: 20px;
   border-radius: 0 !important;
   background-color: #fff;
+  text-align: center;
 }
 
 textarea {
