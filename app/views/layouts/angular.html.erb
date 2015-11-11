@@ -21,23 +21,25 @@
 <header class="nav-down">
   <nav class="navbar navbar-default">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-           data-target=".navbar-collapse" aria-expanded="false">
-           <span class="sr-only"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-        </button>
-         <a class="navbar-brand" href="/"><img src="assets/helpout_logo_header.png"></a>
+        <% if @header_nav %>
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <% end %>
+            <a class="navbar-brand" href="/"><img src="assets/helpout_logo_header.png"></a>
       </div>
+        <% if @header_nav %>
           <div class="collapse navbar-collapse">
-            <% if @header_nav %>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/posts">All Reports</a></li>
             </ul>
-            <% end %>
          </div>
+       <% end %>
       </div>
 </header>
 
