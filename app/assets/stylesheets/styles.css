@@ -5,33 +5,8 @@
   font: inherit;
   box-sizing: border-box;
 }
-
-.helpout-header {
-  height: 120px;
-	padding: 2em 4em;
-  border-bottom: 5px solid lightgrey;
-	/*box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);*/
-	background-color: #104048;
-}
-
-.helpout-header .helpout-header-inner {
-	max-width: 1200px;
-	text-align: right;
-	margin: 0 auto;
-}
-
-.helpout-header .helpout-header-inner h1{
-	float: left;
-	margin: 0;
-}
-
-.helpout-header .helpout-header-inner h1 span {
-	color: #f1f1f1;
-}
-
-.helpout-header .helpout-header-inner a {
-	color: #666;
-	text-decoration:none;
+body {
+  padding-top: 5em;
 }
 
 map {
@@ -70,10 +45,6 @@ hr.fade {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-.burger-form{
-  width: 100%;
 }
 
 input[type="submit"] {
@@ -179,52 +150,34 @@ h3 {
   margin-top: 20px !important;
 }
 
-.btn-burger {
-  border: none !important;
-  background-color: transparent;
-  padding: 1.5em 1em;
-}
-
 .btn-default {
   color: orange !important;
 }
 
-/*Header media queries*/
-
-@media all and (max-width: 860px) {
-
-	.helpout-header {
-		padding: 20px 0;
-		height: 90px;
-	}
-
-	.helpout-header .helpout-header-inner h1 {
-		float: none;
-		margin: -8px 0 10px;
-		text-align: center;
-	}
-
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+.navbar-inverse {
+  background: #104048;
 }
 
-/*Footer media queries*/
+.navbar-inverse .navbar-toggle .icon-bar {
+  border-color: white !important;
+  background-color: white !important;
+}
 
-@media (max-width: 860px) {
+.navbar-toggle .icon-bar {
+    display: block !important;
+    width: 22px !important;
+    height: 2px !important;
+    border-radius: 1px !important;
+}
 
-	.helpout-footer{
-		font: bold 14px sans-serif;
-	}
+.collapse {
+    display: none;
+}
 
-	.helpout-footer .helpout-footer-left,
-	.helpout-footer .helpout-footer-center,
-	.helpout-footer .helpout-footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.helpout-footer .helpout-footer-center i{
-		margin-left: 0;
-	}
-
+.navbar-brand {
+  vertical-align: middle !important;
+  height: 100%;
 }

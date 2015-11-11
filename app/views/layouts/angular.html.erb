@@ -17,58 +17,32 @@
   <base href="/">
 </head>
 <body>
-<header class="helpout-header">
-  <div class="helpout-header-inner">
-    <h1><a href="/"><img src="assets/helpout_logo_w.png"></a></h1>
-      <div class="dropdown">
-        <div class="pull-right">
-          <button type="button" class="btn btn-default btn-lg dropdown-toggle btn-burger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-          </button>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li><a href="/posts">All Reports</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="/logout">Logout</a></li>
-            </ul>
-        </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container nav-contain">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+           data-target=".navbar-collapse" aria-expanded="false">
+           <span class="sr-only"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+         <a class="navbar-brand" href="/"><img src="assets/helpout_logo_header.png"></a>
       </div>
-  </div>
-</header>
+          <div class="collapse navbar-collapse" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">Home</a></li>
+                <li><a href="/posts">All Reports</a></li>
+            </ul>
+          </div>
+      </div>
+  </nav>
 
 
   <%= yield %>
 
-<footer class="helpout-footer">
-  <div class="helpout-footer-left">
-    <h3><img src="assets/helpout_logo_w.png"></a></h3>
-      <p class="helpout-footer-copyright">Helpout &copy; 2015</p>
-  </div>
-<footer class="helpout-footer-center">
-  <div>
-    <i class="fa fa-map-marker"></i>
-    <p><span>IN DEM STREETS</span>WORLDWIDE</p>
-  </div>
-
-  <div>
-    <i class="fa fa-phone"></i>
-    <p>DEY CALLING</p>
-  </div>
-
-  <div>
-    <i class="fa fa-envelope"></i>
-    <p><a href="mailto:help@helpout.com">help@helpout.com</a></p>
-  </div>
-
-  <div class ="helpout-footer-right">
-    <p class="helpout-footer-about">
-      <span>About us</span>
-      These are the men who lead the crime families of America
-    </p>
-    <div class="helpout-footer-icons">
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
-    </div>
-  </div>
+<footer class="col-md-12 text-center footer">
+  <p>footer stuff</p>
 </footer>
 
   <%= javascript_include_tag 'angular', 'data-turbolinks-track' => true %>
