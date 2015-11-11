@@ -1,7 +1,7 @@
 # HelpOut - No One Left Out In The Cold
 HelpOut is designed to ensure that no one is left out in the cold. On nights when extended exposure outdoors
-can have dangerous consequences, HelpOut allows users to notify 311 that someone has been spotted sleeping oustide.
-311 is then able to locate those in need and help ensure they find a safe warm place to stay.
+can have dangerous consequences, HelpOut allows users to submit the exact location and pertinent details regarding someone who has been spotted sleeping oustide. This allows agency, non-profit, and private organizations to respond to render crucial aid on dangerously cold nights. HelpOut also allows responders to coordinate efforts to maximize their efficiency and reach.
+
 
 ## User Stories - The Good Samaritan
 A user is walking home on a very cold night. The city has issued an extreme weather warning and advised that no
@@ -12,19 +12,17 @@ form. The user fills out some basic notes on the location such as "single male s
 on West 17th street near the Rite Aid". The user can post anonymously or they can add their contact information in 
 the form. They submit the form and get a confirmation that the submittion was successful.
 
-  Functionality: 
-    - Map location recognition
-    - Form posting 
-    - Open access 
-    - Flash notifications for form submission
+User
+- Anonymous posting
+- Option to add contact details
+- Automatic geo-location 
+- Flash notifications for successful form submission
 
 
 ## User Stories - Responder
-The night responder for 311 is logged in to the HelpOut app. They view the posts that have been submitted by time.
-They can also search by location or current status. The responder heads out and locates the person sleeping outside. 
-They arrange for them to travel to a safe and warm palce for the night. The responder goes into the post, updates
-the post status to complete, and submits a comment such as "single male sleeping outside was located and assisted 
-this post is now closed". 
+A local agency is logged in to the HelpOut app. They view a post in their area of operation that has been submitted recently. The agency responder comments on the post "{Agency Name} is responding to post on 17th street". 
+
+They arrange for the person to travel to a safe and warm palce for the night. The responder goes into the post, updates the post status to complete, and submits a comment such as "single male sleeping outside was located and assisted this post is now closed". They can also coordinate with other agencies in the area to ask for assistance or defer to another responder.
 
   Functionality:
     - Login
@@ -33,12 +31,3 @@ this post is now closed".
     
 
 
-## User Stories - Responder (Dispatcher) 
-Responders can also communicate with eachother through the comments. A central responder can help coordinate with
-mobile responders to by adding comments to a post. For example Responder 1 could comment "En Route to West 17th 
-street". Responder 2 could then comment "There is extra space at the facility at West 23rd Street". Responder 1 
-would be notified of the comment and respond "Single male transported to West 23rd street this post is now closed".
-
-  Functionality:
-    - Flash notifications for post updates
-    - Add comments/status (dropdown) form

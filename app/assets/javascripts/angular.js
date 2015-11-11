@@ -17,7 +17,7 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var map;
 	var controller = this;
-	
+
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
     $scope.placeMarker = function(e) {
