@@ -5,12 +5,29 @@
   font: inherit;
   box-sizing: border-box;
 }
+
 body {
-  padding-top: 5em;
+  padding-top: 50px;
+}
+
+header {
+  background: #104048;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  box-shadow: 0 8px 6px -6px black;
+  z-index: 1001;
+}
+
+.nav-up {
+  top: -50px;
 }
 
 map {
   width: 100%;
+  height: 600px;
   z-index: -1;
   padding-bottom: 3em;
 }
@@ -19,7 +36,6 @@ html {
   font-size: 12px;
   font-family: "Helvetica", sans-serif;
 }
-
 
 .bg-img {
   height: 100%;
@@ -152,32 +168,33 @@ h3 {
 
 .btn-default {
   color: orange !important;
-}
 
-.navbar-fixed-top .navbar-collapse {
+.navbar-collapse {
   max-height: 340px;
 }
-.navbar-inverse {
-  background: #104048;
-}
 
-.navbar-inverse .navbar-toggle .icon-bar {
-  border-color: white !important;
-  background-color: white !important;
-}
-
-.navbar-toggle .icon-bar {
-    display: block !important;
-    width: 22px !important;
-    height: 2px !important;
-    border-radius: 1px !important;
+.navbar-toggle, .icon-bar {
+  border-color: white;
+  background-color: white;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
 }
 
 .collapse {
-    display: none;
+  display: none;
 }
 
 .navbar-brand {
-  vertical-align: middle !important;
+  vertical-align: middle;
   height: 100%;
+}
+
+/*media queries*/
+
+@media (max-width: 980px) {
+  body {
+    padding-top: 50px;
+  }
 }

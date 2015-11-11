@@ -17,7 +17,7 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var map;
 	var controller = this;
-	
+
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
     $scope.placeMarker = function(e) {
@@ -25,7 +25,8 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
 			controller.lng = marker.position.lng();
-    }
+    };
+		evtMap.setOptions({'scrollwheel': false})
   });
 
 
