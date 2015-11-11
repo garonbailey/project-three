@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="HelpOut">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HelpOut</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"></script>
@@ -15,17 +17,16 @@
   <base href="/">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<h1><a href="/">HelpOut</a></h1>
-		</div>
-		<div class="nav">
-			<li><a target="_self" href='/login'>Responder Login/Sign Up</a></li>
-			<li><a href="/">Report</a></li>
-			<li><a href="/posts">View Open Reports</a></li>
-			<li><a href="/closed">View Past Reports</a></li>
-		</div>
-	</header>
+<header class="helpout-header">
+  <div class="helpout-header-inner">
+    <h1><a href="/"><img src="assets/helpout_logo_w.png"></a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/posts">All</a>
+    </nav>
+  </div>
+</header>
+
 
   <%= yield %>
 
