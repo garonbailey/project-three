@@ -76,9 +76,9 @@ app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) 
 	controller.createComment = function () {
 		$http.post('/comments', {
 			comment: {
-				notes: controller.newCommentText,
-				responder: //currentResponder?
-				post: //currentPost?
+				notes: controller.newCommentText
+				// responder: //currentResponder?
+				// post: //currentPost?
 			}
 		}).
 		success(function (data) {
@@ -91,7 +91,7 @@ app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) 
 			}
 		})
 	};
-}});
+}]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode({ enabled: true });
