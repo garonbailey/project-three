@@ -13,9 +13,9 @@ class RespondersController < ApplicationController
     @responder = Responder.new(responder_params)
     if @responder.save
       session[:responder_id] = @responder.id
-      redirect_to portal_path
+      redirect_to login_path
     else
-      redirect_to portal_path
+      redirect_to login_path
     end
   end
 
