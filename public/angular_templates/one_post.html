@@ -5,11 +5,11 @@
   </map></p>
 </div>
 <div class="container">
-	<div class="center-block">
+	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
 		<p><textarea readonly class="form-control">{{ctrl.currentPost.usernotes}}</textarea></p>
 		<div class="form-group">
-			<form ng-submit="ctrl.createComment()">
-				<textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea><br/><br/>
+			<form ng-submit="commentsCtrl.createComment()">
+				<textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText"></textarea><br/><br/>
 				<input type="submit" value="Add Comment" /><br/><br/>
 			</form><br/><br/>
 			<a href="#" id="-btn" ng-click="()"></a>
