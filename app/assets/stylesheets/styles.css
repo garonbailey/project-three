@@ -4,10 +4,13 @@
   padding: 0;
   font: inherit;
   box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body {
   padding-top: 50px;
+=======
+>>>>>>> e9dd1788dbd8fd3e90e6ad28e875bb2899d3a6e0
 }
 
 header {
@@ -25,6 +28,7 @@ header {
 }
 
 map {
+  height: 300px;
   width: 100%;
   height: 600px;
   z-index: -1;
@@ -85,7 +89,7 @@ a {
 }
 
 a:hover{
-  color:orange;
+  color: orange;
   opacity: .5;
 }
 

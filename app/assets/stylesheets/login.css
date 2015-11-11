@@ -34,7 +34,7 @@ body {
 
 .center-block {
   width: 100%;
-  margin 0 auto;
+  margin: 0 auto;
 }
 
 form {
@@ -82,7 +82,7 @@ h3 {
     padding: 10px 20px;
     font-weight: 100;
     text-transform: none;
-    display: block
+    display: block;
     text-align: center;
     width: 100%;
     border-radius: 0;
