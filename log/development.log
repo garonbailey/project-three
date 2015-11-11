@@ -24714,3 +24714,16 @@ Started GET "/assets/helpout_logo_header.png" for ::1 at 2015-11-11 15:19:06 -05
 
 
 Started GET "/assets/scroll.self-d7af02abd6579bb7806e77862cc73d46c600bc839936567930e02b8b1e36ded6.js?body=1" for ::1 at 2015-11-11 15:19:06 -0500
+
+
+Started GET "/" for ::1 at 2015-11-11 15:26:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.1ms)
+Completed 200 OK in 356ms (Views: 335.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_header.png" for ::1 at 2015-11-11 15:26:03 -0500
+
+
+Started GET "/assets/angular.self-63146579fe9ac9e90097cab4890077b179765be2e0dc2c5b6868135b62bcdc9b.js?body=1" for ::1 at 2015-11-11 15:26:03 -0500
