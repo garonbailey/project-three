@@ -71,6 +71,28 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	});
 }]);
 
+app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
+	var controller = this;
+	controller.createComment = function () {
+		$http.post('/comments', {
+			comment: {
+				notes: controller.newCommentText,
+				responder: //currentResponder?
+				post: //currentPost?
+			}
+		}).
+		success(function (data) {
+			if (data.errors) {
+				controller.error = data.errors;
+				controller.message = "Error submitting comment. Please try again.";
+			} else {
+				controller.message = "New Comment Successful!";
+				controller.newCommentText = undefined;
+			}
+		})
+	};
+}});
+
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode({ enabled: true });
 	$routeProvider.
