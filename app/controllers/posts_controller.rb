@@ -13,6 +13,13 @@ class PostsController < ApplicationController
 		@posts = Post.all
 
 		render 'posts/index', layout: 'angular'
+
+    if logged_in?
+		    @posts = Post.all
+		    render 'posts/index', layout: 'angular'
+    else
+        redirect_to '/'
+    end
 	end
 
 	def closed
@@ -21,17 +28,15 @@ class PostsController < ApplicationController
 
 
 	def show
-		@post = Post.find(params[:id])
-		@comment = Comment.new
-		@comment.post_id = @post.id
-
-		render 'posts/show', layout: 'angular'
+		    @post = Post.find(params[:id])
+		    @comment = Comment.new
+        @comment.post_id = @post.id
+		    render 'posts/show', layout: 'angular'
 	end
 
 	def create
 		@post = Post.new(post_params)
 		@post.save
-
 		render partial: 'post', layout: false
 	end
 
@@ -58,8 +63,6 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:latitude, :longitude,
 		                             :usernotes, :contactname,
-		                             :contactemail, :contactphone)
-
+		                             :contactemail, :contactphone, :created_at)
 	end
-
 end
