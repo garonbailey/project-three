@@ -97,7 +97,7 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 		console.log(dataStuff)
 		console.log($routeParams.index)
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
-			console.log(commentData);
+			controller.comments = commentData;
 			// if (commentData.errors) {
 			// 	controller.error = commentData.errors;
 			// 	controller.message = "error getting comments";
@@ -109,7 +109,7 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 			// }
 		})
 	};
-	// controller.getPostsComments();
+	controller.getPostsComments();
 }]);
 
 app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
