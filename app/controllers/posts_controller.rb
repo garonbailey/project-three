@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
+  before_filter :require_current_responder
 
 	def new
 		@post = Post.new
@@ -10,12 +11,12 @@ class PostsController < ApplicationController
 	end
 
 	def index
-    if logged_in?
+    # if logged_in?
 		    @posts = Post.all
 		    render 'posts/index', layout: 'angular'
-    else
-        redirect_to '/'
-    end
+    # else
+    #     redirect_to '/'
+    # end
 	end
 
 	def closed
