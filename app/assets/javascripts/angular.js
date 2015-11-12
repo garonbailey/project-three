@@ -92,10 +92,6 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	controller.getCurrentResponder();
 
 	controller.getPostsComments = function (dataStuff) {
-		console.log('-----------------')
-		console.log('INSIDE GETPOSTCOMMENTS')
-		console.log(dataStuff)
-		console.log($routeParams.index)
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
 			controller.comments = commentData;
 			// if (commentData.errors) {
