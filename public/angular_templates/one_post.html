@@ -27,7 +27,12 @@
                   {{ctrl.currentPost.usernotes}}
                 </div>
             </div>
-				    <textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Responder Comments</h3>
+              </div>
+				      <textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea>
+            </div>
 				    <input type="submit" value="Add Comment" /><br/>
         </div>
 		</form>
