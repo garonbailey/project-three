@@ -33,7 +33,3 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
-
-//Contact Form collapse via checkbox on homepage
-
-$('.collapse').collapse()
