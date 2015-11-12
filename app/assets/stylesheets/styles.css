@@ -7,12 +7,12 @@
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 67px;
 }
 
 header {
   background: #104048;
-  height: 50px;
+  height: 67px;
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -21,7 +21,7 @@ header {
 }
 
 .nav-up {
-  top: -50px;
+  top: -67px;
 }
 
 map {
