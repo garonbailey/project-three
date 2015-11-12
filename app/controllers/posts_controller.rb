@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
-  before_action :require_current_responder
 
 	def new
 		@post = Post.new
@@ -11,8 +10,12 @@ class PostsController < ApplicationController
 	end
 
 	def index
-		@posts = Post.all
-		render 'posts/index', layout: 'angular'
+    if logged_in?
+		    @posts = Post.all
+		    render 'posts/index', layout: 'angular'
+    else
+        redirect_to '/'
+    end
 	end
 
 	def closed
@@ -21,17 +24,15 @@ class PostsController < ApplicationController
 
 
 	def show
-		@post = Post.find(params[:id])
-		@comment = Comment.new
-		@comment.post_id = @post.id
-
-		render 'posts/show', layout: 'angular'
+		    @post = Post.find(params[:id])
+		    @comment = Comment.new
+        @comment.post_id = @post.id
+		    render 'posts/show', layout: 'angular'
 	end
 
 	def create
 		@post = Post.new(post_params)
 		@post.save
-
 		render partial: 'post', layout: false
 	end
 
@@ -59,26 +60,5 @@ class PostsController < ApplicationController
 		params.require(:post).permit(:latitude, :longitude,
 		                             :usernotes, :contactname,
 		                             :contactemail, :contactphone, :created_at)
-
 	end
-
-  def current_responder
-    if session[:session_token]
-      @current_responder ||= Responder.find_by(session_token: session[:session_token])
-    else
-      @current_responder = nil
-    end
-  end
-
-  def log_out!
-    session[:session_token] = nil
-  end
-
-  def logged_in?
-    !!current_responder
-  end
-
-  def require_current_responder
-    redirect_to root_path unless logged_in?
-  end
 end
