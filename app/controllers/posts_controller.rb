@@ -1,19 +1,22 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
-  before_filter :require_current_responder
+  # before_filter :require_current_responder
 
 	def new
 		@post = Post.new
 		puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
-	  @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
+	  	@map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 
 		render 'posts/new', layout: 'angular'
 	end
 
 	def index
 		@posts = Post.all
-
-		render 'posts/index', layout: 'angular'
+		if logged_in?
+			render 'posts/index', layout: 'angular'
+		else
+			redirect_to login_path
+		end
 	end
 
 	def closed
@@ -23,8 +26,11 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
-
-		render 'posts/show', layout: 'angular'
+		if logged_in?
+			render 'posts/show', layout: 'angular'
+		else 
+			redirect_to login_path
+		end
 	end
 
 	def create

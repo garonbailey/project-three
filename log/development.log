@@ -99,3 +99,1345 @@ Processing by PostsController#index as JSON
   [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.json.jbuilder (38.0ms)
 Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:34:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.0ms)
+  [1m[35mResponder Load (0.9ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "Ssu__LU9wLDiQ89KqLXupQ"]]
+Completed 200 OK in 570ms (Views: 519.9ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:34:16 -0500
+
+
+Started GET "/assets/angular.self-1c63776a81097e3509fdaebf4284c037e3ccd0140af41985eefea4f10bc83dff.js?body=1" for ::1 at 2015-11-12 15:34:16 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:34:16 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:34:16 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:34:16 -0500
+
+
+Started GET "/" for ::1 at 2015-11-12 15:36:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (1.8ms)
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "Ssu__LU9wLDiQ89KqLXupQ"]]
+Completed 200 OK in 537ms (Views: 499.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:41:33 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 186ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:41:34 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:41:34 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:41:34 -0500
+
+
+Started GET "/assets/angular.self-1c63776a81097e3509fdaebf4284c037e3ccd0140af41985eefea4f10bc83dff.js?body=1" for ::1 at 2015-11-12 15:41:34 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:41:34 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-12 15:41:40 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (68.0ms)
+Completed 200 OK in 85ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-12 15:41:40 -0500
+
+
+Started GET "/assets/login.self-08c2133f1b9da4a4daa5e63e51b64864d1775748543204d92af860b0681b42f5.css?body=1" for ::1 at 2015-11-12 15:41:40 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-12 15:41:40 -0500
+
+
+Started POST "/session" for ::1 at 2015-11-12 15:41:45 -0500
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"yqtoZNraeLEPl4OxNB9WtVI9J2eSpgvKfytBM5TJoVdPaCJZs/2dDtyRKi9LDPqP7muCxRBB3EYKsl2kqekFxw==", "responder"=>{"username"=>"garon", "password"=>"[FILTERED]"}}
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."username" = $1 LIMIT 1[0m  [["username", "garon"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mResponder Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "responders" WHERE ("responders"."username" = 'garon' AND "responders"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (20.3ms)[0m  UPDATE "responders" SET "session_token" = $1, "updated_at" = $2 WHERE "responders"."id" = $3  [["session_token", "P0otslSsiA7AhiD69YmDFA"], ["updated_at", "2015-11-12 20:41:45.651964"], ["id", 1]]
+  [1m[36m (49.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 254ms (ActiveRecord: 70.9ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-12 15:41:45 -0500
+Processing by PostsController#index as HTML
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered posts/index.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 101ms (Views: 78.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:41:46 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (97.5ms)
+Completed 200 OK in 166ms (Views: 161.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:42:03 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (2.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (7.2ms)
+Completed 200 OK in 65ms (Views: 58.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:42:03 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (1.0ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/8" for ::1 at 2015-11-12 15:42:18 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 8]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=8):
+  app/controllers/posts_controller.rb:28:in `show'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (90.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (224.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:42:32 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+Completed 200 OK in 1130ms (Views: 1128.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:42:33 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:42:37 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (4.1ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:42:40 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (4.9ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:42:40 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:42:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (97.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (222.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:44:55 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+Completed 200 OK in 507ms (Views: 502.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:44:56 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:44:56 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:44:56 -0500
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:44:56 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:44:56 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:45:00 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.7ms)
+Completed 200 OK in 98ms (Views: 74.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:45:04 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (1.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (9.6ms)
+Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:45:04 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (1.1ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:45:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (101.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (200.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:45:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (1.8ms)
+  [1m[35mResponder Load (1.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+Completed 200 OK in 408ms (Views: 381.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:45:31 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:45:31 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:45:31 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:45:31 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:45:31 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:45:33 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (87.3ms)
+Completed 200 OK in 131ms (Views: 122.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:45:38 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.8ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (10.9ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:45:38 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (194.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (82.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (182.0ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:45:38 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (0.8ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:46:19 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:46:20 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:46:20 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:46:20 -0500
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:46:20 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:46:20 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:46:22 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (14.0ms)
+Completed 200 OK in 35ms (Views: 28.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:46:25 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (6.5ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:46:25 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:46:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (148.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (170.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:47:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.0ms)
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+Completed 200 OK in 237ms (Views: 221.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:47:03 -0500
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:47:03 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:47:03 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:47:03 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:47:03 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:47:05 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (25.9ms)
+Completed 200 OK in 45ms (Views: 37.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:47:07 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (2.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (0.8ms)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:47:07 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (9.2ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:47:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (88.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (193.7ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:47:11 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (6.4ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:47:14 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.6ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:47:14 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "P0otslSsiA7AhiD69YmDFA"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:47:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (183.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:47:24 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:47:24 -0500
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:47:24 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:47:24 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:47:24 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:47:24 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-12 15:47:26 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (267.5ms)
+Completed 200 OK in 284ms (Views: 283.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-08c2133f1b9da4a4daa5e63e51b64864d1775748543204d92af860b0681b42f5.css?body=1" for ::1 at 2015-11-12 15:47:27 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-12 15:47:27 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-12 15:47:27 -0500
+
+
+Started POST "/session" for ::1 at 2015-11-12 15:47:32 -0500
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"d6fHpGOKgtiQRHYKU01c13SRVwTdZE909G4t90PEkwATpCCMZYuoiht/Y6jiP0NF6w9qERgHI83QJ0KkIARH8A==", "responder"=>{"username"=>"garon", "password"=>"[FILTERED]"}}
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."username" = $1 LIMIT 1[0m  [["username", "garon"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mResponder Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "responders" WHERE ("responders"."username" = 'garon' AND "responders"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "responders" SET "session_token" = $1, "updated_at" = $2 WHERE "responders"."id" = $3  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"], ["updated_at", "2015-11-12 20:47:32.838634"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 107ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-12 15:47:32 -0500
+Processing by PostsController#index as HTML
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.5ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:47:33 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.7ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (5.0ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:47:40 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (2.1ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (5.9ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:47:40 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:47:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (154.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (202.6ms)
+
+
+Started POST "/comments" for ::1 at 2015-11-12 15:48:02 -0500
+Processing by CommentsController#create as JSON
+  Parameters: {"authenticity_token"=>"46Qb7RY+ApXfwdaJy8h0VUph/B3LNtwkLC1u/j+WrrGHp/zFED8ox1T6wyt6umvH1f/BCA5VsJ0IZAGtXFZ6QQ==", "comment"=>{"notes"=>"flajeofi j weofoj", "responder_id"=>1, "post_id"=>28}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (30.0ms)[0m  [1mINSERT INTO "comments" ("notes", "post_id", "responder_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["notes", "flajeofi j weofoj"], ["post_id", 28], ["responder_id", 1], ["created_at", "2015-11-12 20:48:02.177579"], ["updated_at", "2015-11-12 20:48:02.177579"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 32.8ms)
+
+ActionView::MissingTemplate (Missing template posts/show with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/macbook/src/project-three/app/views"
+):
+  app/controllers/comments_controller.rb:15:in `create'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (90.6ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007f9e50e0d7b0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f9e50e0d4e0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f9e50e05fd8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-11-12 15:48:52 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 140ms (Views: 138.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:48:52 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:48:52 -0500
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:48:52 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:48:52 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:48:52 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:48:59 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (5.0ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:49:02 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (4.9ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:49:02 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.2ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:49:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (78.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (174.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:49:35 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.2ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 58ms (Views: 54.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:49:35 -0500
+
+
+Started GET "/assets/angular.self-40d5429151fe6982ab9d44882d3d0e840feab5fb9b1462a55633d536c7f7e717.js?body=1" for ::1 at 2015-11-12 15:49:35 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:49:35 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:49:35 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:49:35 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:49:39 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.4ms)
+Completed 200 OK in 28ms (Views: 21.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:49:41 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (6.7ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:49:41 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-11-12 15:49:41 -0500
+
+ActionController::RoutingError (No route matches [GET] "/comments.json"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (155.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:55:28 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 1515ms (Views: 1510.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:55:30 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:55:30 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:55:30 -0500
+
+
+Started GET "/assets/angular.self-e07ae685c7c280107a4dfb68c246042cc618c95ef8accc508920307d42eacff9.js?body=1" for ::1 at 2015-11-12 15:55:30 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:55:30 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:55:32 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (11.4ms)
+Completed 200 OK in 83ms (Views: 40.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:55:35 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.9ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (4.4ms)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:55:35 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for ::1 at 2015-11-12 15:55:35 -0500
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.json.jbuilder (43.5ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 3.4ms)
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x007f9e5126c6d0>:0x007f9e544c7d50>):
+    1: json.comments @comments do |comment|
+    2:   json.id comment.id
+    3:   json.responder_id post.responder_id
+    4:   json.notes comment.notes
+    5:   json.post_id post.post_id
+    6:   json.created_at comment.created_at
+  app/views/comments/index.json.jbuilder:3:in `block in _app_views_comments_index_json_jbuilder___4072328264329040631_70158997926540'
+  app/views/comments/index.json.jbuilder:1:in `_app_views_comments_index_json_jbuilder___4072328264329040631_70158997926540'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (97.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (211.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:57:37 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 1504ms (Views: 1499.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/angular.self-340c3ac241fcffc164e4d365e2beea975097707c164744e0a265462e6936a3e6.js?body=1" for ::1 at 2015-11-12 15:57:39 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:57:39 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:57:39 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:57:39 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:57:39 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:57:41 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (11.7ms)
+Completed 200 OK in 61ms (Views: 40.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:57:44 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (4.7ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:57:44 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments_all" for ::1 at 2015-11-12 15:57:44 -0500
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.json.jbuilder (50.6ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 3.4ms)
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x007f9e55bdd670>:0x007f9e55bd78b0>):
+    1: json.comments @comments do |comment|
+    2:   json.id comment.id
+    3:   json.responder_id post.responder_id
+    4:   json.notes comment.notes
+    5:   json.post_id post.post_id
+    6:   json.created_at comment.created_at
+  app/views/comments/index.json.jbuilder:3:in `block in _app_views_comments_index_json_jbuilder___4072328264329040631_70158997926540'
+  app/views/comments/index.json.jbuilder:1:in `_app_views_comments_index_json_jbuilder___4072328264329040631_70158997926540'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (204.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 15:58:06 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (1.6ms)
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 360ms (Views: 332.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 15:58:07 -0500
+
+
+Started GET "/assets/angular.self-340c3ac241fcffc164e4d365e2beea975097707c164744e0a265462e6936a3e6.js?body=1" for ::1 at 2015-11-12 15:58:07 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 15:58:07 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 15:58:07 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 15:58:07 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:58:09 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (66.2ms)
+Completed 200 OK in 128ms (Views: 120.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 15:58:11 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (10.9ms)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 15:58:11 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.7ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments_all" for ::1 at 2015-11-12 15:58:11 -0500
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.8ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.json.jbuilder (61.4ms)
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 3.1ms)
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x007ff469a91770>:0x007ff469a80600>):
+    1: json.comments @comments do |comment|
+    2:   json.id comment.id
+    3:   json.responder_id post.responder_id
+    4:   json.notes comment.notes
+    5:   json.post_id post.post_id
+    6:   json.created_at comment.created_at
+  app/views/comments/index.json.jbuilder:3:in `block in _app_views_comments_index_json_jbuilder___904662718102927785_70343856011840'
+  app/views/comments/index.json.jbuilder:1:in `_app_views_comments_index_json_jbuilder___904662718102927785_70343856011840'
+
+
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.6ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (183.9ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 16:00:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (2.0ms)
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 228ms (Views: 213.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/angular.self-340c3ac241fcffc164e4d365e2beea975097707c164744e0a265462e6936a3e6.js?body=1" for ::1 at 2015-11-12 16:00:06 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 16:00:06 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 16:00:06 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 16:00:06 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 16:00:06 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 16:00:08 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (23.5ms)
+Completed 200 OK in 43ms (Views: 35.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 16:00:11 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (10.8ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 16:00:11 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.7ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments_all" for ::1 at 2015-11-12 16:00:11 -0500
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.8ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.json.jbuilder (44.2ms)
+Completed 200 OK in 57ms (Views: 48.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 16:02:48 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 1736ms (Views: 1735.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 16:02:50 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 16:02:50 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 16:02:50 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 16:02:50 -0500
+
+
+Started GET "/assets/angular.self-e87eddb2164336ba9eee1d6baf42623627d7d48bf7fd8776152671d9f8cdb1ff.js?body=1" for ::1 at 2015-11-12 16:02:50 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 16:02:51 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (1.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (4.2ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 16:02:54 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (12.0ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/comments_all" for ::1 at 2015-11-12 16:02:54 -0500
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.json.jbuilder (7.9ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 16:02:54 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 16:03:47 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 16:03:47 -0500
+
+
+Started GET "/assets/angular.self-799cfa229c3cd264ffa0be67333cc13f5a3094a66aeeb0f1ced6ba8d0a96bf08.js?body=1" for ::1 at 2015-11-12 16:03:47 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 16:03:47 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 16:03:47 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 16:03:47 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 16:03:50 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (4.2ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 16:03:52 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.1ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (4.9ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-12 16:03:52 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "z8QWZLMPYLy6OiToPfQ1PQ"]]
+  Rendered session/current_responder.json.jbuilder (0.3ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments_all" for ::1 at 2015-11-12 16:03:52 -0500
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.json.jbuilder (9.9ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.5ms)

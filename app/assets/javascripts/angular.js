@@ -79,6 +79,7 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	var controller = this;
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
+		console.log(controller.currentPost.id)
 	});
 	controller.getCurrentResponder = function () {
 		$http.get('/session.json').success(function (responderData) {
@@ -86,6 +87,20 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 		})
 	};
 	controller.getCurrentResponder();
+	controller.getPostsComments = function () {
+		$http.get('/comments_all').success(function (commentData) {
+			if (commentData.errors) {
+				controller.error = data.errors;
+				controller.message = "error getting comments";
+				console.log(controller.message);
+			} else {
+				controller.message = "here be comments, buddy";
+				console.log(controller.message);
+				console.log(commentData);
+			}
+		})
+	};
+	controller.getPostsComments();
 }]);
 
 app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
