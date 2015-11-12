@@ -11,12 +11,8 @@ class PostsController < ApplicationController
 	end
 
 	def index
-    # if logged_in?
 		    @posts = Post.all
 		    render 'posts/index', layout: 'angular'
-    # else
-    #     redirect_to '/'
-    # end
 	end
 
 	def closed

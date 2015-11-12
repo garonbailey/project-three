@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
     helper_method :current_responder
     helper_method :require_current_responder
     helper_method :logged_in?
-
   def angular
     render 'application/angular', layout: 'angular'
   end
@@ -41,7 +40,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_current_responder
-    redirect_to $location.path("/login") unless logged_in?
+    redirect_to root_path unless logged_in?
   end
 
 end
