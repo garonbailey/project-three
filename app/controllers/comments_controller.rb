@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
   def new
     @comment = Comment.new
   end
-  
+
   def create
     @comment = Comment.new(comment_params)
     @comment.save
@@ -39,13 +39,9 @@ class CommentsController < ApplicationController
   def comment_params
     params.require(:comment).permit(:notes, :post_id, :responder_id)
   end
-<<<<<<< HEAD
-end
-=======
 
   def find_by_post
     params.require(:test).permit(:post_id)
   end
 
 end
->>>>>>> da742a0c234cb9eea017066c9fcf98c162c6228b
