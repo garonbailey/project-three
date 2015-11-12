@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
+  before_filter :require_current_responder
 
 	def new
 		@post = Post.new

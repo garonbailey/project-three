@@ -69,7 +69,13 @@
 		<div class="form-group">
 			<form ng-submit="commentsCtrl.createComment()">
 				<textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText"></textarea><br/><br/>
-				<input type="submit" value="Add Comment" /><br/><br/>
+        <p>Closed? {{ctrl.currentPost.closed}}</p>
+        <p>{{ctrl.currentPost.created_at}}</p>
+        <select name="singleSelect" value="{{ctrl.currentPost.colosed}}">
+            <option value="True">Closed</option>
+            <option value="False">Open</option>
+        </select><br>
+      	<input type="submit" value="Add Comment" /><br/><br/>
 			</form><br/><br/>
 			<a href="#" id="-btn" ng-click="()"></a>
 		</div>
