@@ -4,7 +4,36 @@
 
 <div class="jumbotron">
   <div class="container">
-    <h1><small>Report # {{ctrl.currentPost.id}}</small></h1>
+    <h2>Report # {{ctrl.currentPost.id}} <br/>
+    <small>Filed {{ctrl.currentPost.created_at}} </small></h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="center-block">
+    <div class="form-group">
+        <form ng-submit="....">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="reportStatus">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#status" aria-expanded="true" aria-controls="status">
+                  Status
+                </a>
+              </h3>
+            </div>
+            <div id="status" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="reportStatus">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" ng-model="ctrl.closed" name="options" ng-value="true" id="open" autocomplete="off" checked>Open
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" ng-model="ctrl.closed" name="options" ng-value="false" id="closed" autocomplete="off">Closed
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+    </form>
   </div>
 </div>
 
@@ -12,11 +41,6 @@
 	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
 		  <div class="form-group">
         <form ng-submit="commentsCtrl.createComment()">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                {{ctrl.currentPost.created_at}}
-              </div>
-            </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                   <h3 class="panel-title">User Notes</h3>
@@ -27,24 +51,6 @@
             </div>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="reportStatus">
-                  <h3 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#status" aria-expanded="true" aria-controls="status">
-                      Status
-                    </a>
-                  </h3>
-                </div>
-                <div id="status" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="reportStatus">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                      <input type="radio" ng-model="ctrl.closed" name="options" ng-value="true" id="open" autocomplete="off" checked>Open
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" ng-model="ctrl.closed" name="options" ng-value="false" id="closed" autocomplete="off">Closed
-                    </label>
-                </div>
-              </div>
-              <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="responderComments">
                   <h3 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#comments" aria-expanded="false" aria-controls="comments">
@@ -54,8 +60,8 @@
                 </div>
                 <div id="comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="responderComments">
                   <ul class="list-group">
-                    <li ng-repeat="posts in ctrl.posts" class="list-group-item">
-                      {{posts.comments.notes}} <h3><small>by {{posts.comments.responder_id}} </li>
+                    <li ng-repeat="comment in ctrl.comments" class="list-group-item">
+                    <li class="list-group-item">  {{comments.notes}} <h3><small>by {{comments.responder_id}} </small> </li>
                     <li class="list-group-item">Cras justo odio</li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>
                     <li class="list-group-item">Morbi leo risus</li>
@@ -65,10 +71,9 @@
                 </div>
               </div>
             </div>
-            <textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText" placeholder="Your comment..."></textarea>
+            <textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText" placeholder="Your comment..."></textarea><br/>
 				    <input type="submit" class="btn btn-default" value="Submit" /><br/>
         </div>
 		</form>
-		</div>
 	</div>
 </div>

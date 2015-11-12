@@ -178,6 +178,7 @@ h3 {
 }
 
 .collapse.in {
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
