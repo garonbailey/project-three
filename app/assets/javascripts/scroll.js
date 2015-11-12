@@ -1,4 +1,4 @@
-// Header disappear on scroll down
+//Header disappear on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -22,10 +22,10 @@ function hasScrolled() {
         return;
 
     if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
+        //Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
     } else {
-        // Scroll Up
+        //Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('header').removeClass('nav-up').addClass('nav-down');
         }

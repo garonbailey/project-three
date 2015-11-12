@@ -1,7 +1,8 @@
-<div class="jumbotron">
+<div class ="jumbotron">
   <div class="container">
-    <h1>HELP SOMEONE IN NEED<br/>
-		<small>Drop a Pin...</small></h1>
+    <h1>Someone Needs Help<br/>
+      <small>Drop a Pin...</small>
+    </h1>
   </div>
 </div>
 
@@ -9,23 +10,45 @@
 
 <div class="jumbotron">
   <div class="container">
-    <h1><small>Make a Report...</small></h1>
+    <h1><small>{{ctrl.currentPost.id}}</small></h1>
   </div>
 </div>
-{{ctrl.message}}
+
+
+		{{ctrl.message}}
+
+
 <div class="container">
 	 <div class="center-block">
 				 <div class="form-group">
 					 <form ng-submit="ctrl.newReport()">
-						 <input type="hidden" class="form-control"
-							 ng-model="ctrl.latitude"
-							 ><br/>
-						 <input type="hidden" class="form-control"
-							 ng-model="ctrl.longitude"
-							 ><br/>
-						 <textarea ng-model="ctrl.usernotes" class="form-control"
-							 placeholder="notes..."></textarea><br/>
-						 <input type="submit" value="Help Out">
+						 <input type="hidden" class="form-control" ng-model="ctrl.latitude">
+						 <input type="hidden" class="form-control" ng-model="ctrl.longitude">
+						 <textarea ng-model="ctrl.usernotes" class="form-control" placeholder="Details..."></textarea>
+							 	<div class="panel-group driving-license-settings" id="accordion">
+    				 			<div class="panel panel-default">
+        						<div class="panel-heading">
+             					<h4 class="panel-title">
+						 						<div class="checkbox">
+    				 							<label data-toggle="collapse" data-target="#collapse-form">
+        										<input type="checkbox"> Keep me posted.
+    											</label>
+												</div>
+											</h4>
+										</div>
+										<div id="collapse-form" class="panel-collapse collapse">
+											<div class="panel-body">
+
+													<input type"text" class="form-control input-lg" ng-model="ctrl.contactname" placeholder="Name">
+													<input type"text" class="form-control input-lg" ng-model="ctrl.contactemail" placeholder="Email">
+													<input type"text" class="form-control input-lg" ng-model="ctrl.contactphone" placeholder="Phone">
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<input type="submit" class="btn btn-default" value="Help Out">
+						 </div>
 				 </form>
 			 </div>
 		</div>

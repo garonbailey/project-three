@@ -1,10 +1,69 @@
-<h2>ReportID: {{ctrl.currentPost.id}}</h2>
+<map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}">
+  <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
+</map>
+
 <div class="jumbotron">
-  <p><map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}" on-click="placeMarker()">
-    <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
-  </map></p>
+  <div class="container">
+    <h1><small>Report # {{ctrl.currentPost.id}}</small></h1>
+  </div>
 </div>
+
 <div class="container">
+	<div class="center-block">
+		  <div class="form-group">
+        <form ng-submit="ctrl.createComment()">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">User Notes</h3>
+                </div>
+                <div class="panel-body">
+                  {{ctrl.currentPost.usernotes}}
+                </div>
+            </div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="reportStatus">
+                  <h3 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#status" aria-expanded="true" aria-controls="status">
+                      Status
+                    </a>
+                  </h3>
+                </div>
+                <div id="status" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="reportStatus">
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" ng-model="ctrl.status" name="options" value="open" id="open" autocomplete="off" checked>Open
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" ng-model="ctrl.status" name="options" value="closed" id="closed" autocomplete="off">Closed
+                    </label>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="responderComments">
+                  <h3 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#comments" aria-expanded="false" aria-controls="comments">
+                      Comments
+                    </a>
+                  </h3>
+                </div>
+                <div id="comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="responderComments">
+                  <ul class="list-group">
+                    <li ng-repeat="posts in ctrl.posts" class="list-group-item">
+                      {{posts.comments.id.notes}} <h3><small>by {{posts.comments.id.responder_id}} </li>
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <textarea class="form-control" rows="6" ng-model="ctrl.newCommentText" placeholder="Your comment..."></textarea>
+				    <input type="submit" class="btn btn-default" value="Submit" /><br/>
+        </div>
+		</form>
 	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
 		<p><textarea readonly class="form-control">{{ctrl.currentPost.usernotes}}</textarea></p>
 		<div class="form-group">

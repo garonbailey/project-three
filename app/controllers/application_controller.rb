@@ -5,13 +5,13 @@ class ApplicationController < ActionController::Base
     helper_method :current_responder
     helper_method :require_current_responder
     helper_method :logged_in?
+
   def angular
     render 'application/angular', layout: 'angular'
   end
 
   def index
     puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
-
     @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 
     render '/index'
@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_current_responder
-    redirect_to root_path unless logged_in?
+    redirect_to login_path unless logged_in?
   end
 
 end

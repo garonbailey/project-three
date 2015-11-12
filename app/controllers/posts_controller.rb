@@ -5,14 +5,15 @@ class PostsController < ApplicationController
 	def new
 		@post = Post.new
 		puts "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
+	  @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 
-	    @map_url = "https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"
 		render 'posts/new', layout: 'angular'
 	end
 
 	def index
-		    @posts = Post.all
-		    render 'posts/index', layout: 'angular'
+		@posts = Post.all
+
+		render 'posts/index', layout: 'angular'
 	end
 
 	def closed

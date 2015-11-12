@@ -20,6 +20,16 @@
 <header class="nav-down">
   <nav class="navbar navbar-default">
       <div class="navbar-header">
+        <% if current_responder %>
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <% end %>
+            <a class="navbar-brand" href="/"><img src="assets/helpout_logo_header.png"></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse"
            data-target=".navbar-collapse" aria-expanded="false">
            <span class="sr-only"></span>
@@ -29,13 +39,15 @@
         </button>
          <a class="navbar-brand" href="/"><%= image_tag "helpout_logo_header.png" %></a>
       </div>
+        <% if current_responder %>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">Home</a></li>
                 <li><a href="/posts">All Reports</a></li>
             </ul>
          </div>
-      </div>
+       <% end %>
+    </nav>
 </header>
 
 
