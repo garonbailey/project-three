@@ -1,0 +1,101 @@
+
+
+Started GET "/" for ::1 at 2015-11-12 14:49:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (4.2ms)
+  [1m[35mResponder Load (4.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "MPdrbqoQ1g0pbgaYbS92Tw"]]
+Completed 200 OK in 502ms (Views: 464.0ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 14:50:00 -0500
+
+
+Started GET "/assets/angular.self-ca670ada1f4353a893315b39e3fe41dbf26bc4f6ee87faff16bed065cf735dfd.js?body=1" for ::1 at 2015-11-12 14:50:00 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 14:50:00 -0500
+
+
+Started GET "/logout" for ::1 at 2015-11-12 14:50:05 -0500
+Processing by SessionController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-12 14:50:06 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (50.4ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-12 14:50:06 -0500
+
+
+Started POST "/session" for ::1 at 2015-11-12 14:50:10 -0500
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"P1teIEe4FG8EknFmCQEDmIYueIqau1gJ5exrTJvL6IsPgVhnzUfLm8e9233y0+OBUumqQnaJ6oKuelgqAhL5RA==", "responder"=>{"username"=>"Tucker", "password"=>"[FILTERED]"}}
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."username" = $1 LIMIT 1[0m  [["username", "Tucker"]]
+  [1m[35m (2.2ms)[0m  BEGIN
+  [1m[36mResponder Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "responders" WHERE ("responders"."username" = 'Tucker' AND "responders"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (6.0ms)[0m  UPDATE "responders" SET "session_token" = $1, "updated_at" = $2 WHERE "responders"."id" = $3  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"], ["updated_at", "2015-11-12 19:50:10.861842"], ["id", 1]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 149ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-12 14:50:10 -0500
+Processing by PostsController#index as HTML
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.4ms)
+Completed 200 OK in 67ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 14:50:11 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.1ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  [1m[35mPost Load (13.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (95.1ms)
+Completed 200 OK in 129ms (Views: 106.9ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 14:50:15 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (27.3ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/36" for ::1 at 2015-11-12 14:59:11 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mResponder Load (1.8ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered posts/show.html.erb within layouts/angular (4.0ms)
+Completed 200 OK in 180ms (Views: 140.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 14:59:11 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (20.9ms)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/36" for ::1 at 2015-11-12 14:59:25 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mResponder Load (0.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered posts/show.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-12 14:59:26 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.2ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "-NealSTYzE1V7nbEZ1HctQ"]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (38.0ms)
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 1.9ms)
