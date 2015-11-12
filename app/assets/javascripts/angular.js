@@ -80,6 +80,12 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
 	});
+	controller.getCurrentResponder = function () {
+		$http.get('/session.json').success(function (responderData) {
+			controller.responderId = responderData.current_responder.id;
+		})
+	};
+	controller.getCurrentResponder();
 }]);
 
 app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
@@ -90,7 +96,7 @@ app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) 
 			authenticity_token: authenticity_token,
 			comment: {
 				notes: controller.newCommentText,
-				// responder_id: 6,
+				responder_id: $scope.$parent.ctrl.responderId,
 				post_id: $scope.$parent.ctrl.currentPost.id
 			}
 		}).
