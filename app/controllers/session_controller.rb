@@ -24,6 +24,11 @@ class SessionController < ApplicationController
   end
 
   def current_responder
+    if session[:session_token]
+      @current_responder ||= Responder.find_by(session_token: session[:session_token])
+    else
+      @current_responder = nil
+    end
   end
 
 
