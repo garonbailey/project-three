@@ -66,7 +66,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
-		console.log(postsData)
 		controller.posts = postsData.posts;
 	});
 }]);
@@ -88,23 +87,21 @@ app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) 
 	var controller = this;
 	controller.createComment = function () {
 		$http.post('/comments', {
-			// authenticity_token: authenticity_token,
+			authenticity_token: authenticity_token,
 			comment: {
 				notes: controller.newCommentText,
-				responder_id: 6
-				// post_id: $scope.$parent.post.id
+				// responder_id: 6,
+				post_id: $scope.$parent.ctrl.currentPost.id
 			}
 		}).
 		success(function (data) {
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
-				console.log($scope.$parent);
 				console.log(controller.message);
 			} else {
 				controller.message = "New Comment Successful!";
 				controller.newCommentText = undefined;
-				console.log($scope.$parent);
 				console.log(controller.message);
 			}
 		})
