@@ -26,12 +26,14 @@ Rails.application.routes.draw do
   post '/session' => 'session#create'
   delete '/session' => 'session#destroy'
 
+  get '/comments_all/:id' => 'comments#findbypost', defaults: { format: :json }
+
 
   resources :posts, defaults: { format: :json }, only: :create
 
   resources :posts, except: :create
 
   resources :responders, only: [:create]
-  resources :comments, only: [:create]
+  resources :comments, defaults: { format: :json }, only: :create
 
 end

@@ -18,9 +18,34 @@ class CommentsController < ApplicationController
     render 'posts/show', layout: 'angular'
   end
 
+  def findbypost
+    puts params[:id]
+    num = params[:id].to_i
+
+    @commenty = Post.all[num].comments
+    puts "---------------------------"
+    puts @commenty
+
+    respond_to do |format|
+      format.json { render :json => @commenty }
+    end
+    # @post_comments = Comment.find(params[:post_id])
+
+    # render 'posts/show', layout: 'angular'
+  end
+
   private
 
   def comment_params
     params.require(:comment).permit(:notes, :post_id, :responder_id)
   end
+<<<<<<< HEAD
 end
+=======
+
+  def find_by_post
+    params.require(:test).permit(:post_id)
+  end
+
+end
+>>>>>>> da742a0c234cb9eea017066c9fcf98c162c6228b
