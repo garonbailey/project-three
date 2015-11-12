@@ -1,0 +1,29 @@
+
+
+Started GET "/" for ::1 at 2015-11-11 20:43:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (3.4ms)
+Completed 200 OK in 356ms (Views: 328.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-8cb1e3b13ef8f159b3e700bce827bafaf12952ffc87f95c8de14c5a83106f9f9.css?body=1" for ::1 at 2015-11-11 20:43:18 -0500
+
+
+Started GET "/assets/angular.self-ab1084cef4ee3761f5fdc8ae380113e122009b0a8bebb8cfea52e63a422c9e58.js?body=1" for ::1 at 2015-11-11 20:43:18 -0500
+
+
+Started GET "/assets/helpout_logo_header.png" for ::1 at 2015-11-11 20:43:18 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-11 20:43:27 -0500
+Processing by ApplicationController#login as HTML
+  [1m[35mResponder Load (0.9ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "Np9fnZvT_OlU-nwW-6z0VA"]]
+  Rendered login.html.erb (159.2ms)
+Completed 200 OK in 185ms (Views: 177.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/helpout_logo_w.png" for ::1 at 2015-11-11 20:43:27 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-11 20:43:28 -0500
