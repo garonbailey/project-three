@@ -24,6 +24,11 @@ header {
   top: -67px;
 }
 
+.navbar {
+  border-radius: 0 !important;
+  background-color: #104048;
+}
+
 map {
   height: 600px;
   width: 100%;

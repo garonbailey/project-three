@@ -23,16 +23,16 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def log_out!
+    session[:session_token] = nil
+  end
+
   def current_responder
     if session[:session_token]
       @current_responder ||= Responder.find_by(session_token: session[:session_token])
     else
       @current_responder = nil
     end
-  end
-
-  def log_out!
-    session[:session_token] = nil
   end
 
   def logged_in?

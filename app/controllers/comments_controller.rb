@@ -1,11 +1,18 @@
 class CommentsController < ApplicationController
 
+  def new
+    @comment = Comment.new  
+  end
+
+  def index
+    @comments = Comment.all
+  end
+
   def create
     @comment = Comment.new(comment_params)
-
     @comment.save
 
-    redirect_to post_path(@comment.post)
+    render partial: 'comment', layout:false
   end
 
   private
