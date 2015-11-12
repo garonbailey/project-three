@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: :create
+  before_action :require_current_responder
 
 	def new
 		@post = Post.new
@@ -57,8 +58,27 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:latitude, :longitude,
 		                             :usernotes, :contactname,
-		                             :contactemail, :contactphone)
+		                             :contactemail, :contactphone, :created_at)
 
 	end
 
+  def current_responder
+    if session[:session_token]
+      @current_responder ||= Responder.find_by(session_token: session[:session_token])
+    else
+      @current_responder = nil
+    end
+  end
+
+  def log_out!
+    session[:session_token] = nil
+  end
+
+  def logged_in?
+    !!current_responder
+  end
+
+  def require_current_responder
+    redirect_to root_path unless logged_in?
+  end
 end

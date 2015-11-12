@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'application#angular'
 
+
   get '/login' => 'application#login'
   get '/logout' => 'session#destroy'
 

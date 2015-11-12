@@ -1,24 +1,18 @@
+<h2>ReportID: {{ctrl.currentPost.id}}</h2>
 <div class="jumbotron">
   <p><map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}" on-click="placeMarker()">
     <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
   </map></p>
 </div>
 <div class="container">
-	<div class="center-block">
+	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
 		<p><textarea readonly class="form-control">{{ctrl.currentPost.usernotes}}</textarea></p>
 		<div class="form-group">
-			<form ng-submit="ctrl.createComment()">
-				<textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea><br/><br/>
+			<form ng-submit="commentsCtrl.createComment()">
+				<textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText"></textarea><br/><br/>
 				<input type="submit" value="Add Comment" /><br/><br/>
 			</form><br/><br/>
 			<a href="#" id="-btn" ng-click="()"></a>
 		</div>
 	</div>
 </div>
-<h2>ReportID: {{ctrl.currentPost.id}}</h2>
-<ul>
-	<li>{{ctrl.currentPost.usernotes}}</li>
-	<li>{{ctrl.currentPost.longitude}}</li>
-	<li>{{ctrl.currentPost.latitude}}</li>
-</ul>
-

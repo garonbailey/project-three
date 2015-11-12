@@ -17,7 +17,7 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var map;
 	var controller = this;
-	
+
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
     $scope.placeMarker = function(e) {
@@ -25,13 +25,13 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
 			controller.lng = marker.position.lng();
-    }
+    };
+		evtMap.setOptions({'scrollwheel': false})
   });
 
 
 
 	this.newReport = function () {
-
 		$http.post('/posts', {
 			post: {
 				latitude: controller.lat,
@@ -55,6 +55,7 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
+		console.log(postsData)
 		controller.posts = postsData.posts;
 	});
 }]);
@@ -69,6 +70,28 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
 	});
+}]);
+
+app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
+	var controller = this;
+	controller.createComment = function () {
+		$http.post('/comments', {
+			comment: {
+				notes: controller.newCommentText
+				// responder: //currentResponder?
+				// post: //currentPost?
+			}
+		}).
+		success(function (data) {
+			if (data.errors) {
+				controller.error = data.errors;
+				controller.message = "Error submitting comment. Please try again.";
+			} else {
+				controller.message = "New Comment Successful!";
+				controller.newCommentText = undefined;
+			}
+		})
+	};
 }]);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
