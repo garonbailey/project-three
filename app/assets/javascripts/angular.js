@@ -83,8 +83,8 @@ app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) 
 	controller.createComment = function () {
 		$http.post('/comments', {
 			comment: {
-				notes: controller.newCommentText,
-				responder: responder
+				notes: controller.newCommentText
+				// responder_id: controller.responder_id
 				// post: //currentPost?
 			}
 		}).
