@@ -32,10 +32,10 @@
                 <div id="status" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="reportStatus">
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-primary active">
-                      <input type="radio" ng-model="ctrl.status" name="options" value="open" id="open" autocomplete="off" checked>Open
+                      <input type="radio" ng-model="ctrl.closed" name="options" ng-value="true" id="open" autocomplete="off" checked>Open
                     </label>
                     <label class="btn btn-primary">
-                      <input type="radio" ng-model="ctrl.status" name="options" value="closed" id="closed" autocomplete="off">Closed
+                      <input type="radio" ng-model="ctrl.closed" name="options" ng-value="false" id="closed" autocomplete="off">Closed
                     </label>
                 </div>
               </div>
@@ -64,20 +64,4 @@
 				    <input type="submit" class="btn btn-default" value="Submit" /><br/>
         </div>
 		</form>
-	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
-		<p><textarea readonly class="form-control">{{ctrl.currentPost.usernotes}}</textarea></p>
-		<div class="form-group">
-			<form ng-submit="commentsCtrl.createComment()">
-				<textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText"></textarea><br/><br/>
-        <p>Closed? {{ctrl.currentPost.closed}}</p>
-        <p>{{ctrl.currentPost.created_at}}</p>
-        <select name="singleSelect" value="{{ctrl.currentPost.colosed}}">
-            <option value="True">Closed</option>
-            <option value="False">Open</option>
-        </select><br>
-      	<input type="submit" value="Add Comment" /><br/><br/>
-			</form><br/><br/>
-			<a href="#" id="-btn" ng-click="()"></a>
-		</div>
-	</div>
 </div>
