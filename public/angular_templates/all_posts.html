@@ -8,6 +8,8 @@
           <th>Notes</th>
           <th>Longitude</th>
           <th>Latitude</th>
+          <th>Closed?</th>
+          <th>Time</th>
         </tr>
       </thead>
     <tbody>
@@ -15,6 +17,8 @@
           <td><a ng-href="/posts/{{$index}}">{{posts.usernotes}}</a></td>
           <td>{{posts.longitude}}</td>
           <td>{{posts.latitude}}</td>
+          <td>{{posts.closed}}</td>
+          <td>{{posts.created_at}}</td>
         </tr>
     </tbody>
    </table>
