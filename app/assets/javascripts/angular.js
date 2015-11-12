@@ -17,16 +17,21 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var map;
 	var controller = this;
-
+	var marker;
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
 		evtMap.setOptions({'scrollwheel': false});
     $scope.placeMarker = function(e) {
-      var marker = new google.maps.Marker({position: e.latLng, map: map});
+			if (marker) {
+				marker.setPosition(e.latLng)
+				controller.lat = marker.position.lat();
+				controller.lng = marker.position.lng();
+			} else {
+      marker = new google.maps.Marker({position: e.latLng, map: map});
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
 			controller.lng = marker.position.lng();
-    }
+    }}
   });
 
 
@@ -61,7 +66,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
-		console.log(postsData)
 		controller.posts = postsData.posts;
 	});
 }]);
@@ -79,22 +83,26 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 }]);
 
 app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
+	var authenticity_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 	var controller = this;
 	controller.createComment = function () {
 		$http.post('/comments', {
+			authenticity_token: authenticity_token,
 			comment: {
-				notes: controller.newCommentText
-				// responder_id: controller.responder_id
-				// post: //currentPost?
+				notes: controller.newCommentText,
+				// responder_id: 6,
+				post_id: $scope.$parent.ctrl.currentPost.id
 			}
 		}).
 		success(function (data) {
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
+				console.log(controller.message);
 			} else {
 				controller.message = "New Comment Successful!";
 				controller.newCommentText = undefined;
+				console.log(controller.message);
 			}
 		})
 	};
