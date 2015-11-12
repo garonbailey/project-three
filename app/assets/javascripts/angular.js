@@ -32,7 +32,6 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 
 
 	this.newReport = function () {
-
 		$http.post('/posts', {
 			post: {
 				latitude: controller.lat,
@@ -56,6 +55,7 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 app.controller('allPostsCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var controller = this;
 	$http.get('/posts.json').success(function (postsData) {
+		console.log(postsData)
 		controller.posts = postsData.posts;
 	});
 }]);

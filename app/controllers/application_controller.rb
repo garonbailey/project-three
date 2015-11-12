@@ -2,9 +2,8 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :null_session
-
-  helper_method :current_responder
-  helper_method :require_current_responder
+    helper_method :current_responder
+    helper_method :require_current_responder
 
   def angular
     render 'application/angular', layout: 'angular'
@@ -43,6 +42,5 @@ class ApplicationController < ActionController::Base
   def require_current_responder
     redirect_to root_path unless logged_in?
   end
-
 
 end
