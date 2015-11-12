@@ -12,12 +12,12 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.save
 
-    render partial: 'comment', layout:false
+    render 'posts/show', layout: 'angular'
   end
 
   private
 
   def comment_params
-    params.require(:comment).permit(:notes, :post_id)
+    params.require(:comment).permit(:notes, :post_id, :responder_id)
   end
 end
