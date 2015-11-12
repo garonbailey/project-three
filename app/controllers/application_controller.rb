@@ -5,8 +5,6 @@ class ApplicationController < ActionController::Base
     helper_method :current_responder
     helper_method :require_current_responder
     helper_method :logged_in?
-
-
   def angular
     render 'application/angular', layout: 'angular'
   end
