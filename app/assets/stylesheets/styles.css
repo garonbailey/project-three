@@ -117,11 +117,27 @@ h3 {
   padding: 10px 20px;
   font-weight: 300;
   text-transform: none;
-  display: block;
+  display: inline-block;
   text-align: center;
   width: 100%;
   border-radius: 0;
   border: 1px solid #f1f1f1;
+}
+
+.btn-group {
+  display: inline-flex;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #666;
+  border: 0;
+}
+
+.btn-primary.active, .btn-primary.active:hover{
+  background-color: orange;
+  color: #666;
+  border: 0;
 }
 
 .btn-default {
@@ -150,9 +166,14 @@ h3 {
 
 .btn-default {
   color: orange !important;
+}
 
 .navbar-collapse {
   max-height: 340px;
+}
+
+.collapse.in {
+  padding-bottom: 10px;
 }
 
 .navbar-toggle, .icon-bar {
@@ -171,6 +192,10 @@ h3 {
 .navbar-brand {
   vertical-align: middle;
   height: 100%;
+}
+
+.panel-collapse {
+  text-align: center;
 }
 
 /*media queries*/
