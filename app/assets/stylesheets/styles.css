@@ -4,13 +4,10 @@
   padding: 0;
   font: inherit;
   box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 body {
   padding-top: 50px;
-=======
->>>>>>> e9dd1788dbd8fd3e90e6ad28e875bb2899d3a6e0
 }
 
 header {
@@ -56,7 +53,7 @@ form {
 
 .center-block {
   width: 50%;
-  margin 0 auto;
+  margin: 0 auto;
 }
 
 hr.fade {
@@ -170,6 +167,7 @@ h3 {
 
 .btn-default {
   color: orange !important;
+}
 
 .navbar-collapse {
   max-height: 340px;
