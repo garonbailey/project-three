@@ -1,18 +1,35 @@
-<h2>ReportID: {{ctrl.currentPost.id}}</h2>
 <div class="jumbotron">
-  <p><map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}" on-click="placeMarker()">
-    <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
-  </map></p>
+  <div class="container">
+    <h1><small>Report #: {{ctrl.currentPost.id}}</small></h1>
+  </div>
 </div>
+
+<map zoom="14" center="{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}">
+  <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
+</map>
+
+
+<div class="jumbotron">
+  <div class="container">
+    <h1><small>Make a Report...</small></h1>
+  </div>
+</div>
+
 <div class="container">
 	<div class="center-block">
-		<p><textarea readonly class="form-control">{{ctrl.currentPost.usernotes}}</textarea></p>
-		<div class="form-group">
-			<form ng-submit="ctrl.createComment()">
-				<textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea><br/><br/>
-				<input type="submit" value="Add Comment" /><br/><br/>
-			</form><br/><br/>
-			<a href="#" id="-btn" ng-click="()"></a>
-		</div>
+		  <div class="form-group">
+        <form ng-submit="ctrl.createComment()">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">User Notes</h3>
+                </div>
+                <div class="panel-body">
+                  {{ctrl.currentPost.usernotes}}
+                </div>
+            </div>
+				    <textarea class="form-control" rows="6" ng-model="ctrl.newCommentText"></textarea>
+				    <input type="submit" value="Add Comment" /><br/>
+        </div>
+		</form>
 	</div>
 </div>

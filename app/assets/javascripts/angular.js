@@ -20,13 +20,13 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
+		evtMap.setOptions({'scrollwheel': false});
     $scope.placeMarker = function(e) {
       var marker = new google.maps.Marker({position: e.latLng, map: map});
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
 			controller.lng = marker.position.lng();
-    };
-		evtMap.setOptions({'scrollwheel': false})
+    }
   });
 
 
@@ -46,9 +46,9 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 		success(function(data) {
 			if (data.errors) {
 				controller.error = data.errors;
-				controller.message = "Error submitting report";
+				controller.message = "Something broke...";
 			} else {
-				controller.message = "New Report Successful!";
+				controller.message = "A responder is on the way!";
 				controller.location = undefined;
 				controller.usernotes = undefined;
 				controller.contactname = undefined;
