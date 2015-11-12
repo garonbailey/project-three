@@ -17,16 +17,21 @@ app.controller('loginCtrl', ['$routeParams', '$http', function ($routeParams, $h
 app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var map;
 	var controller = this;
-
+	var marker;
   $scope.$on('mapInitialized', function(evt, evtMap) {
     map = evtMap;
 		evtMap.setOptions({'scrollwheel': false});
     $scope.placeMarker = function(e) {
-      var marker = new google.maps.Marker({position: e.latLng, map: map});
+			if (marker) {
+				marker.setPosition(e.latLng)
+				controller.lat = marker.position.lat();
+				controller.lng = marker.position.lng();
+			} else {
+      marker = new google.maps.Marker({position: e.latLng, map: map});
       map.panTo(e.latLng);
 			controller.lat = marker.position.lat();
 			controller.lng = marker.position.lng();
-    }
+    }}
   });
 
 
@@ -83,8 +88,8 @@ app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) 
 	controller.createComment = function () {
 		$http.post('/comments', {
 			comment: {
-				notes: controller.newCommentText
-				// responder_id: controller.responder_id
+				notes: controller.newCommentText,
+				responder: responder
 				// post: //currentPost?
 			}
 		}).
