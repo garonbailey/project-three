@@ -16007,3 +16007,54 @@ Processing by SessionController#current_responder as JSON
   [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "S4pEUGv2bDG2Wd-EhvfNbg"]]
   Rendered session/current_responder.json.jbuilder (3.6ms)
 Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 14:43:21 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "S4pEUGv2bDG2Wd-EhvfNbg"]]
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-12 14:47:03 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "S4pEUGv2bDG2Wd-EhvfNbg"]]
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 14:47:03 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 14:47:03 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 14:47:03 -0500
+
+
+Started GET "/assets/angular.self-3c0fcfae266d123641170dba946d6db5d63e111ef8a1a5c69343dc967634855d.js?body=1" for ::1 at 2015-11-12 14:47:03 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 14:47:03 -0500
+
+
+Started GET "/" for ::1 at 2015-11-12 14:48:04 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "S4pEUGv2bDG2Wd-EhvfNbg"]]
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-12 14:48:04 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-12 14:48:04 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-12 14:48:04 -0500
+
+
+Started GET "/assets/styles.self-130eb9f83219346553eb924e1a432bf28c2534cc67757a0c8e1a8350cb9e5374.css?body=1" for ::1 at 2015-11-12 14:48:04 -0500
+
+
+Started GET "/assets/angular.self-3c0fcfae266d123641170dba946d6db5d63e111ef8a1a5c69343dc967634855d.js?body=1" for ::1 at 2015-11-12 14:48:04 -0500
