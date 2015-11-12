@@ -71,23 +71,6 @@ hr.fade {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-input[type="submit"] {
-  box-sizing: border-box;
-  background-color: white;
-  border: 1px solid #f1f1f1;
-  padding: 10px 20px;
-  border-radius: 3px;
-  font-size: 18px;
-  transition: background-color .5s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: orange;
-  transition: background-color .5s ease;
-  opacity: .8;
-  cursor: pointer;
-}
-
 a {
   color: orange;
   opacity: .8;
@@ -132,36 +115,28 @@ h3 {
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #f1f1f1 !important;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #f1f1f1;
 }
 
-.btn, .btn-primary, .btn-lg {
-  border-radius: 3px !important;
+.btn-default {
+  color: orange;
+}
+
+.btn-default:hover {
+  color: orange;
+  background-color: white;
+  border-color: #f1f1f1;
 }
 
 .btn-primary {
   background-color: white;
-  color: #666 !important;
-  transition: background-color .5s ease !important;
-  border-color: #f1f1f1 !important;
-}
-
-.btn-group-lg>.btn, .btn-lg {
-  border-radius: 3px;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-  background-color: orange !important;
-  transition: background-color .5s ease;
-  opacity: .8 !important;
-  cursor: pointer;
-}
-
-.btn-primary:active, .btn-primary.active {
-  background: orange !important;
-  box-shadow: none;
+  color: #666;
 }
 
 .modal-content {
