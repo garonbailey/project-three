@@ -77,9 +77,12 @@ app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routePara
 app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
 	var post = $routeParams.index;
 	var controller = this;
+
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
 		console.log(controller.currentPost.id)
+
+		controller.getPostsComments(data.posts[post])
 	});
 	controller.getCurrentResponder = function () {
 		$http.get('/session.json').success(function (responderData) {
@@ -87,20 +90,26 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 		})
 	};
 	controller.getCurrentResponder();
-	controller.getPostsComments = function () {
-		$http.get('/comments_all').success(function (commentData) {
-			if (commentData.errors) {
-				controller.error = data.errors;
-				controller.message = "error getting comments";
-				console.log(controller.message);
-			} else {
-				controller.message = "here be comments, buddy";
-				console.log(controller.message);
-				console.log(commentData);
-			}
+
+	controller.getPostsComments = function (dataStuff) {
+		console.log('-----------------')
+		console.log('INSIDE GETPOSTCOMMENTS')
+		console.log(dataStuff)
+		console.log($routeParams.index)
+		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
+			console.log(commentData);
+			// if (commentData.errors) {
+			// 	controller.error = commentData.errors;
+			// 	controller.message = "error getting comments";
+			// 	console.log(controller.message);
+			// } else {
+			// 	controller.message = "here be comments, buddy";
+			// 	console.log(controller.message);
+			// 	console.log(commentData);
+			// }
 		})
 	};
-	controller.getPostsComments();
+	// controller.getPostsComments();
 }]);
 
 app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {

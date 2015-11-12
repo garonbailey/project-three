@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   post '/session' => 'session#create'
   delete '/session' => 'session#destroy'
 
-  get '/comments_all' => 'comments#index', defaults: { format: :json }
+  get '/comments_all/:id' => 'comments#findbypost', defaults: { format: :json }
 
 
   resources :posts, defaults: { format: :json }, only: :create
