@@ -9,9 +9,9 @@
 </div>
 
 <div class="container">
-	<div class="center-block">
+	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
 		  <div class="form-group">
-        <form ng-submit="ctrl.createComment()">
+        <form ng-submit="commentsCtrl.createComment()">
             <div class="panel panel-default">
                 <div class="panel-heading">
                   <h3 class="panel-title">User Notes</h3>
@@ -60,8 +60,11 @@
                 </div>
               </div>
             </div>
-            <textarea class="form-control" rows="6" ng-model="ctrl.newCommentText" placeholder="Your comment..."></textarea>
+            <textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText" placeholder="Your comment..."></textarea>
 				    <input type="submit" class="btn btn-default" value="Submit" /><br/>
         </div>
 		</form>
+        <p>{{ctrl.currentPost.created_at}}</p>
+		</div>
+	</div>
 </div>
