@@ -37,7 +37,10 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 			post: {
 				latitude: controller.lat,
 				longitude: controller.lng,
-				usernotes: controller.usernotes
+				usernotes: controller.usernotes,
+				contactname: controller.contactname,
+				contactemail: controller.contactemail,
+				contactphone: controller.contactphone
 			}
 		}).
 		success(function(data) {
@@ -48,6 +51,9 @@ app.controller('newPostCtrl', ['$routeParams', '$http', '$scope', function ($rou
 				controller.message = "New Report Successful!";
 				controller.location = undefined;
 				controller.usernotes = undefined;
+				controller.contactname = undefined;
+				controller.contactemail = undefined;
+				controller.contactphone = undefined;
 			}
 		});
 	}

@@ -54,7 +54,7 @@ form {
   border-radius: 0px !important;
 }
 
-.panel {
+/*.panel {
   border: 0;
 }
 
@@ -65,13 +65,12 @@ form {
 
 .panel-default>.panel-heading {
   border: 0;
-}
+}*/
 
 .panel > .panel-heading {
   background-image: none;
   background-color: white;
   color: #666;
-  border: 0
 }
 
 .center-block {
