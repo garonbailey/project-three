@@ -225,3 +225,7 @@ Processing by PostsController#index as JSON
   [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 26]]
   Rendered posts/index.json.jbuilder (15.9ms)
 Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 3.1ms)
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mComment Load (1.5ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mComment Load (1.9ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mComment Load (1.8ms)[0m  SELECT "comments".* FROM "comments"

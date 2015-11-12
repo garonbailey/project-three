@@ -9,5 +9,5 @@ json.posts @posts do |post|
   json.contactemail post.contactemail
   json.contactphone post.contactphone
 
-  json.comments post.comments, partial: 'comment/comment', as: :comment
+  json.comments post.comments, partial: 'comments/comment', as: :comment
 end

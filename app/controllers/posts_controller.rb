@@ -22,15 +22,15 @@ class PostsController < ApplicationController
 
 
 	def show
-		    @post = Post.find(params[:id])
-		    @comment = Comment.new
-        @comment.post_id = @post.id
-		    render 'posts/show', layout: 'angular'
+		@post = Post.find(params[:id])
+
+		render 'posts/show', layout: 'angular'
 	end
 
 	def create
 		@post = Post.new(post_params)
 		@post.save
+
 		render partial: 'post', layout: false
 	end
 
