@@ -79,22 +79,28 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 }]);
 
 app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
+	var authenticity_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 	var controller = this;
 	controller.createComment = function () {
 		$http.post('/comments', {
+			// authenticity_token: authenticity_token,
 			comment: {
-				notes: controller.newCommentText
-				// responder_id: controller.responder_id
-				// post: //currentPost?
+				notes: controller.newCommentText,
+				responder_id: 6
+				// post_id: $scope.$parent.post.id
 			}
 		}).
 		success(function (data) {
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
+				console.log($scope.$parent);
+				console.log(controller.message);
 			} else {
 				controller.message = "New Comment Successful!";
 				controller.newCommentText = undefined;
+				console.log($scope.$parent);
+				console.log(controller.message);
 			}
 		})
 	};
