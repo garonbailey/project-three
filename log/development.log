@@ -386,3 +386,16 @@ Started GET "/assets/login.self-5bb8926f8cad4fb281152231b3512b91e8e92d9eb02781e5
 
 
 Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-12 19:46:06 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-12 19:49:25 -0500
+Processing by ApplicationController#login as HTML
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "34XTSJzl_kMZH2cgIx4S9g"]]
+  Rendered login.html.erb (1227.1ms)
+Completed 200 OK in 1242ms (Views: 1240.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-12 19:49:27 -0500
+
+
+Started GET "/assets/login.self-2e46b8fa4953db59a054282ada6f4f30bc304f0f2e9c2ea5aa2f6e4b2b25e79d.css?body=1" for ::1 at 2015-11-12 19:49:27 -0500
