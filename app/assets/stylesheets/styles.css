@@ -82,12 +82,11 @@ map {
 
 .bg-img {
   height: 100%;
-  background-image: asset-data-url('login_bg.jpg');
-  background: no-repeat center center;
+  background: url('../images/login_bg.jpg') no-repeat center center;
   background-size: cover;
 }
 
-form {
+form, .formish {
   width: 80%;
   margin: 0 auto;
 }
@@ -177,13 +176,13 @@ h3 {
 .btn-primary:hover {
   background-color: white;
   color: #666;
-  border: 0;
+  border: 1px solid #f1f1f1;
 }
 
 .btn-primary.active, .btn-primary.active:hover{
   background-color: orange;
   color: #666;
-  border: 0;
+  border: 1px solid #f1f1f1;
 }
 
 .btn-default {
