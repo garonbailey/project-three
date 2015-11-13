@@ -42,7 +42,7 @@ html {
 
 .bg-img {
   height: 100%;
-  background-image: asset-data-url('login_bg.jpg');
+  /*background-image: asset-data-url(login_bg.jpg);*/
   background: no-repeat center center;
   background-size: cover;
 }

@@ -8,7 +8,7 @@
 
 html body {
   height: 100%;
-  background-image: asset-data-url("login_bg.jpg");
+  /*background-image: asset-data-url(login_bg.jpg);*/
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
