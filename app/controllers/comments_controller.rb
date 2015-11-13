@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.save
 
-    render 'posts/show', layout: 'angular'
+    render partial: 'comment'
   end
 
   def findbypost
