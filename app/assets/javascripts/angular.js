@@ -94,17 +94,7 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	controller.getPostsComments = function () {
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
 			controller.comments = commentData;
-			console.log("words");
 			console.log(controller.comments);
-			// if (commentData.errors) {
-			// 	controller.error = commentData.errors;
-			// 	controller.message = "error getting comments";
-			// 	console.log(controller.message);
-			// } else {
-			// 	controller.message = "here be comments, buddy";
-			// 	console.log(controller.message);
-			// 	console.log(commentData);
-			// }
 		})
 	};
 	controller.getPostsComments();
