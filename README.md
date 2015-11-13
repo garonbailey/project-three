@@ -9,10 +9,10 @@ can have dangerous consequences, HelpOut allows users to submit the exact locati
 ##Wireframes
 
 ![User](User.png)
-Format: ![User](url)
+
 
 ![Responder](Responder.png)
-Format: ![Responder](url)
+
 
 ##Technology
 This app is built on a Ruby and Rails base along with the Angular.js framework. The data base is built using Postgresql. The front end ultilizes HTML and CSS.
