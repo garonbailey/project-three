@@ -9,7 +9,7 @@
 </div>
 
 <div class="container">
-	<div class="center-block" ng-controller="postCommentsCtrl as commentsCtrl">
+	<div class="center-block">
 		  <div class="form-group">
         <form ng-submit="commentsCtrl.createComment()">
             <div class="panel panel-default">
@@ -44,29 +44,27 @@
                     </label>
                 </div>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="responderComments">
-                  <h3 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#comments" aria-expanded="false" aria-controls="comments">
-                      Comments
-                    </a>
-                  </h3>
-                </div>
-                <div id="comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="responderComments">
-                  <ul class="list-group">
-                    <li ng-repeat="posts in ctrl.posts" class="list-group-item">
-                      {{posts.comments.notes}} <h3><small>by {{posts.comments.responder_id}} </li>
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+              <div class="commentsWrapper" ng-controller="postCommentsCtrl as commentsCtrl">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="responderComments">
+                    <h3 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#comments" aria-expanded="false" aria-controls="comments">
+                        Comments
+                      </a>
+                    </h3>
+                  </div>
+                  <div id="comments" class="panel-collapse collapse" role="tabpanel" aria-labelledby="responderComments">
+                    <ul class="list-group">
+                      <li ng-repeat="comment in ctrl.comments" class="list-group-item">
+                        {{comment.notes}} <h3><small>by {{comment.responder_id}} </small> </h3>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              <textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText" placeholder="Your comment..."></textarea>
+  				    <input type="submit" class="btn btn-default" value="Submit" /><br/>
             </div>
-            <textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText" placeholder="Your comment..."></textarea>
-				    <input type="submit" class="btn btn-default" value="Submit" /><br/>
         </div>
 		</form>
 		</div>

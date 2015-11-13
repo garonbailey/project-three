@@ -82,7 +82,7 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 		controller.currentPost = data.posts[post];
 		console.log(controller.currentPost.id)
 
-		controller.getPostsComments(data.posts[post])
+		controller.getPostsComments(data.posts[post]);
 	});
 	controller.getCurrentResponder = function () {
 		$http.get('/session.json').success(function (responderData) {
@@ -91,13 +91,11 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	};
 	controller.getCurrentResponder();
 
-	controller.getPostsComments = function (dataStuff) {
-		console.log('-----------------')
-		console.log('INSIDE GETPOSTCOMMENTS')
-		console.log(dataStuff)
-		console.log($routeParams.index)
+	controller.getPostsComments = function () {
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
 			controller.comments = commentData;
+			console.log("words");
+			console.log(controller.comments);
 			// if (commentData.errors) {
 			// 	controller.error = commentData.errors;
 			// 	controller.message = "error getting comments";
@@ -112,9 +110,10 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 	controller.getPostsComments();
 }]);
 
-app.controller('postCommentsCtrl', ['$http', '$scope', function ($http, $scope) {
+app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function ($http, $scope, $routeParams) {
 	var authenticity_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 	var controller = this;
+
 	controller.createComment = function () {
 		$http.post('/comments', {
 			authenticity_token: authenticity_token,
