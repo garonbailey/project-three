@@ -25,12 +25,21 @@ class PostsController < ApplicationController
 
 
 	def show
-		@post = Post.find(params[:id])
-		if logged_in?
-			render 'posts/show', layout: 'angular'
-		else 
-			redirect_to login_path
+		@post = Post.find_by(id: params[:id])
+
+		respond_to do |format|
+			format.html { redirect_to '/posts' }
+			format.json do
+				@post = Post.find(params[:id])
+				if logged_in? 
+					render partial: 'post'
+				else 
+					redirect_to login_path
+				end
+			end
 		end
+
+		
 	end
 
 	def create

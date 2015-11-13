@@ -80,7 +80,6 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', '$scope', function ($
 
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
-		console.log(controller.currentPost.id)
 
 		controller.getPostsComments(data.posts[post]);
 	});
@@ -94,7 +93,6 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', '$scope', function ($
 	controller.getPostsComments = function () {
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
 			$scope.comments = controller.comments = commentData;
-			console.log(controller.comments);
 		})
 	};
 	controller.getPostsComments();
@@ -106,7 +104,6 @@ function ($http, $scope, $routeParams, $location) {
 	var controller = this;
 
 	controller.createComment = function () {
-		console.log("Let's make a comment");
 		$http.post('/comments', {
 			authenticity_token: authenticity_token,
 			comment: {
@@ -116,16 +113,12 @@ function ($http, $scope, $routeParams, $location) {
 			}
 		}).
 		success(function (data) {
-			console.log("I'm in the success function for creating a comment!");
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
-				console.log(controller.message);
 			} else {
-				console.log(data);
 				controller.message = "New Comment Successful!";
 				controller.newCommentText = undefined;
-				console.log(controller.message);
 				$scope.$parent.comments.push(data.comment)
 			}
 		})

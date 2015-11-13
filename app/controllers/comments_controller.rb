@@ -14,7 +14,6 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @comment.save
-
     render partial: 'comment'
   end
 
@@ -23,15 +22,10 @@ class CommentsController < ApplicationController
     num = params[:id].to_i
 
     @commenty = Post.all[num].comments
-    puts "---------------------------"
-    puts @commenty
 
     respond_to do |format|
       format.json { render :json => @commenty }
     end
-    # @post_comments = Comment.find(params[:post_id])
-
-    # render 'posts/show', layout: 'angular'
   end
 
   private
