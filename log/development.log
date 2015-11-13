@@ -3098,3 +3098,47 @@ Processing by CommentsController#create as JSON
   [1m[35m (3.5ms)[0m  COMMIT
   Rendered comments/_comment.json.jbuilder (0.5ms)
 Completed 200 OK in 14ms (Views: 3.3ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/comments" for ::1 at 2015-11-13 09:04:22 -0500
+Processing by CommentsController#create as JSON
+  Parameters: {"authenticity_token"=>"J89z55GqgmJUQ5M+Ewz6JwQuHIQOfOUlyaMoPIdxmI6MJ2clz8IHcv17xF/V2xERemH7N/rzNuIra143vd9aEA==", "comment"=>{"notes"=>"oh shit son", "responder_id"=>2, "post_id"=>4}}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "comments" ("notes", "post_id", "responder_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["notes", "oh shit son"], ["post_id", 4], ["responder_id", 2], ["created_at", "2015-11-13 14:04:22.440304"], ["updated_at", "2015-11-13 14:04:22.440304"]]
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+  Rendered comments/_comment.json.jbuilder (0.5ms)
+Completed 200 OK in 14ms (Views: 3.3ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/comments" for ::1 at 2015-11-13 09:04:30 -0500
+Processing by CommentsController#create as JSON
+  Parameters: {"authenticity_token"=>"J89z55GqgmJUQ5M+Ewz6JwQuHIQOfOUlyaMoPIdxmI6MJ2clz8IHcv17xF/V2xERemH7N/rzNuIra143vd9aEA==", "comment"=>{"notes"=>"damn homie", "responder_id"=>2, "post_id"=>4}}
+  [1m[35m (8.1ms)[0m  BEGIN
+  [1m[36mSQL (10.3ms)[0m  [1mINSERT INTO "comments" ("notes", "post_id", "responder_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["notes", "damn homie"], ["post_id", 4], ["responder_id", 2], ["created_at", "2015-11-13 14:04:30.504883"], ["updated_at", "2015-11-13 14:04:30.504883"]]
+  [1m[35m (8.6ms)[0m  COMMIT
+  Rendered comments/_comment.json.jbuilder (1.7ms)
+Completed 200 OK in 37ms (Views: 4.3ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-13 09:21:00 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (15.1ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-13 09:21:01 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (18.1ms)
+Completed 200 OK in 36ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-13 09:22:53 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (21.3ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-7f7160675db76b1e760c396e21344126946077d18e4362122e16680d7d06d96d.css?body=1" for ::1 at 2015-11-13 09:22:53 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 09:22:53 -0500
