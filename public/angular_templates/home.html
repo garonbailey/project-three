@@ -8,48 +8,50 @@
 
 <map zoom="14" center="40.7397, -73.9898" on-click="placeMarker()"></map>
 
+
+<div class="center-block">
+  <h2><small>{{ctrl.message}}</small></h2>
+</div>
+
 <div class="jumbotron">
   <div class="container">
-    <h1><small>{{ctrl.currentPost.id}}</small></h1>
+    <h1><small>Make a Report.</small></h1>
   </div>
 </div>
 
-
-		{{ctrl.message}}
-
-
 <div class="container">
-	 <div class="center-block">
-				 <div class="form-group">
-					 <form ng-submit="ctrl.newReport()">
-						 <input type="hidden" class="form-control" ng-model="ctrl.latitude">
-						 <input type="hidden" class="form-control" ng-model="ctrl.longitude">
-						 <textarea ng-model="ctrl.usernotes" class="form-control" placeholder="Details..."></textarea>
-							 	<div class="panel-group driving-license-settings" id="accordion">
-    				 			<div class="panel panel-default">
-        						<div class="panel-heading">
-             					<h4 class="panel-title">
-						 						<div class="checkbox">
-    				 							<label data-toggle="collapse" data-target="#collapse-form">
-        										<input type="checkbox"> Keep me posted.
-    											</label>
-												</div>
-											</h4>
-										</div>
-										<div id="collapse-form" class="panel-collapse collapse">
-											<div class="panel-body">
+	  <div class="center-block">
+				<div class="form-group">
+					<form ng-submit="ctrl.newReport()">
 
-													<input type"text" class="form-control input-lg" ng-model="ctrl.contactname" placeholder="Name">
-													<input type"text" class="form-control input-lg" ng-model="ctrl.contactemail" placeholder="Email">
-													<input type"text" class="form-control input-lg" ng-model="ctrl.contactphone" placeholder="Phone">
+						<input type="hidden" class="form-control" ng-model="ctrl.latitude">
+						<input type="hidden" class="form-control" ng-model="ctrl.longitude">
+						<textarea rows="6" ng-model="ctrl.usernotes" class="form-control" placeholder="Details..."></textarea><br/>
 
+							<div class="panel-group driving-license-settings" id="accordion">
+    				 		<div class="panel panel-default">
+        					<div class="panel-heading">
+             				<h3 class="panel-title">
+						 					<div class="checkbox">
+    				 						<label data-toggle="collapse" data-target="#collapse-form">
+        									<input type="checkbox"> <br/><br/> Keep me posted.
+    										</label>
 											</div>
+										</h3>
+									</div>
+									<div id="collapse-form" class="panel-collapse collapse">
+										<div class="panel-body">
+
+												<input type"text" class="form-control input-lg" ng-model="ctrl.contactname" placeholder="Name">
+												<input type"text" class="form-control input-lg" ng-model="ctrl.contactemail" placeholder="Email">
+												<input type"text" class="form-control input-lg" ng-model="ctrl.contactphone" placeholder="Phone">
+
 										</div>
 									</div>
 								</div>
-								<input type="submit" class="btn btn-default" value="Help Out">
-						 </div>
-				 </form>
-			 </div>
+							</div>
+							<input type="submit" class="btn btn-default" value="Help Out"><br/><br/>
+          </div>
+				</form>
 		</div>
 </div>

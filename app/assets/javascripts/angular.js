@@ -74,13 +74,12 @@ app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routePara
 	this.message = "Closed Posts Controller";
 }]);
 
-app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+app.controller('singlePostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var post = $routeParams.index;
 	var controller = this;
 
 	$http.get('/posts.json').success(function (data) {
 		controller.currentPost = data.posts[post];
-		console.log(controller.currentPost.id)
 
 		controller.getPostsComments(data.posts[post]);
 	});
@@ -93,19 +92,18 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 
 	controller.getPostsComments = function () {
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
-			controller.comments = commentData;
-			console.log(controller.comments);
+			$scope.comments = controller.comments = commentData;
 		})
 	};
 	controller.getPostsComments();
 }]);
 
-app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function ($http, $scope, $routeParams) {
+app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', '$location',
+function ($http, $scope, $routeParams, $location) {
 	var authenticity_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 	var controller = this;
 
 	controller.createComment = function () {
-		console.log("Let's make a comment");
 		$http.post('/comments', {
 			authenticity_token: authenticity_token,
 			comment: {
@@ -115,15 +113,13 @@ app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function 
 			}
 		}).
 		success(function (data) {
-			console.log(data);
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
-				console.log(controller.message);
 			} else {
 				controller.message = "New Comment Successful!";
 				controller.newCommentText = undefined;
-				console.log(controller.message);
+				$scope.$parent.comments.push(data.comment)
 			}
 		})
 	};

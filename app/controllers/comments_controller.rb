@@ -1,20 +1,20 @@
 class CommentsController < ApplicationController
 
-  def new
-    @comment = Comment.new  
-  end
-
   def index
     @comments = Comment.all
+  end
+
+  def show
+  end
+
+  def new
+    @comment = Comment.new
   end
 
   def create
     @comment = Comment.new(comment_params)
     @comment.save
-
-    # @user = User.find(@comment.responder_id)
-
-    render :json => @comment
+    render partial: 'comment'
   end
 
   def findbypost
@@ -22,15 +22,10 @@ class CommentsController < ApplicationController
     num = params[:id].to_i
 
     @commenty = Post.all[num].comments
-    puts "---------------------------"
-    puts @commenty
 
     respond_to do |format|
       format.json { render :json => @commenty }
     end
-    # @post_comments = Comment.find(params[:post_id])
-
-    # render 'posts/show', layout: 'angular'
   end
 
   private
