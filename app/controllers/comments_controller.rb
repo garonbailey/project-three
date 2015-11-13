@@ -12,7 +12,9 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.save
 
-    render 'posts/show', layout: 'angular'
+    # @user = User.find(@comment.responder_id)
+
+    render :json => @comment
   end
 
   def findbypost

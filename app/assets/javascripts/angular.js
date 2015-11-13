@@ -115,6 +115,7 @@ app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function 
 			}
 		}).
 		success(function (data) {
+			console.log(data);
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
