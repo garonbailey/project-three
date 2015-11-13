@@ -105,6 +105,7 @@ app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function 
 	var controller = this;
 
 	controller.createComment = function () {
+		console.log("Let's make a comment");
 		$http.post('/comments', {
 			authenticity_token: authenticity_token,
 			comment: {
