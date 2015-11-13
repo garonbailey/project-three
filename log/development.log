@@ -357,3 +357,32 @@ Completed 200 OK in 637ms (Views: 635.2ms | ActiveRecord: 0.5ms)
 
 
 Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-12 19:42:12 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-12 19:44:18 -0500
+Processing by ApplicationController#login as HTML
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "34XTSJzl_kMZH2cgIx4S9g"]]
+  Rendered login.html.erb (249.6ms)
+Completed 200 OK in 265ms (Views: 264.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/login.self-41c3e0f570c52a6f4fea16bb20f1486bdb289ea379efb94cbdc80fc9fd737175.css?body=1" for ::1 at 2015-11-12 19:44:19 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-12 19:44:19 -0500
+
+
+Started GET "/assets/login_bg.jpg" for ::1 at 2015-11-12 19:44:19 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-12 19:46:03 -0500
+Processing by ApplicationController#login as HTML
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "34XTSJzl_kMZH2cgIx4S9g"]]
+  Rendered login.html.erb (2327.6ms)
+Completed 200 OK in 2343ms (Views: 2342.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/login.self-5bb8926f8cad4fb281152231b3512b91e8e92d9eb02781e5bedbdab51370996f.css?body=1" for ::1 at 2015-11-12 19:46:06 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-12 19:46:06 -0500
