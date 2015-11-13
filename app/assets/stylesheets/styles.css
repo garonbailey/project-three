@@ -10,7 +10,7 @@ html {
   position: relative;
   min-height: 100%;
   font-size: 12px;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -222,7 +222,7 @@ h3 {
 }
 
 .nav>li>a {
-  padding: 10px 10px;
+  padding: 20px 10px;
   color: #f1f1f1;
 }
 
@@ -258,6 +258,7 @@ h3 {
 
 .panel-collapse {
   text-align: center;
+  overflow: hidden;
 }
 
 /*media queries*/
