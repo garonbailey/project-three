@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -15,32 +25,17 @@ html {
 
 body {
   padding-top: 67px;
-  margin-bottom: 30px;
+  background-color: #fdfdfd;
 }
 
-.footer {
-	background-color: #f5f5f5;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
-	box-sizing: border-box;
+footer {
+	background-color: #404040;
+  border-top: 5px solid lightgrey;
 	width: 100%;
 	text-align: center;
-	font: normal 18px sans-serif;
-	padding: 25px;
-  height: 180px;
-}
-
-.footer .footer-links{
-	list-style: none;
-	font-weight: bold;
-	color:  #ffffff;
-	padding: 35px 0 23px;
-	margin: 0;
-}
-
-.footer .footer-links a{
-	display:inline-block;
-	text-decoration: none;
-	color: inherit;
+	font-size: 12px;
+  color: #999;
+	padding: 10px;
 }
 
 header {
@@ -80,7 +75,7 @@ form, .formish {
 }
 
 .form-control {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #fbfbfb;
 }
 
 .input-lg, .panel-body, .panel-heading, .panel-default, .form-control {
@@ -89,13 +84,14 @@ form, .formish {
 
 .panel > .panel-heading {
   background-image: none;
-  background-color: white;
-  color: #666;
+  background-color: #fdfdfd;
+  color: #404040;
 }
 
 .center-block {
   width: 50%;
   margin: 0 auto;
+  text-align: center;
 }
 
 hr.fade {
@@ -115,17 +111,6 @@ a:hover{
   opacity: .5;
 }
 
-.col-md-4 {
-  padding-top: 20px;
-}
-
-.col-md-4 img {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 .list-group-item {
   width: 50%;
   margin: 0 auto;
@@ -134,8 +119,9 @@ a:hover{
 .jumbotron {
   padding: 10px 20px 10px 20px;
   border-radius: 0 !important;
-  background-color: #fff;
+  background-color: #fdfdfd;
   text-align: center;
+  color: #999;
 }
 
 textarea {
@@ -148,13 +134,14 @@ h3 {
 
 .btn {
   padding: 10px 20px;
+  font-size: 16px;
   font-weight: 300;
   text-transform: none;
   display: inline-block;
   text-align: center;
   width: 100%;
   border-radius: 0;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #eeeeee;
 }
 
 .btn-group {
@@ -162,15 +149,15 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: white;
-  color: #666;
-  border: 1px solid #f1f1f1;
+  background-color: #fdfdfd;
+  color: #999;
+  border: 1px solid #eeeeee;
 }
 
 .btn-primary.active, .btn-primary.active:hover{
   background-color: orange;
-  color: #666;
-  border: 1px solid #f1f1f1;
+  color: #999;
+  border: 1px solid #eeeeee;
 }
 
 .btn-default {
@@ -179,13 +166,13 @@ h3 {
 
 .btn-default:hover {
   color: orange;
-  background-color: white;
-  border-color: #f1f1f1;
+  background-color: #fdfdfd;
+  border-color: #eeeeee;
 }
 
 .btn-primary {
-  background-color: white;
-  color: #666;
+  background-color: #fdfdfd;
+  color: #999;
 }
 
 .page-header {
@@ -200,7 +187,7 @@ h3 {
 .navbar-collapse {
   max-height: 340px;
   border: .5px;
-  border-color: #f1f1f1;
+  border-color: #fbfbfb;
 }
 
 .collapse.in {
@@ -210,15 +197,15 @@ h3 {
 
 .nav>li>a {
   padding: 20px 10px;
-  color: #f1f1f1;
+  color: #fdfdfd;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #f1f1f1;
+  color: #fdfdfd;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #f2f2f2;
+  color: #fbfbfb;
 }
 
 .navbar-toggle {
@@ -258,25 +245,4 @@ h3 {
   map {
     height: 300px;
   }
-
-	.footer {
-		padding: 35px;
-	}
-
-	.footer .footer-headline{
-		font-size: 18px;
-	}
-
-	.footer .footer-helpout{
-		font-size: 12px;
-	}
-
-	.footer .footer-links{
-		font-size: 14px;
-		padding: 25px 0 20px;
-	}
-
-	.footer .footer-links a{
-		line-height: 1.8;
-	}
 }

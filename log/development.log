@@ -542,3 +542,1642 @@ Processing by CommentsController#findbypost as JSON
   [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
   [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 23]]
 Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:18:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (3.5ms)
+Completed 500 Internal Server Error in 302ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( styles.css )` to `config/initializers/assets.rb` and restart your server):
+     8:   <script src="https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"></script>
+     9:   <script src="https://code.angularjs.org/1.4.7/angular-route.js" charset="utf-8"></script>
+    10:   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,900,700' rel='stylesheet' type='text/css'>
+    11:   <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+    12:   <%= javascript_include_tag "ng-map.js" %>
+    13:   <%= csrf_meta_tags %>
+    14:   <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" %>
+  app/views/layouts/angular.html.erb:11:in `_app_views_layouts_angular_html_erb__1239168109645037922_70115927955940'
+  app/controllers/application_controller.rb:10:in `angular'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (154.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (221.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (389.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:19:56 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( styles.css )` to `config/initializers/assets.rb` and restart your server):
+     8:   <script src="https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"></script>
+     9:   <script src="https://code.angularjs.org/1.4.7/angular-route.js" charset="utf-8"></script>
+    10:   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,900,700' rel='stylesheet' type='text/css'>
+    11:   <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+    12:   <%= javascript_include_tag "ng-map.js" %>
+    13:   <%= csrf_meta_tags %>
+    14:   <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" %>
+  app/views/layouts/angular.html.erb:11:in `_app_views_layouts_angular_html_erb__1239168109645037922_70115927955940'
+  app/controllers/application_controller.rb:10:in `angular'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.0ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (133.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (111.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (251.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:20:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (1.9ms)
+Completed 200 OK in 334ms (Views: 316.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:20:07 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:20:08 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:20:08 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:20:08 -0500
+
+
+Started GET "/assets/styles.self-452ea3a2c98e57d59d13c184a36ae56d39dd4ea43fe93c470a87db0488bc2e69.css?body=1" for ::1 at 2015-11-13 01:20:08 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 01:20:12 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (88.8ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 01:20:12 -0500
+
+
+Started GET "/assets/login.self-63f2463ef69bf2e697d42e1fb718375553ef6a7c90684dcb1cbd04d6beb6ecb5.css?body=1" for ::1 at 2015-11-13 01:20:12 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 01:20:12 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 01:20:20 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (26.8ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:20:25 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:22:04 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:22:04 -0500
+
+
+Started GET "/assets/styles.self-b47ca330778d32690ad266bebc7602f413d9cc43ff95eff93a059137e565f187.css?body=1" for ::1 at 2015-11-13 01:22:04 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:22:04 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:22:04 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:22:04 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:22:20 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-7560fec9646dc1b41fdbe255486a6bd869ffd9406f650bd12d32553072011277.css?body=1" for ::1 at 2015-11-13 01:22:21 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:22:21 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:22:21 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:22:21 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:22:21 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:22:33 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 86ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:22:33 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:22:33 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:22:33 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:22:33 -0500
+
+
+Started GET "/assets/styles.self-340e9e8553836da8bb00bd0de0043a20e022106c2fdf1a356a644963fb944d72.css?body=1" for ::1 at 2015-11-13 01:22:33 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:22:51 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:22:51 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:22:51 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:22:51 -0500
+
+
+Started GET "/assets/styles.self-2257660443caa66dd5a1d2bd6d875e4d530658e130be8f07632124ad8343cabe.css?body=1" for ::1 at 2015-11-13 01:22:51 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:22:51 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:23:31 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:23:31 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:23:31 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:23:31 -0500
+
+
+Started GET "/assets/styles.self-f13765a24ae81af10923e8b83cd694156ae23aace0f2a03537affeeb72401ac7.css?body=1" for ::1 at 2015-11-13 01:23:31 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:23:31 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:23:52 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:23:52 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:23:52 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:23:52 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:23:52 -0500
+
+
+Started GET "/assets/styles.self-4f7fdb45ff8768ec851dd0cac86df6e27997b1643e88083555f0832a0bd2f375.css?body=1" for ::1 at 2015-11-13 01:23:52 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:24:36 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 83ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-7b2865b734de1930658009b1b95fd5dc344ced7f1653a2416f59387bc89fb70c.css?body=1" for ::1 at 2015-11-13 01:24:36 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:24:36 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:24:36 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:24:36 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:24:36 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:25:41 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:25:41 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:25:41 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:25:41 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:25:41 -0500
+
+
+Started GET "/assets/styles.self-f55d285a2ddb4a6f59fe5c38e44a0ea77e8fbd4d258402a074850ae2435af7ef.css?body=1" for ::1 at 2015-11-13 01:25:41 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:25:54 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:25:54 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:25:54 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:25:54 -0500
+
+
+Started GET "/assets/styles.self-7f3a5fa6a5ca1dc48eefec0c649669b6eb21b8db8dd2fc0885a21379d3c8f745.css?body=1" for ::1 at 2015-11-13 01:25:54 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:25:54 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:26:24 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:26:24 -0500
+
+
+Started GET "/assets/styles.self-34953a5cf6bd0ec58b8b7e61767e33fe06708be8ac89036701a455d8c752809e.css?body=1" for ::1 at 2015-11-13 01:26:24 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:26:24 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:26:24 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:26:24 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:27:25 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-b19653ff8dd2fe9bedd012bdb1cb250578b543a4bc32bd2f91450c3ae9d8ad34.css?body=1" for ::1 at 2015-11-13 01:27:25 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:27:25 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:27:25 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:27:25 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:27:25 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 01:27:59 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (17.6ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for ::1 at 2015-11-13 01:28:04 -0500
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"YKIsIeSFxlfSTFfMHI/Vewg406hNs5aqIVTL4OcGNJWj7MS4rXWkddPpU7JWQmql9Qet26cobdRaOm7qoMgtjA==", "responder"=>{"username"=>"user2", "password"=>"[FILTERED]"}}
+  [1m[35mResponder Load (3.0ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."username" = $1 LIMIT 1  [["username", "user2"]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mResponder Exists (0.9ms)[0m  SELECT  1 AS one FROM "responders" WHERE ("responders"."username" = 'user2' AND "responders"."id" != 2) LIMIT 1
+  [1m[36mSQL (2.6ms)[0m  [1mUPDATE "responders" SET "session_token" = $1, "updated_at" = $2 WHERE "responders"."id" = $3[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"], ["updated_at", "2015-11-13 06:28:04.794812"], ["id", 2]]
+  [1m[35m (183.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 379ms (ActiveRecord: 206.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-13 01:28:04 -0500
+Processing by PostsController#index as HTML
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.6ms)
+Completed 200 OK in 68ms (Views: 59.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:28:05 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (1.0ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (70.1ms)
+Completed 200 OK in 111ms (Views: 102.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:28:07 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (3.1ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (53.8ms)
+Completed 200 OK in 91ms (Views: 83.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 01:28:07 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (2.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 56]]
+Completed 200 OK in 92ms (Views: 11.0ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:28:08 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.9ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 01:28:08 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (1.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 56]]
+Completed 200 OK in 18ms (Views: 8.4ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/comments" for ::1 at 2015-11-13 01:28:15 -0500
+Processing by CommentsController#create as JSON
+  Parameters: {"authenticity_token"=>"kwIMiqnMN2C0fUY4JsJekyntN/8y+h5uf19QqUyMyk1QTOQT4DxVQrXYQkZsD+FN1NJJjNhh5RAEMfWjC0LTVA==", "comment"=>{"notes"=>"another one", "responder_id"=>2, "post_id"=>56}}
+  [1m[36m (2.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "comments" ("notes", "post_id", "responder_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["notes", "another one"], ["post_id", 56], ["responder_id", 2], ["created_at", "2015-11-13 06:28:16.001567"], ["updated_at", "2015-11-13 06:28:16.001567"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 9.1ms)
+
+ActionView::MissingTemplate (Missing template posts/show with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sean/src/project-three/project-three/app/views"
+):
+  app/controllers/comments_controller.rb:18:in `create'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (135.0ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fadbbd77f88 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fadbbd77c18 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fadbbd6f4c8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/posts/45" for ::1 at 2015-11-13 01:32:44 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 45]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=45):
+  app/controllers/posts_controller.rb:28:in `show'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.1ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (112.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (254.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:32:51 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/styles.self-6ae6d04916277a73b07840d30c4affac33824ecb3ba7dbf27e143748a5b5bbf8.css?body=1" for ::1 at 2015-11-13 01:32:51 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:33:23 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.0ms)
+  [1m[35mResponder Load (0.7ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:33:24 -0500
+
+
+Started GET "/assets/styles.self-6ae6d04916277a73b07840d30c4affac33824ecb3ba7dbf27e143748a5b5bbf8.css?body=1" for ::1 at 2015-11-13 01:33:24 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:33:24 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:33:24 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:33:24 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:39:53 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:39:54 -0500
+
+
+Started GET "/assets/styles.self-b8a70ea4e65aea04b1ed19dec8354aabaff9b52167f8cb1071e21e184145a9a9.css?body=1" for ::1 at 2015-11-13 01:39:54 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:39:54 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:39:54 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:39:54 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:40:34 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (1.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (31.6ms)
+Completed 200 OK in 64ms (Views: 58.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:40:39 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (12.2ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (7.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (107.9ms)
+Completed 200 OK in 159ms (Views: 137.1ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:40:39 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.5ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:40:39 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (4.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:40:40 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (3.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/posts/6" for ::1 at 2015-11-13 01:43:36 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/show.html.erb within layouts/angular (0.5ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:43:36 -0500
+
+
+Started GET "/assets/styles.self-cdee712abcd362d7cac165f19a017df935c908e67bebd8eaed1eee3da5e290f0.css?body=1" for ::1 at 2015-11-13 01:43:36 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:43:36 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:43:36 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:43:36 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:43:37 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (2.0ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (50.1ms)
+Completed 200 OK in 90ms (Views: 83.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:43:37 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.5ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:43:37 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (6.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:43:37 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (1.9ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/6" for ::1 at 2015-11-13 01:44:16 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/show.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 100ms (Views: 92.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:44:16 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:44:16 -0500
+
+
+Started GET "/assets/styles.self-5baa1edb8754fa9e45441ecff9e05c3c8b8cf664ea66a37af85c3b45b4192c63.css?body=1" for ::1 at 2015-11-13 01:44:16 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:44:16 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:44:16 -0500
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:44:16 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:44:17 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (42.9ms)
+Completed 200 OK in 76ms (Views: 69.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:44:17 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (1.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:44:17 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (1.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/6" for ::1 at 2015-11-13 01:46:44 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mResponder Load (0.3ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/show.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 108ms (Views: 103.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:46:44 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:46:44 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:46:44 -0500
+
+
+Started GET "/assets/styles.self-41e72ecc302bba17e1e2ef4dc92334a7aafc33918b44e6192a7999496bbb46c4.css?body=1" for ::1 at 2015-11-13 01:46:44 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:46:44 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:46:45 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (3.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (38.9ms)
+Completed 200 OK in 74ms (Views: 67.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:46:45 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (4.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:46:45 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:46:45 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/6" for ::1 at 2015-11-13 01:48:12 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mResponder Load (0.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/show.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 63ms (Views: 58.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/styles.self-41e72ecc302bba17e1e2ef4dc92334a7aafc33918b44e6192a7999496bbb46c4.css?body=1" for ::1 at 2015-11-13 01:48:12 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:48:13 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:48:13 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:48:13 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:48:13 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:48:13 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (2.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (2.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (44.5ms)
+Completed 200 OK in 96ms (Views: 88.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:48:13 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (2.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:48:13 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (1.0ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:48:13 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (1.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 7]]
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/6" for ::1 at 2015-11-13 01:48:41 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mResponder Load (0.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/show.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:48:41 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:48:41 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:48:41 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:48:41 -0500
+
+
+Started GET "/assets/styles.self-41e72ecc302bba17e1e2ef4dc92334a7aafc33918b44e6192a7999496bbb46c4.css?body=1" for ::1 at 2015-11-13 01:48:41 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:48:41 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (2.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (69.7ms)
+Completed 200 OK in 115ms (Views: 108.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 01:48:42 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:48:42 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/comments_all/6" for ::1 at 2015-11-13 01:48:42 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.9ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:48:49 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:50:00 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-41e72ecc302bba17e1e2ef4dc92334a7aafc33918b44e6192a7999496bbb46c4.css?body=1" for ::1 at 2015-11-13 01:50:00 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:50:00 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:50:00 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:50:00 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:50:00 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:50:52 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-41e72ecc302bba17e1e2ef4dc92334a7aafc33918b44e6192a7999496bbb46c4.css?body=1" for ::1 at 2015-11-13 01:50:52 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:50:52 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:50:52 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:50:52 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:50:52 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:52:37 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 89ms (Views: 87.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:52:37 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:52:37 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:52:37 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:52:37 -0500
+
+
+Started GET "/assets/styles.self-38337eada3fe926fbf80b68a325644e2e16054b54d948c271f95c3e43c72cd65.css?body=1" for ::1 at 2015-11-13 01:52:37 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:53:36 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.9ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 103ms (Views: 101.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:53:36 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:53:36 -0500
+
+
+Started GET "/assets/styles.self-64485c09e0aea31090ddac64790844fd406447d5f73aea7236bc7f3fab95e5f8.css?body=1" for ::1 at 2015-11-13 01:53:36 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:53:36 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:53:36 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:55:56 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-38337eada3fe926fbf80b68a325644e2e16054b54d948c271f95c3e43c72cd65.css?body=1" for ::1 at 2015-11-13 01:55:56 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:55:56 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:55:56 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:55:56 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:55:56 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-13 01:56:52 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"latitude"=>40.727876687858114, "longitude"=>-73.98528099060059, "usernotes"=>"must be tripping on acid", "contactname"=>"Donny", "contactemail"=>"db@gmail.com", "contactphone"=>"718 uh I forgot"}}
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "posts" ("latitude", "longitude", "usernotes", "contactname", "contactemail", "contactphone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["latitude", 40.727876687858114], ["longitude", -73.98528099060059], ["usernotes", "must be tripping on acid"], ["contactname", "Donny"], ["contactemail", "db@gmail.com"], ["contactphone", "718 uh I forgot"], ["created_at", "2015-11-13 06:56:52.492298"], ["updated_at", "2015-11-13 06:56:52.492298"]]
+  [1m[35m (10.5ms)[0m  COMMIT
+  Rendered posts/_post.json.jbuilder (1.9ms)
+Completed 200 OK in 32ms (Views: 6.1ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:58:08 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:58:08 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:58:09 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:58:09 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:58:09 -0500
+
+
+Started GET "/assets/styles.self-da7baf10874ae1f6c4b2fe25c1ecff54d1b7b3ecc3633b4cd0608a2377ea85bb.css?body=1" for ::1 at 2015-11-13 01:58:09 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:58:23 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-366919a230d1eeb2ca960a82d20109d2377dcf3263dc7c41dd758349d51fae03.css?body=1" for ::1 at 2015-11-13 01:58:23 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:58:23 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:58:23 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:58:23 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:58:23 -0500
+
+
+Started POST "/posts" for ::1 at 2015-11-13 01:58:33 -0500
+Processing by PostsController#create as JSON
+  Parameters: {"post"=>{"usernotes"=>"ate too many mushrooms"}}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  Rendered posts/_post.json.jbuilder (0.5ms)
+Completed 200 OK in 12ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 01:58:51 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.8ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:58:52 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:58:52 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:58:52 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:58:52 -0500
+
+
+Started GET "/assets/styles.self-490daf3b8d94ccb1bbcb29a9054e84b017ed012dfa2c234e346e6b48f9262094.css?body=1" for ::1 at 2015-11-13 01:58:52 -0500
+
+
+Started GET "/" for ::1 at 2015-11-13 01:59:13 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.6ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 01:59:13 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 01:59:13 -0500
+
+
+Started GET "/assets/styles.self-366919a230d1eeb2ca960a82d20109d2377dcf3263dc7c41dd758349d51fae03.css?body=1" for ::1 at 2015-11-13 01:59:13 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 01:59:13 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 01:59:13 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 01:59:30 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (38.9ms)
+Completed 200 OK in 79ms (Views: 73.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:01:28 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (2.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (28.3ms)
+Completed 200 OK in 62ms (Views: 54.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:01:30 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (3.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (47.1ms)
+Completed 200 OK in 117ms (Views: 109.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:01:30 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.7ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/comments_all/0" for ::1 at 2015-11-13 02:01:30 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"0"}
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/comments_all/0" for ::1 at 2015-11-13 02:01:30 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"0"}
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/0" for ::1 at 2015-11-13 02:02:47 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=0):
+  app/controllers/posts_controller.rb:28:in `show'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.0ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (114.2ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (269.1ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-13 02:02:54 -0500
+Processing by PostsController#index as HTML
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:02:54 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (3.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (42.2ms)
+Completed 200 OK in 87ms (Views: 80.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:02:56 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (7.0ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (2.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (41.8ms)
+Completed 200 OK in 89ms (Views: 76.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:02:56 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (1.8ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.5ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/comments_all/13" for ::1 at 2015-11-13 02:02:56 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"13"}
+  [1m[36mPost Load (1.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/comments_all/13" for ::1 at 2015-11-13 02:02:57 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"13"}
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 14]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-13 02:03:17 -0500
+Processing by PostsController#index as HTML
+  [1m[36mResponder Load (0.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:03:17 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (0.9ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (34.9ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-13 02:03:19 -0500
+Processing by PostsController#index as HTML
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-366919a230d1eeb2ca960a82d20109d2377dcf3263dc7c41dd758349d51fae03.css?body=1" for ::1 at 2015-11-13 02:03:20 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 02:03:20 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 02:03:20 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 02:03:20 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 02:03:20 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:03:20 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (28.3ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:03:23 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:03:23 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (3.2ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (36.1ms)
+Completed 200 OK in 76ms (Views: 67.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/comments_all/9" for ::1 at 2015-11-13 02:03:23 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 10]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/comments_all/9" for ::1 at 2015-11-13 02:03:23 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (1.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 10]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 02:05:11 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-366919a230d1eeb2ca960a82d20109d2377dcf3263dc7c41dd758349d51fae03.css?body=1" for ::1 at 2015-11-13 02:05:11 -0500
+
+
+Started GET "/assets/ng-map.self-28ae5501cf006b27e7b0ce8216e0a8df92eb35f34d4bed8b2c88aa6c479b9204.js?body=1" for ::1 at 2015-11-13 02:05:11 -0500
+
+
+Started GET "/assets/scroll.self-0b02c425920e1930c44ad516fe0cd97efbbc6b364684f7175e2eed31eeb7cf71.js?body=1" for ::1 at 2015-11-13 02:05:11 -0500
+
+
+Started GET "/assets/angular.self-871e303c95990595262832b75d7874adf66e58b1974f2ab80d534d0f21f30356.js?body=1" for ::1 at 2015-11-13 02:05:11 -0500
+
+
+Started GET "/assets/helpout_logo_header-6ece413dba533055dbc21649a99aa698e20bb64524c79cdadf569dcf153cde9f.png" for ::1 at 2015-11-13 02:05:11 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:05:19 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.6ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (38.7ms)
+Completed 200 OK in 84ms (Views: 79.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:05:23 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (0.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (52.5ms)
+Completed 200 OK in 90ms (Views: 82.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:05:23 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (1.0ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.5ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:05:23 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (1.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 56]]
+Completed 200 OK in 33ms (Views: 21.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:05:24 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 56]]
+Completed 200 OK in 37ms (Views: 10.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/45" for ::1 at 2015-11-13 02:11:55 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 45]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=45):
+  app/controllers/posts_controller.rb:28:in `show'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (132.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (117.2ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (259.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-13 02:12:01 -0500
+Processing by ApplicationController#angular as HTML
+  Rendered application/angular.html.erb within layouts/angular (0.1ms)
+  [1m[36mResponder Load (0.5ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/styles.self-df465ecf0e4a121266554b6f64640e10136834fe9a2f302cc7d93bd71e059aaa.css?body=1" for ::1 at 2015-11-13 02:12:01 -0500
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:12:10 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (6.9ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (1.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (56.9ms)
+Completed 200 OK in 107ms (Views: 95.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:12:17 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (5.2ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (39.2ms)
+Completed 200 OK in 78ms (Views: 68.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:12:17 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:12:17 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[36mPost Load (16.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 56]]
+Completed 200 OK in 36ms (Views: 9.3ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:12:17 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (3.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 56]]
+Completed 200 OK in 18ms (Views: 7.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/posts/45" for ::1 at 2015-11-13 02:13:43 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 45]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=45):
+  app/controllers/posts_controller.rb:28:in `show'
+
+
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.9ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (115.4ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/sean/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (256.8ms)
+
+
+Started GET "/posts" for ::1 at 2015-11-13 02:13:46 -0500
+Processing by PostsController#index as HTML
+  [1m[35mResponder Load (0.5ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered posts/index.html.erb within layouts/angular (0.1ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:13:47 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (6.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (50.2ms)
+Completed 200 OK in 86ms (Views: 76.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:13:50 -0500
+Processing by PostsController#index as JSON
+  [1m[36mResponder Load (1.4ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.json.jbuilder (140.2ms)
+Completed 200 OK in 182ms (Views: 176.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:13:51 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[36mResponder Load (0.9ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1[0m  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.5ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:13:51 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (2.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 56]]
+Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:13:51 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (1.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 56]]
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts.json" for ::1 at 2015-11-13 02:14:36 -0500
+Processing by PostsController#index as JSON
+  [1m[35mResponder Load (9.4ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.json.jbuilder (37.5ms)
+Completed 200 OK in 85ms (Views: 72.5ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:14:36 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[35mPost Load (3.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 56]]
+Completed 200 OK in 20ms (Views: 7.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/session.json" for ::1 at 2015-11-13 02:14:36 -0500
+Processing by SessionController#current_responder as JSON
+  [1m[35mResponder Load (0.7ms)[0m  SELECT  "responders".* FROM "responders" WHERE "responders"."session_token" = $1 LIMIT 1  [["session_token", "48lffDkDzx55PJZ-q84OTQ"]]
+  Rendered session/current_responder.json.jbuilder (0.4ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/comments_all/45" for ::1 at 2015-11-13 02:14:36 -0500
+Processing by CommentsController#findbypost as JSON
+  Parameters: {"id"=>"45"}
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 56]]
+Completed 200 OK in 38ms (Views: 24.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/logout" for ::1 at 2015-11-13 02:15:33 -0500
+Processing by SessionController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:15:33 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (68.7ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-9f90681dd773d4f244aa486db6bd36e21447d9ca8095ef66a661c0800281597a.css?body=1" for ::1 at 2015-11-13 02:15:33 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:16:27 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (18.1ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:16:27 -0500
+
+
+Started GET "/assets/login.self-9f90681dd773d4f244aa486db6bd36e21447d9ca8095ef66a661c0800281597a.css?body=1" for ::1 at 2015-11-13 02:16:27 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:16:44 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (17.7ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-9f90681dd773d4f244aa486db6bd36e21447d9ca8095ef66a661c0800281597a.css?body=1" for ::1 at 2015-11-13 02:16:44 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:16:44 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:17:58 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (55.2ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-d18725c867fd931744344e0693c5699551a30930d517eb3c8089bec074b91df0.css?body=1" for ::1 at 2015-11-13 02:17:58 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:17:58 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 02:17:58 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:18:00 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (17.0ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-d18725c867fd931744344e0693c5699551a30930d517eb3c8089bec074b91df0.css?body=1" for ::1 at 2015-11-13 02:18:00 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:18:00 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:18:32 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (55.9ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:18:32 -0500
+
+
+Started GET "/assets/login.self-4e0b2365a16e4d1adb2c2588eae74a5d9ddd6191e5fd019f1d7d3ff3dca8ffed.css?body=1" for ::1 at 2015-11-13 02:18:32 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 02:18:33 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:19:14 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (53.6ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-5a9208c5148f7803b433e9b78de824eb552a72edaa89b07a161b46f53c594513.css?body=1" for ::1 at 2015-11-13 02:19:14 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:19:14 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 02:19:14 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:19:35 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (69.5ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-d4ebf452d36005f2de78687a88a156f70e968b5447088201500f8485613a1f8f.css?body=1" for ::1 at 2015-11-13 02:19:36 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:19:36 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 02:19:36 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:21:34 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (56.9ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:21:34 -0500
+
+
+Started GET "/assets/login.self-92d824025d4e6dc666c13eb6c55f52dbd2c366e57ce0c6a2b4915a329a8761a0.css?body=1" for ::1 at 2015-11-13 02:21:34 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 02:21:34 -0500
+
+
+Started POST "/session" for ::1 at 2015-11-13 02:21:40 -0500
+Processing by SessionController#create as HTML
+  Parameters: {"authenticity_token"=>"yvUNdziResh55UVy6lZN0RYfHgy8B/t4feaW7OijSdsJu+XucWEY6nhAQQygm/IP6yBgf1acAAYGiDPmr21Qwg==", "responder"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mResponder Load (1.3ms)[0m  [1mSELECT  "responders".* FROM "responders" WHERE "responders"."username" = $1 LIMIT 1[0m  [["username", ""]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:21:40 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (21.1ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:21:52 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (20.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:21:52 -0500
+
+
+Started GET "/assets/login.self-92d824025d4e6dc666c13eb6c55f52dbd2c366e57ce0c6a2b4915a329a8761a0.css?body=1" for ::1 at 2015-11-13 02:21:52 -0500
+
+
+Started GET "/login" for ::1 at 2015-11-13 02:23:00 -0500
+Processing by ApplicationController#login as HTML
+  Rendered login.html.erb (66.7ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-7f7160675db76b1e760c396e21344126946077d18e4362122e16680d7d06d96d.css?body=1" for ::1 at 2015-11-13 02:23:00 -0500
+
+
+Started GET "/assets/helpout_logo_w-b1b62e2f32ee3d30428ee137f6c886b5ab54ff63f011416265844f851152c99e.png" for ::1 at 2015-11-13 02:23:00 -0500
+
+
+Started GET "/assets/bahhhhhh-fe2529edf287abe76ccf9ca24e2f46f5ae8425c28881d494c06d26f3ee6dcfbf.jpg" for ::1 at 2015-11-13 02:23:00 -0500

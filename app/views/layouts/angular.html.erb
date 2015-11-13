@@ -17,10 +17,9 @@
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
 
-
   <base href="/">
 </head>
-<body>
+<body class="Site">
 <header class="nav-down">
   <nav class="navbar navbar-default">
       <div class="navbar-header">
@@ -47,13 +46,13 @@
          </div>
     </nav>
 </header>
-
+<main class="Site-content">
 
   <%= yield %>
 
-
-<footer class="footer">
-  <p class="footer-helpout">
+</main>
+<footer>
+  <p>
     <br/><a href="/"><%= image_tag "helpout_logo_header.png" %></a>
     <br/><br/> &copy; '93 'til
   </p>

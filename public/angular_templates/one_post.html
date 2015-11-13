@@ -2,17 +2,14 @@
   <marker position="[{{ctrl.currentPost.latitude}}, {{ctrl.currentPost.longitude}}]"></marker>
 </map>
 
-<div class="jumbotron">
-  <div class="container">
-    <h2>Report # {{ctrl.currentPost.id}} <br/>
-    <small>Filed {{ctrl.currentPost.created_at}} </small></h2>
-  </div>
+<div class="center-block">
+   <h2><small>{{ctrl.message}}</small></h2>
 </div>
 
 <div class="jumbotron">
   <div class="container">
-      <h2><small>{{ctrl.message}}</small></h2>
-    </div>
+    <h2>Report # {{ctrl.currentPost.id}} <br/>
+    <small>Filed {{ctrl.currentPost.created_at}} </small></h2>
   </div>
 </div>
 
@@ -42,11 +39,7 @@
         </div>
      </form>
    </div>
- </div>
-</div>
 
-<div class="container">
-  <div class="center-block">
     <div class="form-group">
       <div class="formish">
         <div class="panel panel-default">
@@ -79,18 +72,15 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="container">
-  <div class="center-block">
     <div ng-controller="postCommentsCtrl as commentsCtrl">
       <div class="form-group">
          <form ng-submit="commentsCtrl.createComment()">
             <textarea class="form-control" rows="6" ng-model="commentsCtrl.newCommentText" placeholder="Your comment...">
-            </textarea>
-            <input type="submit" class="btn btn-default" value="Submit" /><br/>
+            </textarea><br/>
+            <input type="submit" class="btn btn-default" value="Submit" /><br/><br/>
           </form>
       </div>
     </div>
   </div>
+</div>

@@ -8,19 +8,16 @@
 
 <map zoom="14" center="40.7397, -73.9898" on-click="placeMarker()"></map>
 
-<div class="jumbotron">
-  <div class="container">
-    <h1><small>{{ctrl.currentPost.id}}</small></h1>
-  </div>
-</div>
 
-<div class="jumbotron">
-  <div class="container">
+  <div class="center-block">
       <h2><small>{{ctrl.message}}</small></h2>
-    </div>
+  </div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1><small>Make a Report.</small></h1>
   </div>
 </div>
-
 
 <div class="container">
 	 <div class="center-block">
@@ -28,7 +25,7 @@
 					 <form ng-submit="ctrl.newReport()">
 						 <input type="hidden" class="form-control" ng-model="ctrl.latitude">
 						 <input type="hidden" class="form-control" ng-model="ctrl.longitude">
-						  <textarea rows="6" ng-model="ctrl.usernotes" class="form-control" placeholder="Details..."></textarea>
+						  <textarea rows="6" ng-model="ctrl.usernotes" class="form-control" placeholder="Details..."></textarea><br/>
 							 	<div class="panel-group driving-license-settings" id="accordion">
     				 			<div class="panel panel-default">
         						<div class="panel-heading">
@@ -51,7 +48,7 @@
 										</div>
 									</div>
 								</div>
-								<input type="submit" class="btn btn-default" value="Help Out">
+								<input type="submit" class="btn btn-default" value="Help Out"><br/><br/>
              </div>
 				</form>
 		</div>
