@@ -1,18 +1,21 @@
 class CommentsController < ApplicationController
 
-  def new
-    @comment = Comment.new  
-  end
-
   def index
     @comments = Comment.all
+  end
+
+  def show
+  end
+
+  def new
+    @comment = Comment.new
   end
 
   def create
     @comment = Comment.new(comment_params)
     @comment.save
 
-    render 'posts/show', layout: 'angular'
+    render partial: 'comment'
   end
 
   def findbypost

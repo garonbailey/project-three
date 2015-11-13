@@ -74,7 +74,7 @@ app.controller('closedPostsCtrl', ['$routeParams', '$http', function ($routePara
 	this.message = "Closed Posts Controller";
 }]);
 
-app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParams, $http) {
+app.controller('singlePostCtrl', ['$routeParams', '$http', '$scope', function ($routeParams, $http, $scope) {
 	var post = $routeParams.index;
 	var controller = this;
 
@@ -93,14 +93,15 @@ app.controller('singlePostCtrl', ['$routeParams', '$http', function ($routeParam
 
 	controller.getPostsComments = function () {
 		$http.get('/comments_all/' + $routeParams.index).success(function (commentData) {
-			controller.comments = commentData;
+			$scope.comments = controller.comments = commentData;
 			console.log(controller.comments);
 		})
 	};
 	controller.getPostsComments();
 }]);
 
-app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function ($http, $scope, $routeParams) {
+app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', '$location',
+function ($http, $scope, $routeParams, $location) {
 	var authenticity_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 	var controller = this;
 
@@ -115,14 +116,17 @@ app.controller('postCommentsCtrl', ['$http', '$scope', '$routeParams', function 
 			}
 		}).
 		success(function (data) {
+			console.log("I'm in the success function for creating a comment!");
 			if (data.errors) {
 				controller.error = data.errors;
 				controller.message = "Error submitting comment. Please try again.";
 				console.log(controller.message);
 			} else {
+				console.log(data);
 				controller.message = "New Comment Successful!";
 				controller.newCommentText = undefined;
 				console.log(controller.message);
+				$scope.$parent.comments.push(data.comment)
 			}
 		})
 	};

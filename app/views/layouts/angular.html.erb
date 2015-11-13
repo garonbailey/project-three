@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=" + ENV['GOOGLE_MAP'] + "&callback=initMap"></script>
   <script src="https://code.angularjs.org/1.4.7/angular-route.js" charset="utf-8"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,900,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag "ng-map.js" %>
   <%= csrf_meta_tags %>
@@ -15,9 +16,10 @@
   <%= javascript_include_tag 'scroll', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
   <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+
   <base href="/">
 </head>
-<body>
+<body class="Site">
 <header class="nav-down">
   <nav class="navbar navbar-default">
       <div class="navbar-header">
@@ -44,12 +46,16 @@
          </div>
     </nav>
 </header>
-
+<main class="Site-content">
 
   <%= yield %>
 
-<footer class="col-md-12 text-center footer">
-  <p>footer stuff</p>
+</main>
+<footer>
+  <p>
+    <br/><a href="/"><%= image_tag "helpout_logo_header.png" %></a>
+    <br/><br/> &copy; '93 'til
+  </p>
 </footer>
 
   <%= javascript_include_tag 'angular', 'data-turbolinks-track' => true %>
